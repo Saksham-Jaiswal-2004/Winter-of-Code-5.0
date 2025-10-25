@@ -6,7 +6,7 @@ import Structure from "@/components/structure";
 
  
 export const metadata: Metadata = {
-  title: 'Winter of Code 4.0',
+  title: 'Winter of Code 5.0',
   description: 'Loading...',
 };
 

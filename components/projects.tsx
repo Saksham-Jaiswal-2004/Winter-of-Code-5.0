@@ -2,7 +2,7 @@ import Image from 'next/image'
 import projectcard from '../public/projectcard.svg'
 import projectbanner from '../public/projectbanner.svg'
 import projectmodal from '../public/projectmodal.svg'
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import discordlogo from '../public/discord_proj.svg'
 import linkedinlogo from '../public/linkedin_proj.svg'
 import twitterlogo from '../public/twitter_proj.svg'
@@ -1386,7 +1386,6 @@ const ProjectCard = ({project}: {project: Project}) => {
   const closeModal = () => setIsOpen(false);
 
   const handleBackdropClick = (e:any) => {
-    // Only close if clicking the backdrop itself, not the modal content
     if (e.target === e.currentTarget) {
       closeModal();
     }
@@ -1473,28 +1472,124 @@ const ProjectCard = ({project}: {project: Project}) => {
 
 
 const Projects = () => {
-    var TBA = false;
+    var TBA = true;
+    const [searchTerm, setSearchTerm] = useState('');
+    const [sortBy, setSortBy] = useState('name');
+    const [selectedTech, setSelectedTech] = useState('');
+
+    // Get all unique tech stacks
+    const allTechStacks = useMemo(() => {
+    const techs = new Set<string>();
+    projectData.forEach(project => {
+      project.techstack.forEach(tech => techs.add(tech.toUpperCase()));
+    });
+    return Array.from(techs)
+    .sort()
+    .map(tech => tech.charAt(0).toUpperCase() + tech.slice(1)); // optional: capitalize first letter
+    }, []);
+
+    // Filter and sort projects
+    const filteredProjects = useMemo(() => {
+        let filtered = projectData.filter(project => {
+            const matchesSearch = 
+                project.name.toLowerCase().includes(searchTerm.toLowerCase());
+
+            // Case-insensitive techstack match
+            const matchesTech =
+              !selectedTech ||
+              project.techstack.some(
+                tech => tech.toLowerCase() === selectedTech.toLowerCase()
+            );
+
+            return matchesSearch && matchesTech;
+        });
+
+        // Sort
+        filtered.sort((a, b) => {
+            switch (sortBy) {
+                case 'name':
+                    return a.name.localeCompare(b.name);
+                case 'developer':
+                    return a.developer.localeCompare(b.developer);
+                case 'techCount':
+                    return b.techstack.length - a.techstack.length;
+                default:
+                    return 0;
+            }
+        });
+
+        return filtered;
+    }, [searchTerm, sortBy, selectedTech]);
+
     return (
         <section className='w-full h-full mx-auto pt-[10%] bg-black' id="projects">
-            <div className='text-center text-brand font-kleemax text-scale-40 drop-shadow-blue'>
-                PROJECTS
-                <div className='-z-10 w-[25%] absolute left-[50%] top-0 translate-x-[-50%] translate-y-[-40.5%]'>
-                    <Image className="mx-auto w-full" src={projectbanner} alt="projectbanner" />
+            <div className='px-[5%]'>
+                <div className='text-center text-brand font-kleemax text-scale-40 drop-shadow-blue'>
+                    PROJECTS
+                    <div className='-z-10 w-[25%] absolute left-[50%] top-0 translate-x-[-50%] translate-y-[-40.5%]'>
+                        <Image className="mx-auto w-full" src={projectbanner} alt="projectbanner" />
+                    </div>
+                </div>
+                
+                {/* Horizontal Filters - Right Side Below Title */}
+                <div className='flex gap-6 items-center justify-end mt-10 mb-2 relative z-10'>
+                    <input
+                        type="text"
+                        placeholder="Search by name"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className='px-6 py-3 bg-black border-[2px] border-brand rounded-lg text-brand font-chakra text-[18px] focus:outline-none focus:border-[#CADEFF] w-[300px] appearance-none'
+                    />
+                    
+                    <select
+                        value={selectedTech}
+                        onChange={(e) => setSelectedTech(e.target.value)}
+                        className='px-6 py-3 bg-black border-[2px] border-brand rounded-lg text-brand font-chakra text-[18px] focus:outline-none focus:border-[#23CADEFF] w-[300px] appearance-none cursor-pointer'
+                        style={{
+                          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2323CADEFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
+                          backgroundRepeat: 'no-repeat',
+                          backgroundPosition: 'right 1rem center',
+                          backgroundSize: '20px'
+                        }}
+                      >
+                        <option value="">Search by Techstacks</option>
+                        {allTechStacks.map((tech) => (
+                          <option key={tech} value={tech}>{tech}</option>
+                        ))}
+                    </select>
+                    
+                    {(searchTerm || selectedTech || sortBy !== 'name') && (
+                        <button
+                            onClick={() => {
+                                setSearchTerm('');
+                                setSelectedTech('');
+                                setSortBy('name');
+                            }}
+                            className='px-6 py-3 bg-brand/20 hover:bg-brand/30 text-brand border-[2px] border-brand rounded-lg font-chakra text-[18px] transition-all duration-300'
+                        >
+                            Clear
+                        </button>
+                    )}
                 </div>
             </div>
+
             {TBA ?
             <div className="pt-[5%] flex w-full justify-center text-brand drop-shadow-blue font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED</div>
             :
-            <div className='w-full p-[10%] sm:p-[5%] flex justify-center flex-wrap'>
-            {projectData.map((project, index)=>
-            <ProjectCard key={index} project={project}/>
-            )}
+            <div className='w-full p-[5%] sm:p-[3%] flex justify-center flex-wrap'>
+                {filteredProjects.map((project, index)=>
+                    <ProjectCard key={index} project={project}/>
+                )}
+                {filteredProjects.length === 0 && (
+                    <div className="w-full text-center py-12 text-brand font-chakra text-scale-20">
+                        No projects found matching your criteria...
+                    </div>
+                )}
             </div>            
             }
             <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black"/>
         </section>
-);
-
+    );
 }
 
 export default Projects;

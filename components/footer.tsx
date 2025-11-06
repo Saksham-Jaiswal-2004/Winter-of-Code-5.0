@@ -9,10 +9,8 @@ import mailbox from '../public/mailbox.svg'
 import submit from '../public/submit.svg'
 
 const resources = [
-    {title:"Organisation Brochure", link:"https://drive.google.com/file/d/1n3CBIyKuriTmm3xk4Z4aJkUefQc4Rr5y/view?usp=sharing"},
+    {title:"Organisation Brochure", link:"https://drive.google.com/file/d/117rMEB4imPUtNh0RtCQ-A-FK5wGMWM-y/view?usp=sharing"},
     {title:"Sponsorship Brochure", link:"https://drive.google.com/file/d/1lzozKgXBw1Czn2MCxXGHrig61oM6Hlc_/view?usp=sharing"},
-
-
 ]
 
 const Footer = () => {
@@ -28,16 +26,16 @@ const Footer = () => {
                     WOC                    
                     </div>
                     <div className="flex gap-[4%] items-center justify-start">
-                        <Link href="https://www.instagram.com/gdsciiitkalyani/" target="_blank" rel="noopener noreferrer" className="w-[22%]">
+                        <Link href="https://www.instagram.com/gdgiiitkalyani/" target="_blank" rel="noopener noreferrer" className="w-[22%]">
                             <Image className="bg-gradient-radial from-white via-white via-60% to-transparent to-60% hover:scale-110 duration-700" src={instagram} alt="instagram" />
                         </Link>
                         <Link href="https://x.com/gdsciiitkalyani" target="_blank" rel="noopener noreferrer" className="w-[22%]">
                             <Image className="bg-gradient-radial from-white via-white via-60% to-transparent to-60% hover:scale-110 duration-700" src={twitter} alt="twitter" />
                         </Link>
-                        <Link href="https://discord.gg/ePBMbdKdKG" target="_blank" rel="noopener noreferrer" className="w-[22%]">
+                        <Link href="https://discord.gg/tcaxPN6CNs" target="_blank" rel="noopener noreferrer" className="w-[22%]">
                             <Image className="p-[7.5%] hover:scale-110 duration-700" src={discord} alt="discord" />
                         </Link>
-                        <Link href="https://www.linkedin.com/company/gdsc-iiit-kalyani/" target="_blank" rel="noopener noreferrer" className="w-[19%] relative">
+                        <Link href="https://www.linkedin.com/company/gdsc-iiit-kalyani" target="_blank" rel="noopener noreferrer" className="w-[19%] relative">
                             <Image className="bg-gradient-radial from-white via-white via-65% to-transparent to-65% hover:scale-110 duration-700" src={linkedin} alt="linkedin" />
                         </Link>
                     </div>
@@ -54,7 +52,7 @@ const Footer = () => {
                     );
                 })}
                 <div className="text-scale-40-6 text-white font-chakra text-wrap w-[90%] m-[1%]">
-                    © GDG IIIT KALYANI 2024
+                    © GDG IIIT KALYANI 2025
                 </div>
             </div>
             <div className="flex-col flex w-[25%] mt-[2%]">

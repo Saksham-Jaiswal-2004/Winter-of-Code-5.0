@@ -113,3 +113,38 @@ hr {
 .modal {
   animation: modal 200ms linear 1;
 }
+
+@keyframes shimmer {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.text-ice-border {
+  position: relative;
+  color: #dff7ff;
+  text-shadow: 
+    0 0 6px #aeeaff, 
+    0 0 12px #7fcfff, 
+    1px 1px 4px #bde9ff;
+}
+
+/* Frost specks on borders */
+.text-ice-border::before,
+.text-ice-border::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  background-image: radial-gradient(circle at 10% 20%, #e0f9ff55 2px, transparent 3px),
+                    radial-gradient(circle at 60% 40%, #b8eaff66 1.5px, transparent 2px),
+                    radial-gradient(circle at 80% 70%, #d7ffff55 2px, transparent 3px),
+                    radial-gradient(circle at 40% 80%, #aeefff55 1.8px, transparent 3px);
+  background-repeat: no-repeat;
+  animation: shimmer 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: lighten;
+}

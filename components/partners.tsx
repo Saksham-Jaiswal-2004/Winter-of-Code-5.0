@@ -87,7 +87,7 @@ const PartnerCard = ({partner} : {partner:Partner}) => {
 };
 
 const Partners = () => {
-    var TBA = false;
+    var TBA = true;
     
     return (
         <section className='w-full h-full mx-auto pt-[10%]' id="partners">
@@ -95,7 +95,7 @@ const Partners = () => {
             COMMUNITY PARTNERS
             </div>
             {TBA ?
-            <div className="pt-[5%] flex w-full justify-center text-partner drop-shadow-red font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED</div>
+            <div className="pt-[5%] flex w-full justify-center text-[#E2AA06] drop-shadow-red font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED</div>
             :
             <div className='w-full p-[10%] sm:p-[5%] gap-[2%] flex justify-center flex-wrap'>
             {partnerData.map((partner, index)=>

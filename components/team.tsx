@@ -11,68 +11,80 @@ interface Teammate{
 
 const teamData:Teammate[] = [
     {
-        name:'Oindrila',
-        bio: 'https://www.linkedin.com/in/oindriladas02/',
+        name:'Saksham Jaiswal',
+        bio: 'https://www.linkedin.com/in/saksham-jaiswal-220637302/',
     },
     {
-        name: 'Arpan',
-        bio: 'https://www.linkedin.com/in/arpan-mandal-74a0672a2/',
+        name:'Akansha Gupta',
+        bio: 'https://www.linkedin.com/in/akansha-gupta-b16972324/',
     },
     {
-        name: 'Arup',
-        bio: 'https://www.linkedin.com/in/arup-matabber/',
+        name:'Satya Yadav',
+        bio: 'https://www.linkedin.com/in/satya-yadav-22798b323/',
     },
     {
-        name:'Ritam B',
-        bio: 'https://www.linkedin.com/in/ritam-biswas-197138286/',
+        name:'Harsh Raj',
+        bio: 'https://www.linkedin.com/in/harshraj112/',
     },
     {
-        name:'Ayush',
-        bio: 'https://www.linkedin.com/in/ayush-prasad-b42992322/',
+        name: 'Harsh Dev Jha',
+        bio: 'https://www.linkedin.com/in/harsh-dev-jha/',
     },
     {
-        name:'Arya',
-        bio: 'https://www.linkedin.com/in/arya-raj-83908a253/',
+        name: 'Swarnabha Khamrui',
+        bio: 'https://www.linkedin.com/in/swarnabha-khamrui-396353321/',
     },
     {
-        name:'Samridhi',
-        bio: 'https://www.linkedin.com/in/samridhi-mukhopadhyay-36295228a/',
+        name:'Sarbajit Kumar De',
+        bio: 'https://www.linkedin.com/in/sarbajit-kumar-de-864a1728a/',
     },
     {
-        name:'Himanshu',
-        bio: 'https://www.linkedin.com/in/himanshu-patel-61a2712b6/',
+        name:'Mohit Negi',
+        bio: 'https://www.linkedin.com/in/mohit-negi-3a1368319/',
     },
     {
-        name:'Sagnik',
-        bio: 'https://www.linkedin.com/in/sagnik0012/',
+        name:'Awnikant Ajay',
+        bio: 'https://www.linkedin.com/in/awnikant/',
     },
     {
-        name:'Soaham',
-        bio: 'https://www.linkedin.com/in/soaham-sur-54a83528b/',
+        name:'Srijan Srivastava',
+        bio: 'https://www.linkedin.com/in/srijan-srivastava-99a66b33b/',
     },
     {
-        name:'Sanu',
-        bio: 'https://www.linkedin.com/in/sanu-mukherjee1001/',
+        name:'Shwet Raj',
+        bio: 'https://www.linkedin.com/in/shwet-raj-5a9b312ba/',
     },
     {
-        name:'Ritam D',
-        bio: 'https://www.linkedin.com/in/ritamde25/',
+        name:'Suraj Kumar',
+        bio: 'https://www.linkedin.com/in/suraj-kumar-370561316/',
     },
     {
-        name:'Divyansh',
-        bio: 'https://www.linkedin.com/in/divyansh-kanaujia-989792288/',
+        name:'Sahil Sujit Singh',
+        bio: 'https://www.linkedin.com/in/sahil-sujit-singh-999739338/',
     },
     {
-        name:'Krishna',
-        bio: 'https://www.linkedin.com/in/krishna-singh-554939288/',
+        name:'Devansh Shukla',
+        bio: 'https://www.linkedin.com/in/devansh-shukla-538294322/',
     },
     {
-        name:'Karan',
-        bio: 'https://www.linkedin.com/in/karan-kumar-12b227239/',
+        name:'Sakshi Dhriti',
+        bio: 'https://www.linkedin.com/in/sakshi-dhriti-9ba463381/',
     },
     {
-        name:'Lokesh',
-        bio: 'https://www.linkedin.com/in/lokesh-meena-029244288/',
+        name:'Adrisha Biswas',
+        bio: 'https://www.linkedin.com/in/adrisha-biswas-bb4067381/',
+    },
+    {
+        name:'Anurag Anand Pandit',
+        bio: 'https://www.linkedin.com/in/anurag-pandit-19673736a/',
+    },
+    {
+        name:'Ayush Lahiri',
+        bio: 'https://www.linkedin.com/in/ayush-lahiri-510786384/',
+    },
+    {
+        name:'Subhra Sekhar Garai',
+        bio: 'https://www.linkedin.com/in/znackt/',
     },
 ];
 

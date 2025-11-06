@@ -89,14 +89,16 @@ const OrgCard = ({org} : {org:Org}) => {
 
 
 const Organisations = () => {
-    var TBA = false;
+    var TBA = true;
     return (
         <section className='w-full h-full mx-auto pt-[10%] bg-black' id="orgs">
             <div className='text-center text-orgs font-kleemax text-scale-40 drop-shadow-gold'>
             ORGANISATIONS
             </div>
             {TBA ?
-            <div className="pt-[5%] flex w-full justify-center text-orgs drop-shadow-gold font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED</div>
+            <div className="pt-[5%] flex w-full justify-center text-[#C23B30] drop-shadow-red font-kleemax text-scale-30 font-semibold">
+                TO BE ANNOUNCED
+            </div>
             :
             <div className='w-full p-[10%] sm:p-[5%] gap-[2%] flex justify-center flex-wrap'>
             {orgsData.map((org, index)=>

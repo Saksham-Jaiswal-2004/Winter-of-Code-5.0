@@ -23,42 +23,42 @@ const numerate = (index:number) => {
 //*
 const timelineData:TEvent[] = [
     {
-      startDate: 'XX-XX-XXXX',
-      endDate: 'XX-XX-XXXX',
+      startDate: '15-11-2025',
+      endDate: '15-12-2025',
       title: 'Student Applications',
       description: 'This marks the period when students can submit their applications to participate in Winter of Code. Ensure your application is complete before the deadline!'
     },
     {
-      startDate: 'XX-XX-XXXX',
+      startDate: '10-01-2026',
       title: 'Inaugural Ceremony',
       description: 'The official start of Winter of Code! Join us for an introductory session where we’ll walk you through the program’s timeline, expectations, and the exciting journey ahead.'
     },
     {
-      startDate: 'XX-XX-XXXX',
-      endDate: 'XX-XX-XXXX',
+      startDate: '10-01-2026',
+      endDate: '20-01-2026',
       title: 'Proposal Writing',
       description: 'A week-long workshop focused on helping students write strong, well-structured project proposals. Get guidance from mentors and learn the best practices for proposing your project ideas.'
     },
     {
-      startDate: 'XX-XX-XXXX',
-      endDate: 'XX-XX-XXXX',
+      startDate: '25-01-2026',
+      endDate: '31-01-2026',
       title: 'Community Bonding Phase',
       description: 'This phase encourages students and mentors to connect, discuss their projects, and build rapport with the organisations. It’s a great opportunity to understand your project’s goals better before diving into coding.'
     },
     {
-      startDate: 'XX-XX-XXXX',
-      endDate: 'XX-XX-XXXX',
+      startDate: '01-02-2026',
+      endDate: '15-03-2026',
       title: 'Coding\nPhase',
       description: 'This is where the real fun begins! The core phase of Winter of Code, where students begin implementing their proposed projects. During this period, students will collaborate closely with mentors and contribute code to open-source repositories.'
     },
     {
-      startDate: 'XX-XX-XXXX',
-      endDate: 'XX-XX-XXXX',
+      startDate: '16-03-2026',
+      endDate: '07-04-2026',
       title: 'Mentor Evaluation',
       description: 'Mentors will review the progress of students’ projects, providing feedback and guidance. This evaluation is crucial for refining and improving the final submission.'
     },
     {
-      startDate: 'XX-XX-XXXX',
+      startDate: '10-04-2026',
       title: 'Closing Ceremony',
       description: 'The official conclusion of Winter of Code. Celebrate your achievements, review key learnings, and recognize outstanding contributors as we wrap up the program.'
     }

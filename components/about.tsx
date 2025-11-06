@@ -3,7 +3,7 @@ import Image from 'next/image'
 import arrow from '../public/arrow.svg'
 import aboutus from '../public/aboutus.svg'
 
-const description = "Winter of Code is a 30-day open-source journey brought to you by GDG on campus IIIT Kalyani (formerly known as GDSC IIIT Kalyani) , in collaboration with Google Developer Groups on Campus. Modeled after Google Summer of Code (GSoC), this program offers an exciting opportunity for developers to dive into the world of open source, contribute to impactful projects, and collaborate with like-minded peers. Whether you're a seasoned coder or just starting out, Winter of Code 5.0 is your chance to enhance your skills, make meaningful contributions, and become part of the global open-source community."
+const description = "Winter of Code is a 3-month-long open-source journey brought to you by GDG on campus IIIT Kalyani (formerly known as GDSC IIIT Kalyani) , in collaboration with Google Developer Groups on Campus. Modeled after Google Summer of Code (GSoC), this program offers an exciting opportunity for developers to dive into the world of open source, contribute to impactful projects, and collaborate with like-minded peers. Whether you're a seasoned coder or just starting out, Winter of Code 5.0 is your chance to enhance your skills, make meaningful contributions, and become part of the global open-source community."
 const AboutUs = () => {
     return (
         <section className='w-full p-4 pt-[10%]' id="about">

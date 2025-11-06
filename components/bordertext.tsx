@@ -10,10 +10,10 @@ const BorderText = () => {
   const text = Array.from("WINTEROFCODE");
   const x = [0, 90, 180, 270, 360,450,0, 85, 195, 280, 365, 450];
   return (
-    <div className="flex flex-col items-left w-full">
+    <div className="flex flex-col items-left w-full h-fit">
       <div className="hidden sm:block w-full h-fit relative">
       <div className="hidden sm:flex absolute w-full font-kleemax text-scale-310 text-[#D9D9D910] justify-center overflow-hidden top-[65%] translate-y-[-50%] left-0">WOC</div>
-      <svg className="z-20 w-fit max-h-[80%] max-w-[75%] mx-auto " viewBox="0 0 570 190">
+      <svg className="z-[1000] w-fit max-h-[80%] max-w-[75%] mx-auto " viewBox="0 0 570 190">
             {text.map((letter,index)=>
             <text
               key={index}

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 const SponsorData: string[][] = [
-    [], // Platinum
-    [], // Gold
+    ["Devfolio"], // Platinum
+    ["ETHIndia"], // Gold
     [], // Silver
     []  // Bronze
 ];
@@ -10,7 +10,7 @@ const SponsorData: string[][] = [
 const tier = ["Platinum", "Gold", "Silver", "Bronze"];
 
 const Sponsors = () => {
-    const TBA = true; // change to false when sponsors are ready
+    const TBA = false; // change to false when sponsors are ready
 
     return (
         <section className='w-full h-full mx-auto pt-[10%]' id="sponsors">
@@ -49,7 +49,7 @@ const Sponsors = () => {
                                             src={`/sponsors/${sponsor.toLowerCase()}.png`}
                                             width={600}
                                             height={200}
-                                            alt={`${sponsor} logo`}
+                                            alt={`${sponsor} Logo`}
                                         />
                                     ))}
                                 </div>

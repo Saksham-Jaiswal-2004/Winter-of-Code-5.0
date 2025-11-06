@@ -33,7 +33,7 @@ const BorderText = () => {
       <Image src={wocg} alt="wocart" className="sm:hidden"/>
       <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%]"> 
                 <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
-                <div className="relative flex justify-center text-scale-30-5 bg-black drop-shadow-blue px-[1.5%] border-[0.25vw] text-brand hover:scale-110 duration-700">
+                <div className="relative flex justify-center text-scale-30-5 bg-black drop-shadow-blue px-[1.5%] border-[0.25vw] text-brand hover:scale-110 duration-700 cursor-pointer">
                     <div className='absolute top-right-arrow right-[0.375vw] top-[0.3vw] sm:top-[0.45vw]'></div>
                     {TBA ? <div className="text-nowrap pt-[1.5%] font-kleemax">
                             <JumbleText text="COMING SOON" id="registerhere"/>

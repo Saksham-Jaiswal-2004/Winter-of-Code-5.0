@@ -42,6 +42,7 @@ export default function RootLayout({
       </head>
       <body className={`${kleemax.variable} ${chakra.variable} bg-black`}>
         <Structure children={children}/>
+        <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
       </body>
     </html>
   );

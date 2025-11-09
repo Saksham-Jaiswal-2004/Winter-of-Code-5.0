@@ -10,7 +10,7 @@ import submit from '../public/submit.svg'
 
 const resources = [
     {title:"Organisation Brochure", link:"https://drive.google.com/file/d/117rMEB4imPUtNh0RtCQ-A-FK5wGMWM-y/view?usp=sharing"},
-    {title:"Sponsorship Brochure", link:"https://drive.google.com/file/d/1lzozKgXBw1Czn2MCxXGHrig61oM6Hlc_/view?usp=sharing"},
+    {title:"Sponsorship Brochure", link:"https://drive.google.com/file/d/1vOyyjSdUysjeUrpb87Ubb-Rkl542M9v2/view?usp=sharing"},
 ]
 
 const Footer = () => {

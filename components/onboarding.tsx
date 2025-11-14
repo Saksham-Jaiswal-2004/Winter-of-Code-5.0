@@ -9,7 +9,7 @@ import Snowfall from 'react-snowfall'
 import { useEffect, useState } from "react";
 
 const Register = () => {
-    var TBA = true;
+    var TBA = false;
 
     useEffect(() => {
         const script = document.createElement('script');

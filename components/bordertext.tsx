@@ -6,7 +6,7 @@ import Link from 'next/link'
 import JumbleText from '@/components/jumble'
 
 const BorderText = () => {
-  var TBA = true;
+  var TBA = false;
   const text = Array.from("WINTEROFCODE");
   const x = [0, 90, 180, 270, 360,450,0, 85, 195, 280, 365, 450];
   return (
@@ -39,8 +39,8 @@ const BorderText = () => {
                             <JumbleText text="COMING SOON" id="registerhere"/>
                     </div>
                     :
-                    <Link href="https://winterofcode.devfolio.co/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
-                            <JumbleText text="REGISTRATION CLOSED" id="registerhere"/>
+                    <Link href="https://winter-of-code-5.devfolio.co/overview" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
+                            <JumbleText text="REGISTRATION OPEN" id="registerhere"/>
                     </Link>}
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>

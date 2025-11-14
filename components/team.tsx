@@ -11,6 +11,10 @@ interface Teammate {
 
 const teamData: Teammate[] = [
   {
+    name: "Arup Matabber",
+    bio: "https://www.linkedin.com/in/arup-matabber/",
+  },
+  {
     name: "Saksham Jaiswal",
     bio: "https://www.linkedin.com/in/saksham-jaiswal-220637302/",
   },
@@ -19,12 +23,12 @@ const teamData: Teammate[] = [
     bio: "https://www.linkedin.com/in/akansha-gupta-b16972324/",
   },
   {
-    name: "Satya Yadav",
-    bio: "https://www.linkedin.com/in/satya-yadav-22798b323/",
-  },
-  {
     name: "Harsh Raj",
     bio: "https://www.linkedin.com/in/harshraj112/",
+  },
+  {
+    name: "Satya Yadav",
+    bio: "https://www.linkedin.com/in/satya-yadav-22798b323/",
   },
   {
     name: "Harsh Dev Jha",

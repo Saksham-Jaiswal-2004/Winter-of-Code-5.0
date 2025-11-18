@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Chakra_Petch } from "next/font/google";
 import localfont from "next/font/local";
 import Structure from "@/components/structure";
-
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
  
 export const metadata: Metadata = {
   title: 'Winter of Code 5.0',
@@ -43,6 +42,7 @@ export default function RootLayout({
       <body className={`${kleemax.variable} ${chakra.variable} bg-black`}>
         <Structure children={children}/>
         <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+        <SpeedInsights />
       </body>
     </html>
   );

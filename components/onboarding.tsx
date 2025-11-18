@@ -39,7 +39,7 @@ const Register = () => {
             <div className="flex flex-col justify-center items-center w-full sm:hidden z-20"> 
                 <hr className="w-full h-[0.25vw] bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30-5 bg-black drop-shadow-blue px-[1.5%] border-[0.25vw] text-brand hover:scale-110 duration-700 z-[1000]">
-                    <div className='absolute top-right-arrow right-[0.375vw] top-[0.3vw] sm:top-[0.45vw]'></div>
+                    <div className='absolute top-right-arrow right-[0.375vw] top-[0.3vw] sm:top-[0.45vw] mb-4'></div>
                     {TBA ? 
                     <div className="text-nowrap pt-[1.5%] font-kleemax">
                         <JumbleText text="COMING SOON" id="registerhere"/>

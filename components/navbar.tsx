@@ -24,7 +24,7 @@ const Navbar = () => {
     };
     return (
         <nav className="z-[2000] sticky flex-col flex w-full top-0 gap-[1%]">
-            <div className="flex flex-col items-end sm:flex-row w-full justify-center h-full pt-[calc(0.5%+8px)] bg-black pb-[8px]">
+            <div className="flex flex-col items-end sm:flex-row w-full justify-center transition-all duration-200 ease-in-out h-full pt-[calc(0.5%+8px)] bg-black pb-[8px]">
                 <Link href="/" className="text-scale-30-5 w-[14%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:translate-y-[-40%] flex justify-center text-brand font-kleemax">
                     WOC
                 </Link>

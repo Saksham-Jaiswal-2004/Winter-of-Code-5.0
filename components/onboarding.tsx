@@ -50,7 +50,7 @@ const Register = () => {
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
                 <div 
-	                className="apply-button hidden" 
+	                className="apply-button" 
 	                data-hackathon-slug="winter-of-code-5" 
 	                data-button-theme="light"
 	                // style="height: 44px; width: 312px"

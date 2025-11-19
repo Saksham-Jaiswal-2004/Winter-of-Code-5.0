@@ -3,7 +3,7 @@ import Image from 'next/image';
 const SponsorData: string[][] = [
     ["Devfolio"], // Platinum
     ["ETHIndia"], // Gold
-    [], // Silver
+    ["aops"], // Silver
     []  // Bronze
 ];
 

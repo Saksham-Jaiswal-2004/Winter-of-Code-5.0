@@ -32,14 +32,6 @@ export default function Structure({
 }) {
 
   useEffect(() => {
-
-    // Inject Devfolio script safely
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
     // Text scaling function
     const setFontSizeForTextScaleElements = () => {
       const elements = document.querySelectorAll<HTMLElement>('[class*="text-scale"]');
@@ -77,7 +69,6 @@ export default function Structure({
     window.addEventListener('resize', setFontSizeForTextScaleElements);
     window.addEventListener('click', setFontSizeForTextScaleElements);
 
-  
     const onLoadHandler = () => setFontSizeForTextScaleElements();
     window.addEventListener('load', onLoadHandler);
 
@@ -86,9 +77,6 @@ export default function Structure({
     }, 300);
 
     return () => {
-      if (script.parentNode) {
-        document.body.removeChild(script);
-      }
       window.removeEventListener('resize', setFontSizeForTextScaleElements);
       window.removeEventListener('click', setFontSizeForTextScaleElements);
       window.removeEventListener('load', onLoadHandler);
@@ -98,10 +86,10 @@ export default function Structure({
   }, []);
 
   return (
-    <body className={`${kleemax.variable} ${chakra.variable} bg-black`}>
+    <>
       <Navbar />
       {children}
       <Footer />
-    </body>
+    </>
   );
 }

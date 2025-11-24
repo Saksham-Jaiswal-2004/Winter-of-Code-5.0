@@ -5,72 +5,7 @@ interface Org{
     name:string;
     website:string;
 }
-const orgsData:Org[] = [
-    {
-        name: 'OpenPrinting',
-        website: 'http://www.openprinting.org/'
-    },
-    {
-        name: 'DebugSwift',
-        website: 'https://cocoapods.org/pods/DebugSwift'
-    },
-    {
-        name: 'Tiled',
-        website: 'https://www.mapeditor.org/'
-    },
-    {
-        name: 'ClassroomIO',
-        website: 'https://classroomio.com/'
-    },
-    {
-        name: 'ChartDB',
-        website: 'https://chartdb.io/'
-    },
-    {
-        name: 'Brisa',
-        website: 'https://brisa.build/'
-    },
-    {
-        name: 'TensorZero',
-        website: 'https://www.tensorzero.com/'
-    },
-    {
-        name: 'Mixxx',
-        website: 'https://mixxx.org/'
-    },
-    {
-        name: 'GDevelop',
-        website: 'https://gdevelop.io/'
-    },
-    {
-        name: 'SQL Page',
-        website: 'https://sql-page.com/'
-    },
-    {
-        name: 'Holidays Framework',
-        website: 'https://pypi.org/project/holidays/'
-    },
-    {
-        name: 'Laudspeaker',
-        website: 'https://laudspeaker.com/'
-    },
-    {
-        name: 'Snapcrafters',
-        website: 'https://snapcraft.io/publisher/snapcrafters'
-    },
-    {
-        name: 'Mifos',
-        website: 'https://mifos.org/'
-    },
-    {
-        name: 'API Dash',
-        website: 'https://apidash.dev/'
-    },
-    {
-        name: 'The Stellar Group',
-        website: 'https://hpx.stellar-group.org/'
-    }
-];
+const orgsData:Org[] = [];
 
 const OrgCard = ({org} : {org:Org}) => {
     return (
@@ -89,7 +24,7 @@ const OrgCard = ({org} : {org:Org}) => {
 
 
 const Organisations = () => {
-    var TBA = true;
+    var TBA = false;
     return (
         <section className='w-full h-full mx-auto pt-[10%] bg-black' id="orgs">
             <div className='text-center text-orgs font-kleemax text-scale-40 drop-shadow-gold'>
@@ -100,11 +35,76 @@ const Organisations = () => {
                 TO BE ANNOUNCED
             </div>
             :
+            <>
             <div className='w-full p-[10%] sm:p-[5%] gap-[2%] flex justify-center flex-wrap'>
             {orgsData.map((org, index)=>
             <OrgCard key={index} org={org}/>
             )}
-            </div>            
+            </div>
+            <div className="flex w-full justify-center mt-[5%]">
+                <a href="https://www.notion.so/Organisation-s-Application-Guide-Winter-of-Code-5-0-2ad489c63bf480d0a423d3ce5aceb69d?source=copy_link" target="_blank" rel="noopener noreferrer">
+                    <button 
+                        className="glow-button"
+                        style={{
+                            '--glow-color': '#44A7F0',
+                            '--glow-spread-color': 'rgba(68, 167, 240, 0.781)',
+                            '--enhanced-glow-color': 'rgb(100, 186, 245)',
+                            '--btn-color': 'rgb(25, 80, 120)',
+                        } as React.CSSProperties}
+                    >
+                        CLICK HERE TO APPLY
+                    </button>
+                </a>
+            </div>
+            <style jsx>{`
+                .glow-button {
+                    border: 0.25em solid var(--glow-color);
+                    padding: 1em 3em;
+                    color: var(--glow-color);
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: 'Chakra Petch', sans-serif;
+                    cursor: pointer;
+                    background-color: var(--btn-color);
+                    border-radius: 1em;
+                    outline: none;
+                    box-shadow: 0 0 1em 0.25em var(--glow-color),
+                        0 0 4em 1em var(--glow-spread-color),
+                        inset 0 0 0.74em 0.25em var(--glow-color);
+                    text-shadow: 0 0 0.5em var(--glow-color);
+                    position: relative;
+                    transition: all 0.3s;
+                }
+                
+                .glow-button::after {
+                    pointer-events: none;
+                    content: "";
+                    position: absolute;
+                    top: 120%;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: var(--glow-spread-color);
+                    filter: blur(2em);
+                    opacity: 0.7;
+                    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+                }
+                
+                .glow-button:hover {
+                    color: var(--btn-color);
+                    background-color: var(--glow-color);
+                    box-shadow: 0 0 1em 0.25em var(--glow-color),
+                        0 0 4em 2em var(--glow-spread-color),
+                        inset 0 0 0.75em 0.25em var(--glow-color);
+                }
+                
+                .glow-button:active {
+                    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+                        0 0 2.5em 2em var(--glow-spread-color),
+                        inset 0 0 0.5em 0.25em var(--glow-color);
+                }
+            `}</style>
+            </>
             }
             <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black"/>
         </section>

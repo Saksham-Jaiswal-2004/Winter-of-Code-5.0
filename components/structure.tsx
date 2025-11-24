@@ -67,7 +67,6 @@ export default function Structure({
 
     // Event listeners
     window.addEventListener('resize', setFontSizeForTextScaleElements);
-    window.addEventListener('click', setFontSizeForTextScaleElements);
 
     const onLoadHandler = () => setFontSizeForTextScaleElements();
     window.addEventListener('load', onLoadHandler);
@@ -78,7 +77,6 @@ export default function Structure({
 
     return () => {
       window.removeEventListener('resize', setFontSizeForTextScaleElements);
-      window.removeEventListener('click', setFontSizeForTextScaleElements);
       window.removeEventListener('load', onLoadHandler);
       clearTimeout(timeout);
     };

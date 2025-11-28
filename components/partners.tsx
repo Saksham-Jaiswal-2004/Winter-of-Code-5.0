@@ -1,19 +1,44 @@
 import Image from 'next/image'
 import partnercard from '../public/partner.svg'
 
-interface Partner{
-    name:string;
-    link:string;
+interface Partner {
+    name: string;
+    link: string;
 }
 
-const partnerData:Partner[] = [];
+const partnerData: Partner[] = [
+    {
+        name: "GDG On Campus IEM",
+        link: "https://www.linkedin.com/company/gdsciem"
+    },
+    {
+        name: "Magistics",
+        link: "https://www.linkedin.com/company/magistics/"
+    },
+    {
+        name: "Google Developer Group Vidyalankar Institute of Technology",
+        link: "https://www.linkedin.com/company/google-developer-groups-vit-mumbai"
+    },
+    {
+        name: "GDG on Campus BCREC",
+        link: "https://www.linkedin.com/company/gdsc-bcrec"
+    },
+    {
+        name: "Sourcify IN",
+        link: "https://www.linkedin.com/company/sourcifyin/"
+    },
+    {
+        name: "GDG on Campus GCECT",
+        link: "https://www.linkedin.com/company/google-developer-groups-on-campus-gcect"
+    }
+];
 
-const PartnerCard = ({partner} : {partner:Partner}) => {
+const PartnerCard = ({ partner }: { partner: Partner }) => {
     return (
-        <a 
-            className="relative w-[45%] sm:w-[30%] gap-[2%] my-[2%] hover:scale-105 duration-700" 
-            href={partner.link} 
-            rel="noopener noreferrer" 
+        <a
+            className="relative w-[45%] sm:w-[30%] gap-[2%] my-[2%] hover:scale-105 duration-700"
+            href={partner.link}
+            rel="noopener noreferrer"
             target="_blank"
         >
             <Image className="backdrop-blur" src={partnercard} alt="org card" />
@@ -21,16 +46,15 @@ const PartnerCard = ({partner} : {partner:Partner}) => {
                 {partner.name}
             </div>
 
-            <div 
-                className={`absolute left-[50%] -translate-x-[50%] top-[26.5%] ${
-                    partner.name.startsWith("GDG On Campus") ? "w-[125%]" : "w-[90%]"
-                } h-[60%] items-center flex overflow-hidden`}
+            <div
+                className={`absolute left-[50%] -translate-x-[50%] top-[28%] ${partner.name.startsWith("GDG On Campus") ? "w-[85%]" : "w-[65%]"
+                    } h-[55%] items-center flex overflow-hidden`}
             >
-                <Image 
-                    src={`/partners/${partner.name}.${partner.name.startsWith("GDG On Campus") ? "svg" : "png"}`}
-                    className='w-full h-fit mx-auto' 
-                    width={500} 
-                    height={500}  
+                <Image
+                    src={`/partners/${partner.name}.png`}
+                    className='w-full h-full mx-auto object-contain'
+                    width={500}
+                    height={500}
                     alt={partner.name}
                 />
             </div>
@@ -39,7 +63,7 @@ const PartnerCard = ({partner} : {partner:Partner}) => {
 };
 
 const Partners = () => {
-    var TBA = true;
+    var TBA = false;
 
     return (
         <section className='w-full h-full mx-auto pt-[10%]' id="partners">
@@ -52,7 +76,7 @@ const Partners = () => {
                     TO BE ANNOUNCED
                 </div>
             ) : (
-                <div className='w-full p-[10%] sm:p-[5%] gap-[2%] flex justify-center flex-wrap'>
+                <div className='w-full pt-[8%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
                     {partnerData.map((partner, index) =>
                         <PartnerCard key={index} partner={partner} />
                     )}
@@ -60,10 +84,10 @@ const Partners = () => {
             )}
 
             {/* APPLY BUTTON */}
-            <div className="flex w-full justify-center mt-[5%]">
-                <a href="https://forms.gle/X2H524b3NjuUvESbA" target="_blank" rel="noopener noreferrer">
-                    <button 
-                        className="glow-button"
+            <div className="flex w-full justify-center mt-[5%] px-4">
+                <a href="https://forms.gle/X2H524b3NjuUvESbA" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
+                    <button
+                        className="glow-button w-full sm:w-auto"
                         style={{
                             '--glow-color': '#44A7F0',
                             '--glow-spread-color': 'rgba(68, 167, 240, 0.781)',
@@ -71,7 +95,7 @@ const Partners = () => {
                             '--btn-color': 'rgb(25, 80, 120)',
                         } as React.CSSProperties}
                     >
-                        CLICK HERE TO APPLY
+                        JOIN THE COMMUNITY
                     </button>
                 </a>
             </div>
@@ -79,9 +103,9 @@ const Partners = () => {
             <style jsx>{`
                 .glow-button {
                     border: 0.25em solid var(--glow-color);
-                    padding: 1em 3em;
+                    padding: 0.8em 1.5em;
                     color: var(--glow-color);
-                    font-size: 15px;
+                    font-size: 12px;
                     font-weight: bold;
                     font-family: 'Chakra Petch', sans-serif;
                     cursor: pointer;
@@ -94,6 +118,13 @@ const Partners = () => {
                     text-shadow: 0 0 0.5em var(--glow-color);
                     position: relative;
                     transition: all 0.3s;
+                }
+                
+                @media (min-width: 640px) {
+                    .glow-button {
+                        padding: 1em 3em;
+                        font-size: 15px;
+                    }
                 }
                 
                 .glow-button::after {

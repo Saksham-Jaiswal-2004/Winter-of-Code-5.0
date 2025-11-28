@@ -60,10 +60,10 @@ const Sponsors = () => {
             )}
 
             {/* Apply Button */}
-            <div className="flex w-full justify-center mt-[5%]">
-                <a href="https://www.notion.so/Sponsor-Application-Guide-Winter-of-Code-5-0-2b5489c63bf480568f41f626dea2e7b2?source=copy_link" target='_blank' rel="noopener noreferrer">
-                    <button 
-                        className="glow-button"
+            <div className="flex w-full justify-center mt-[5%] px-4">
+                <a href="https://www.notion.so/Sponsor-Application-Guide-Winter-of-Code-5-0-2b5489c63bf480568f41f626dea2e7b2?source=copy_link" target='_blank' rel="noopener noreferrer" className="w-full sm:w-auto flex justify-center">
+                    <button
+                        className="glow-button w-full sm:w-auto"
                         style={{
                             '--glow-color': '#44A7F0',
                             '--glow-spread-color': 'rgba(68, 167, 240, 0.781)',
@@ -71,7 +71,7 @@ const Sponsors = () => {
                             '--btn-color': 'rgb(25, 80, 120)',
                         } as React.CSSProperties}
                     >
-                        CLICK HERE TO APPLY
+                        BECOME A SPONSOR
                     </button>
                 </a>
             </div>
@@ -79,9 +79,9 @@ const Sponsors = () => {
             <style jsx>{`
                 .glow-button {
                     border: 0.25em solid var(--glow-color);
-                    padding: 1em 3em;
+                    padding: 0.8em 1.5em;
                     color: var(--glow-color);
-                    font-size: 15px;
+                    font-size: 12px;
                     font-weight: bold;
                     font-family: 'Chakra Petch', sans-serif;
                     cursor: pointer;
@@ -94,6 +94,13 @@ const Sponsors = () => {
                     text-shadow: 0 0 0.5em var(--glow-color);
                     position: relative;
                     transition: all 0.3s;
+                }
+                
+                @media (min-width: 640px) {
+                    .glow-button {
+                        padding: 1em 3em;
+                        font-size: 15px;
+                    }
                 }
                 
                 .glow-button::after {
@@ -125,7 +132,7 @@ const Sponsors = () => {
                 }
             `}</style>
 
-            <hr className="flex mt-[10%] max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black"/>
+            <hr className="flex mt-[10%] max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black" />
         </section>
     );
 };

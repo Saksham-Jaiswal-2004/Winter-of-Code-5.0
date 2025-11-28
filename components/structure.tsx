@@ -4,6 +4,7 @@ import { Inter, Chakra_Petch } from "next/font/google";
 import localfont from "next/font/local";
 import "../app/globals.css";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
@@ -30,6 +31,7 @@ export default function Structure({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
 
   useEffect(() => {
     // Text scaling function
@@ -71,17 +73,35 @@ export default function Structure({
     const onLoadHandler = () => setFontSizeForTextScaleElements();
     window.addEventListener('load', onLoadHandler);
 
+    // Recalculate after a short delay to ensure DOM is ready
     const timeout = setTimeout(() => {
       setFontSizeForTextScaleElements();
+    }, 100);
+
+    // Additional timeout for slower renders
+    const timeout2 = setTimeout(() => {
+      setFontSizeForTextScaleElements();
     }, 300);
+
+    // MutationObserver to detect DOM changes
+    const observer = new MutationObserver(() => {
+      setFontSizeForTextScaleElements();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
 
     return () => {
       window.removeEventListener('resize', setFontSizeForTextScaleElements);
       window.removeEventListener('load', onLoadHandler);
       clearTimeout(timeout);
+      clearTimeout(timeout2);
+      observer.disconnect();
     };
 
-  }, []);
+  }, [pathname]); // Re-run when pathname changes
 
   return (
     <>

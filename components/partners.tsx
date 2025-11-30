@@ -40,7 +40,7 @@ const partnerData: Partner[] = [
         link: "https://www.linkedin.com/company/gdgocaot/"
     },
     {
-        name: "Jis",
+        name: "GDG JIS",
         link: "https://www.linkedin.com/company/dscjisu/"
     }
 ];

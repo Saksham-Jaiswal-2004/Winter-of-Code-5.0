@@ -49,7 +49,7 @@ const Sponsors = () => {
                                             src={`/sponsors/${sponsor.toLowerCase()}.png`}
                                             width={600}
                                             height={200}
-                                            alt={sponsor}
+                                            alt={`${sponsor} Logo`}
                                         />
                                     ))}
                                 </div>

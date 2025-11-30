@@ -30,6 +30,18 @@ const partnerData: Partner[] = [
     {
         name: "GDG on Campus GCECT",
         link: "https://www.linkedin.com/company/google-developer-groups-on-campus-gcect"
+    },
+    {
+        name: "ByteBrigade",
+        link: "https://www.linkedin.com/company/byte-brigade2025/"
+    },
+    {
+        name: "gdg oc aot logo",
+        link: "https://www.linkedin.com/company/gdgocaot/"
+    },
+    {
+        name: "Jis",
+        link: "https://www.linkedin.com/company/dscjisu/"
     }
 ];
 

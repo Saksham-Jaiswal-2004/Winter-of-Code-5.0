@@ -42,7 +42,19 @@ const partnerData: Partner[] = [
     {
         name: "GDG JIS",
         link: "https://www.linkedin.com/company/dscjisu/"
-    }
+    },
+    {
+        name: "AITD-EVENTS",
+        link: "https://www.linkedin.com/in/aitd-events/"
+    },
+    {
+        name: "Apertre",
+        link: "https://www.linkedin.com/showcase/apertre25/"
+    },
+    {
+        name: "rootsprout",
+        link: "https://www.linkedin.com/company/rootsprout/"
+    },
 ];
 
 const PartnerCard = ({ partner }: { partner: Partner }) => {

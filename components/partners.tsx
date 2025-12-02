@@ -54,10 +54,19 @@ const partnerData: Partner[] = [
     {
         name: "rootsprout",
         link: "https://www.linkedin.com/company/rootsprout/"
-    }
+    },
+    {
+        name: "DevDotCom",
+        link: "https://www.linkedin.com/company/devdotcom/"
+    },
+    {
+        name: "MCKV GDG",
+        link: "https://www.linkedin.com/company/gdg-on-campus-mckv-institute-of-engineering-howrah-india"
+    },
 ];
 
 const PartnerCard = ({ partner }: { partner: Partner }) => {
+    const isLarge = partner.name === 'rootsprout' || partner.name === 'ByteBrigade';
     return (
         <a
             className="relative w-[45%] sm:w-[30%] gap-[2%] my-[2%] hover:scale-105 duration-700"
@@ -76,9 +85,9 @@ const PartnerCard = ({ partner }: { partner: Partner }) => {
             >
                 <Image
                     src={`/partners/${partner.name}.png`}
-                    className='w-full h-full mx-auto object-contain'
-                    width={500}
-                    height={500}
+                    className={`w-full h-full mx-auto object-contain ${isLarge ? 'transform scale-150' : ''}`}
+                    width={isLarge ? 900 : 500}
+                    height={isLarge ? 900 : 500}
                     alt={partner.name}
                 />
             </div>

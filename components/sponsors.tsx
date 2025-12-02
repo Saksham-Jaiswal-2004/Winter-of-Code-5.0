@@ -12,6 +12,14 @@ const tier = ["Platinum", "Gold", "Silver", "Bronze"];
 const Sponsors = () => {
     const TBA = false; // change to true if sponsors not announced
 
+    // Map sponsor identifiers to actual image filenames in `/public/sponsors`.
+    const sponsorFileMap: Record<string, string> = {
+        devfolio: 'devfolio.png',
+        ethindia: 'ethindia.png',
+        indeed: 'Indeed.png',
+        interviewbuddy: 'interviewBuddy.png',
+        aops: 'aops.png',
+    };
     return (
         <section className='w-full h-full mx-auto pt-[10%]' id="sponsors">
             {/* Heading */}
@@ -46,7 +54,7 @@ const Sponsors = () => {
                                         <Image
                                             key={idx}
                                             className="backdrop-blur sm:w-[20%] h-auto w-[30%] hover:scale-105 duration-700"
-                                            src={`/sponsors/${sponsor.toLowerCase()}.png`}
+                                            src={`/sponsors/${sponsorFileMap[sponsor.toLowerCase()] ?? `${sponsor.toLowerCase()}.png`}`}
                                             width={600}
                                             height={200}
                                             alt={`${sponsor} Logo`}

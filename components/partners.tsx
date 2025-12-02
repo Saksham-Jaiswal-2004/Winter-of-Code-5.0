@@ -54,7 +54,7 @@ const partnerData: Partner[] = [
     {
         name: "rootsprout",
         link: "https://www.linkedin.com/company/rootsprout/"
-    },
+    }
 ];
 
 const PartnerCard = ({ partner }: { partner: Partner }) => {

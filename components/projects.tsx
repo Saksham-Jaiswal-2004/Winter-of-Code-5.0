@@ -1524,7 +1524,7 @@ const Projects = () => {
     return (
         <section className='w-full h-full mx-auto pt-[10%] bg-black' id="projects">
             <div className='px-[5%]'>
-                <div className='text-center text-brand font-kleemax text-scale-50 drop-shadow-blue'>
+                <div className='text-center text-brand font-kleemax text-7xl drop-shadow-blue'>
                     PROJECTS
                     <div className='-z-10 w-[25%] absolute left-[50%] top-0 translate-x-[-50%] translate-y-[-40.5%]'>
                         <Image className="mx-auto w-full" src={projectbanner} alt="projectbanner" />
@@ -1574,7 +1574,7 @@ const Projects = () => {
             </div>
 
             {TBA ?
-                    <div className="pt-[5%] flex w-full justify-center text-brand drop-shadow-blue font-kleemax text-scale-40 font-semibold">TO BE ANNOUNCED</div>
+                    <div className="pt-[5%] flex w-full justify-center text-brand drop-shadow-blue font-kleemax text-6xl font-semibold">TO BE ANNOUNCED</div>
             :
             <div className='w-full p-[5%] sm:p-[3%] flex justify-center flex-wrap'>
                 {filteredProjects.map((project, index)=>

@@ -3,7 +3,7 @@ import asset1 from '../public/faqcard1.svg'
 import asset2 from '../public/faqbutton.svg'
 import asset3 from '../public/faqcard2.svg'
 import asset4 from '../public/faquestion.svg'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const faqData = [
     {

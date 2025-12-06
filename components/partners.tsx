@@ -67,6 +67,18 @@ const partnerData: Partner[] = [
         name: "Open Source Chandigarh",
         link: "https://www.linkedin.com/company/open-source-chandigarh"
     },
+    {
+        name: "Noobuild",
+        link: "https://www.linkedin.com/company/noobuild/"
+    },
+    {
+        name: "Scroll Connect",
+        link: "https://www.linkedin.com/company/scrollconnect"
+    },
+    {
+        name: "Iiitians Network",
+        link: "https://www.linkedin.com/company/iiitians-network/"
+    },
 ];
 
 const PartnerCard = ({ partner }: { partner: Partner }) => {

@@ -52,6 +52,14 @@ const partnerData: Partner[] = [
         link: "https://www.linkedin.com/company/rootsprout/"
     },
     {
+        name: "CU Updates",
+        link: "https://www.linkedin.com/company/rootsprout/"
+    },
+    {
+        name: "Codesapiens",
+        link: "https://www.linkedin.com/company/codesapiens-community/"
+    },
+    {
         name: "GDG on Campus IEM",
         link: "https://www.linkedin.com/company/gdsciem"
     },

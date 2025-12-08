@@ -53,7 +53,7 @@ const partnerData: Partner[] = [
     },
     {
         name: "CU Updates",
-        link: "https://www.linkedin.com/company/rootsprout/"
+        link: "https://www.linkedin.com/company/cu-updates/"
     },
     {
         name: "Codesapiens",

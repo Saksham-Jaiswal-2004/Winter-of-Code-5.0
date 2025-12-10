@@ -8,18 +8,19 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors:{
-      brand:"#609CFF",
-      orgs:"#E2AA06",
-      faq:"#00FF84",
-      sponsors:"#E2AA06",
-      partner:"#F84335",
-      blite:"#FBBC0440",
-      black:"#000000",
-      white:"#FFFFFF",
-      timeline:'#C23B30',
-      grey:"#CCCCCC",
-      team:"#44A7F0",
+    colors: {
+      brand: "#609CFF",
+      neon: "#8B7FFF",
+      orgs: "#E2AA06",
+      faq: "#00FF84",
+      sponsors: "#E2AA06",
+      partner: "#F84335",
+      blite: "#FBBC0440",
+      black: "#000000",
+      white: "#FFFFFF",
+      timeline: '#C23B30',
+      grey: "#CCCCCC",
+      team: "#44A7F0",
     },
     extend: {
       backgroundImage: {
@@ -50,13 +51,16 @@ const config: Config = {
         sky: [
           "0 0 1vw rgba(68,167,240, 1)",
         ],
+        neon: [
+          "0 0 1vw rgba(139,127,255, 1)",
+        ],
       },
       maxWidth: {
         '1/5': '20%',
         '1/4': '25%',
         '1/2': '50%',
         '3/4': '75%',
-       }
+      }
     },
   },
   plugins: [],

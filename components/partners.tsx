@@ -60,6 +60,10 @@ const partnerData: Partner[] = [
         link: "https://www.linkedin.com/company/codesapiens-community/"
     },
     {
+        name: "WallGodds",
+        link: "https://www.linkedin.com/company/wallgodds"
+    },
+    {
         name: "GDG on Campus IEM",
         link: "https://www.linkedin.com/company/gdsciem"
     },
@@ -90,6 +94,10 @@ const partnerData: Partner[] = [
     {
         name: "GDG on Campus IIE",
         link: "https://www.linkedin.com/company/gdgc-iie"
+    },
+    {
+        name: "GDG on Campus CIT",
+        link: "https://www.linkedin.com/company/gdg-on-campus-coimbatore-institute-of-technology/"
     },
 ];
 

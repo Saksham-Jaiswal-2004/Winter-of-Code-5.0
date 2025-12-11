@@ -64,6 +64,10 @@ const partnerData: Partner[] = [
         link: "https://www.linkedin.com/company/wallgodds"
     },
     {
+        name: "LastMinuteEngineering",
+        link: "https://www.linkedin.com/company/lastminuteengineering/"
+    },
+    {
         name: "GDG on Campus IEM",
         link: "https://www.linkedin.com/company/gdsciem"
     },

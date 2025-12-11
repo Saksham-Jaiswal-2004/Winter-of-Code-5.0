@@ -490,7 +490,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
 
 const Projects = () => {
-  var TBA = true;
+  var TBA = false;
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('name');
   const [selectedTech, setSelectedTech] = useState('');

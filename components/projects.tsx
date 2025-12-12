@@ -212,30 +212,30 @@ const projectData: Project[] = [
       twitter: "",
     },
   },
-  {
-    name: "Ak-dskit (DsKit)",
-    developer: "Programmers' Paradise Technical Society",
-    desc: "Problem Statement:\nData scientists and ML engineers often spend 60-80% of their time on repetitive tasks like data cleaning, EDA, preprocessing, and basic modeling. There's a need for a unified, production-ready toolkit that wraps complex operations into simple 1-line commands while maintaining flexibility and comprehensive feature coverage.\nAk-dskit solves this by providing 221+ wrapper functions that streamline the entire ML pipeline - from data loading to model deployment - making data science accessible, efficient, and production-ready.\nFocus Areas:\nStudents can contribute to various aspects of the project:\n\nCore Features Enhancement\n• Extending data cleaning and preprocessing capabilities\n• Adding new feature engineering methods\n• Improving automated EDA functions\n• Enhancing model validation utilities\n• Visualization & Explainability\n\n• Creating new interactive visualization functions\n• Improving SHAP integration for model explainability\n• Building custom plotting utilities for specific use cases\n• Developing hyperplane visualization for advanced algorithms\n• AutoML & Optimization\n• Expanding hyperparameter tuning capabilities\n• Adding support for new ML algorithms\n• Implementing ensemble methods\n• Building automated feature selection tools\n• Documentation & Testing\n• Writing comprehensive tutorials and guides\n• Creating Jupyter notebook examples\n• Developing unit tests for existing functions\n• Improving API documentation\n• DevOps & Deployment\n• Setting up CI/CD pipelines\n• Creating Docker containers for deployment\n• Building model serving utilities\n• Implementing monitoring and logging features\n• Database & Time Series\n• Enhancing database utility functions\n• Expanding time series analysis capabilities\n• Adding support for new data sources\n• Building data versioning tools\n• Student Contribution Guide (Idea Page)\n\nWhat Students Will Work On:\n• Beginner Level:\n1. Writing documentation and tutorials\n2. Creating example notebooks\n3. Adding unit tests for existing functions\n4. Fixing bugs and improving error handling\n\n5. Enhancing function docstrings\n• Intermediate Level:\n1. Implementing new preprocessing methods\n2. Adding visualization functions\n3. Creating data validation utilities\n4. Building feature engineering tools\n5. Developing data profiling capabilities\n• Advanced Level:\n1. Implementing advanced AutoML features\n2. Building custom ML algorithms\n3. Creating model deployment pipelines\n4. Developing distributed computing support\n5. Implementing neural network wrappers\n\nExpected Outcomes:\n\n1. At least 10-15 new utility functions added to the library\n2. Comprehensive test coverage (target: >80%)\n3. 5+ tutorial notebooks demonstrating real-world use cases\n4. Improved documentation with API reference updates\n5. Performance optimization for core functions\n6. New features like automated report generation, data drift detection, or A/B testing utilities",
-    techstack: ["Python", "NumPy", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn", "Plotly", "SHAP", "XGBoost", "LightGBM", "CatBoost", "Optuna", "Hyperopt", "PyPI"],
-    github: "https://github.com/Programmers-Paradise/DsKit",
-    mentors: [
-      {
-        name: "Aksh Agrawal",
-        socials: {
-          linkedin: "",
-          discord: "hextrovert_10",
-          email: "aksh.300012824005@csvtu.ac.in",
-          twitter: "",
-        },
-      },
-    ],
-    socials: {
-      linkedin: "",
-      discord: "",
-      email: "",
-      twitter: "",
-    },
-  },
+  // {
+  //   name: "Ak-dskit (DsKit)",
+  //   developer: "Programmers' Paradise Technical Society",
+  //   desc: "Problem Statement:\nData scientists and ML engineers often spend 60-80% of their time on repetitive tasks like data cleaning, EDA, preprocessing, and basic modeling. There's a need for a unified, production-ready toolkit that wraps complex operations into simple 1-line commands while maintaining flexibility and comprehensive feature coverage.\nAk-dskit solves this by providing 221+ wrapper functions that streamline the entire ML pipeline - from data loading to model deployment - making data science accessible, efficient, and production-ready.\nFocus Areas:\nStudents can contribute to various aspects of the project:\n\nCore Features Enhancement\n• Extending data cleaning and preprocessing capabilities\n• Adding new feature engineering methods\n• Improving automated EDA functions\n• Enhancing model validation utilities\n• Visualization & Explainability\n\n• Creating new interactive visualization functions\n• Improving SHAP integration for model explainability\n• Building custom plotting utilities for specific use cases\n• Developing hyperplane visualization for advanced algorithms\n• AutoML & Optimization\n• Expanding hyperparameter tuning capabilities\n• Adding support for new ML algorithms\n• Implementing ensemble methods\n• Building automated feature selection tools\n• Documentation & Testing\n• Writing comprehensive tutorials and guides\n• Creating Jupyter notebook examples\n• Developing unit tests for existing functions\n• Improving API documentation\n• DevOps & Deployment\n• Setting up CI/CD pipelines\n• Creating Docker containers for deployment\n• Building model serving utilities\n• Implementing monitoring and logging features\n• Database & Time Series\n• Enhancing database utility functions\n• Expanding time series analysis capabilities\n• Adding support for new data sources\n• Building data versioning tools\n• Student Contribution Guide (Idea Page)\n\nWhat Students Will Work On:\n• Beginner Level:\n1. Writing documentation and tutorials\n2. Creating example notebooks\n3. Adding unit tests for existing functions\n4. Fixing bugs and improving error handling\n\n5. Enhancing function docstrings\n• Intermediate Level:\n1. Implementing new preprocessing methods\n2. Adding visualization functions\n3. Creating data validation utilities\n4. Building feature engineering tools\n5. Developing data profiling capabilities\n• Advanced Level:\n1. Implementing advanced AutoML features\n2. Building custom ML algorithms\n3. Creating model deployment pipelines\n4. Developing distributed computing support\n5. Implementing neural network wrappers\n\nExpected Outcomes:\n\n1. At least 10-15 new utility functions added to the library\n2. Comprehensive test coverage (target: >80%)\n3. 5+ tutorial notebooks demonstrating real-world use cases\n4. Improved documentation with API reference updates\n5. Performance optimization for core functions\n6. New features like automated report generation, data drift detection, or A/B testing utilities",
+  //   techstack: ["Python", "NumPy", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn", "Plotly", "SHAP", "XGBoost", "LightGBM", "CatBoost", "Optuna", "Hyperopt", "PyPI"],
+  //   github: "https://github.com/Programmers-Paradise/DsKit",
+  //   mentors: [
+  //     {
+  //       name: "Aksh Agrawal",
+  //       socials: {
+  //         linkedin: "",
+  //         discord: "hextrovert_10",
+  //         email: "aksh.300012824005@csvtu.ac.in",
+  //         twitter: "",
+  //       },
+  //     },
+  //   ],
+  //   socials: {
+  //     linkedin: "",
+  //     discord: "",
+  //     email: "",
+  //     twitter: "",
+  //   },
+  // },
   {
     name: "Complete CI testing for OpenPrinting projects",
     developer: "OpenPrinting",
@@ -287,39 +287,39 @@ const projectData: Project[] = [
       twitter: "",
     },
   },
-  {
-    name: "Redis Operator , K8s Vault Webhook , Logging Operator",
-    developer: "OpsTree Global",
-    desc: "1.Problem Statement -\nA golang based redis operator that will make/oversee Redis standalone/cluster/replication/sentinel mode setup on top of the Kubernetes.\n\nFocus Areas\nThe focus area will be backend controller development along with performance optimization.\nStudent Contribution Guide (Idea Page)\n• Backup & Restore CRD\n• Add a RedisBackup CR to trigger backups (e.g., using BGSAVE, snapshots, or RDB dumps).\n• Similarly, a RedisRestore CR to restore from snapshot.\n• Integrate with object storage (S3, GCS) for snapshot uploads.\n• Automated Certificate Management\n• Integrate with cert-manager to automate TLS certificates for Redis and Sentinel pods.\n• Support cert rotation.\n• Auto-Scaling\n• Add horizontal scaling logic: based on usage (memory, CPU, keyspace, throughput), operator can scale the number of replicas or shards.\n• Alternatively, integrate with Kubernetes Horizontal Pod Autoscaler (HPA) or a custom scaler.\n\n2. Problem Statement -\nk8s-vault-webhook is a Kubernetes admission webhook which listen for the events related to Kubernetes resources for injecting secret directly from secret manager to pod, secret, and configmap. The motive of creating this project is to provide a dynamic secret injection to containers/pods running inside Kubernetes from different secret managers for enhanced security.\nFocus Area -\nThe focus should be to stabilize the existing secret manager integrations, along with new feature support for secret manager.\nStudent Contribution Guide -\nSupport for more secret managers / backends: maybe add support for secret managers not yet supported, or improve existing ones.\n• Secrets versioning and rotation: introduce versioning of secrets, or periodic re-injection when secrets change in Vault.\n• Custom annotations or templating: allow more flexible templating for how secrets should be injected (e.g., naming conventions, path transformations).\n• RBAC / policy management UI or CRD: build a CRD or UI to manage which service accounts map to which Vault policies, instead of manual policy definitions.\n• Backup/reconciliation: maintain a reconciliation loop that ensures injected secrets remain up-to-date even after pod restarts, or if secret manager data changes.\n• Observability: expose metrics from the webhook (such as number of admission requests, failed injections, latency) via Prometheus.\n• Fault tolerance: handle cases when the secret manager is down, or when the webhook's certificate expires, more gracefully.\n\n3.Problem Statement -\nA golang based operator to create and manage EFK (Elasticsearch, Fluentd, and Kibana) stack on Kubernetes\nFocus Area -\n• Development of backend API features to support elasticsearch, fluentd, and kibana integration.\nStudent Contribution Guide -\n\nSupport for Alternative Log Collectors / Forwarders\n• Add support for Fluent Bit as a daemonset collector + Fluentd / ES / other outputs.\n(Although some upstream logging operators use Fluent Bit + Fluentd; if not present, this is big.)\n• Support for Loki as a storage backend (instead of or in addition to Elasticsearch) or other outputs (S3, Kafka, etc.).\n• Automatic Scaling & Lifecycle Management\n• Add CR-driven scaling for Elasticsearch nodes (master / data / ingestion) based on resource usage.\n• Implement lifecycle management of indices:\nrollover, retention, delete-old-index policies via CRD\n(or enhance existing index lifecycle CR).\n• Secure Multi-Tenancy / Namespacing\n• Build better namespace isolation of logging pipelines: allow CR per namespace, or per team, with RBAC.\n• Add validation / policy CRs to enforce which namespaces can write to which logging pipeline, or limit ES resources per tenant.\n• Observability Enhancements\n• Expose metrics from the operator: reconciliation time, number of CRs, failures, etc., via Prometheus.\n• Build Grafana dashboards for EFK stack health (ES metrics, Fluentd throughput, Kibana usage).",
-    techstack: ["GoLang", "Kubernetes"],
-    github: "https://github.com/OT-CONTAINER-KIT/redis-operator, https://github.com/OT-CONTAINER-KIT/k8s-vault-webhook, https://github.com/OT-CONTAINER-KIT/logging-operator",
-    mentors: [
-      {
-        name: "Abhishek Dubey",
-        socials: {
-          linkedin: "https://www.linkedin.com/in/shubham-gupta-8b1168244/",
-          discord: "shubamgupta6536",
-          email: "iamshubhamgupta200@gmail.com",
-          twitter: "",
-        },
-      },
-      {
-        name: "Samyak Jain",
-        socials: {
-          linkedin: "https://www.linkedin.com/in/samyyaakk",
-          discord: "samyyaakk",
-          email: "samyak.jain@opstree.com",
-          twitter: "",
-        },
-      },
-    ],
-    socials: {
-      linkedin: "",
-      discord: "",
-      email: "",
-      twitter: "",
-    },
-  },
+  // {
+  //   name: "Redis Operator , K8s Vault Webhook , Logging Operator",
+  //   developer: "OpsTree Global",
+  //   desc: "1.Problem Statement -\nA golang based redis operator that will make/oversee Redis standalone/cluster/replication/sentinel mode setup on top of the Kubernetes.\n\nFocus Areas\nThe focus area will be backend controller development along with performance optimization.\nStudent Contribution Guide (Idea Page)\n• Backup & Restore CRD\n• Add a RedisBackup CR to trigger backups (e.g., using BGSAVE, snapshots, or RDB dumps).\n• Similarly, a RedisRestore CR to restore from snapshot.\n• Integrate with object storage (S3, GCS) for snapshot uploads.\n• Automated Certificate Management\n• Integrate with cert-manager to automate TLS certificates for Redis and Sentinel pods.\n• Support cert rotation.\n• Auto-Scaling\n• Add horizontal scaling logic: based on usage (memory, CPU, keyspace, throughput), operator can scale the number of replicas or shards.\n• Alternatively, integrate with Kubernetes Horizontal Pod Autoscaler (HPA) or a custom scaler.\n\n2. Problem Statement -\nk8s-vault-webhook is a Kubernetes admission webhook which listen for the events related to Kubernetes resources for injecting secret directly from secret manager to pod, secret, and configmap. The motive of creating this project is to provide a dynamic secret injection to containers/pods running inside Kubernetes from different secret managers for enhanced security.\nFocus Area -\nThe focus should be to stabilize the existing secret manager integrations, along with new feature support for secret manager.\nStudent Contribution Guide -\nSupport for more secret managers / backends: maybe add support for secret managers not yet supported, or improve existing ones.\n• Secrets versioning and rotation: introduce versioning of secrets, or periodic re-injection when secrets change in Vault.\n• Custom annotations or templating: allow more flexible templating for how secrets should be injected (e.g., naming conventions, path transformations).\n• RBAC / policy management UI or CRD: build a CRD or UI to manage which service accounts map to which Vault policies, instead of manual policy definitions.\n• Backup/reconciliation: maintain a reconciliation loop that ensures injected secrets remain up-to-date even after pod restarts, or if secret manager data changes.\n• Observability: expose metrics from the webhook (such as number of admission requests, failed injections, latency) via Prometheus.\n• Fault tolerance: handle cases when the secret manager is down, or when the webhook's certificate expires, more gracefully.\n\n3.Problem Statement -\nA golang based operator to create and manage EFK (Elasticsearch, Fluentd, and Kibana) stack on Kubernetes\nFocus Area -\n• Development of backend API features to support elasticsearch, fluentd, and kibana integration.\nStudent Contribution Guide -\n\nSupport for Alternative Log Collectors / Forwarders\n• Add support for Fluent Bit as a daemonset collector + Fluentd / ES / other outputs.\n(Although some upstream logging operators use Fluent Bit + Fluentd; if not present, this is big.)\n• Support for Loki as a storage backend (instead of or in addition to Elasticsearch) or other outputs (S3, Kafka, etc.).\n• Automatic Scaling & Lifecycle Management\n• Add CR-driven scaling for Elasticsearch nodes (master / data / ingestion) based on resource usage.\n• Implement lifecycle management of indices:\nrollover, retention, delete-old-index policies via CRD\n(or enhance existing index lifecycle CR).\n• Secure Multi-Tenancy / Namespacing\n• Build better namespace isolation of logging pipelines: allow CR per namespace, or per team, with RBAC.\n• Add validation / policy CRs to enforce which namespaces can write to which logging pipeline, or limit ES resources per tenant.\n• Observability Enhancements\n• Expose metrics from the operator: reconciliation time, number of CRs, failures, etc., via Prometheus.\n• Build Grafana dashboards for EFK stack health (ES metrics, Fluentd throughput, Kibana usage).",
+  //   techstack: ["GoLang", "Kubernetes"],
+  //   github: "https://github.com/OT-CONTAINER-KIT/redis-operator, https://github.com/OT-CONTAINER-KIT/k8s-vault-webhook, https://github.com/OT-CONTAINER-KIT/logging-operator",
+  //   mentors: [
+  //     {
+  //       name: "Abhishek Dubey",
+  //       socials: {
+  //         linkedin: "https://www.linkedin.com/in/shubham-gupta-8b1168244/",
+  //         discord: "shubamgupta6536",
+  //         email: "iamshubhamgupta200@gmail.com",
+  //         twitter: "",
+  //       },
+  //     },
+  //     {
+  //       name: "Samyak Jain",
+  //       socials: {
+  //         linkedin: "https://www.linkedin.com/in/samyyaakk",
+  //         discord: "samyyaakk",
+  //         email: "samyak.jain@opstree.com",
+  //         twitter: "",
+  //       },
+  //     },
+  //   ],
+  //   socials: {
+  //     linkedin: "",
+  //     discord: "",
+  //     email: "",
+  //     twitter: "",
+  //   },
+  // },
   {
     name: "WallGodds Web",
     developer: "WallGodds",

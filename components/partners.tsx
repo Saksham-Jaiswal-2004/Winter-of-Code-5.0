@@ -68,6 +68,14 @@ const partnerData: Partner[] = [
         link: "https://www.linkedin.com/company/lastminuteengineering/"
     },
     {
+        name: "Builder base",
+        link: "https://www.linkedin.com/company/builder-base/"
+    },
+    {
+        name: "IEI STUDENT CHAPTER ECE",
+        link: "https://www.linkedin.com/company/sceceaot/"
+    },
+    {
         name: "GDG on Campus IEM",
         link: "https://www.linkedin.com/company/gdsciem"
     },
@@ -110,6 +118,10 @@ const partnerData: Partner[] = [
     {
         name: "GDG on Campus TMS",
         link: "https://www.linkedin.com/company/gdg-oncampus-techno-main-salt-lake/"
+    },
+    {
+        name: "GDG on Campus NITS",
+        link: "https://www.linkedin.com/company/gdgcnits"
     },
 ];
 

@@ -8,27 +8,27 @@ interface Org {
 const orgsData: Org[] = [
     {
         name: "OWASP Nest",
-        website: ""
+        website: "https://owasp.org/"
     },
     {
         name: "OpenPrinting",
-        website: ""
+        website: "https://www.openprinting.org/"
     },
     {
         name: "QC Devs",
-        website: ""
+        website: "https://qcdevs.org"
     },
     {
         name: "MIXXX",
-        website: ""
+        website: "https://mixxx.org/"
     },
     {
         name: "Open World Holidays Framework",
-        website: ""
+        website: "https://github.com/vacanza/"
     },
     {
         name: "OpsTree Global",
-        website: ""
+        website: "https://opstree.com/"
     },
     {
         name: "PerformanC",
@@ -36,11 +36,11 @@ const orgsData: Org[] = [
     },
     {
         name: "Development Society AEC",
-        website: ""
+        website: "https://devsoc-aec.vercel.app/"
     },
     {
         name: "FOSSIA",
-        website: ""
+        website: "https://fossia.org"
     },
     {
         name: "Open Source Chandigarh",
@@ -48,11 +48,11 @@ const orgsData: Org[] = [
     },
     {
         name: "Cooketh Org",
-        website: ""
+        website: "https://cookethcompany.xyz/"
     },
     {
         name: "WallGodds",
-        website: ""
+        website: "https://www.linkedin.com/company/wallgodds"
     },
 ];
 

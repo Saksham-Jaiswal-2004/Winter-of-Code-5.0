@@ -23,7 +23,23 @@ const orgsData: Org[] = [
         website: ""
     },
     {
+        name: "Open World Holidays Framework",
+        website: ""
+    },
+    {
+        name: "OpsTree Global",
+        website: ""
+    },
+    {
+        name: "PerformanC",
+        website: ""
+    },
+    {
         name: "Development Society AEC",
+        website: ""
+    },
+    {
+        name: "FOSSIA",
         website: ""
     },
     {

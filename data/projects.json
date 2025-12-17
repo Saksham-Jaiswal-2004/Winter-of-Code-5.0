@@ -411,5 +411,581 @@
       "email": "",
       "twitter": ""
     }
+  },
+  {
+    "name": "MIXXX",
+    "developer": "MIXXX",
+    "desc": "Spin-Up/Spin-Down Effect on Play/Pause\nA real turntable cannot instantly start and stop a track. The tempo increases gradually when pressing playand spins down after pressing pause. This effect has been implemented in various controller mappings but isnot yet available for GUI controls and keyboard. The project aims to review existing mapping solutions andmove them into the C++ domain of Mixxx.\nDetails: https://github.com/mixxxdj/mixxx/issues/15071\n\nFader Start\nRadio DJs are used to start the tracks with the fader only. There shall be no need for touchingplay/cue/pause. This feature has been implement in various controller mappings but is not yet available forGUI controls. The project aims to review existing mapping solutions and move them into the C++ domain ofMixxx.\nDetails: https://github.com/mixxxdj/mixxx/issues/5587\n\nReverb Band Pass Effect\nMixxx has an effect rack with a couple of built-in effects. We have a request to integrate a band pass filterwith the reverb effect. The work requires to analyse how the reverb and the band pass filter works, integratecode and tweak the default parameters for a pleasant effect.\nDetails: https://github.com/mixxxdj/mixxx/issues/12504\n\nFormant Effect\nMixxx has an effect rack with a couple of built-in effects. This project aims to add a Formant shift effect. AFormant effect can be used to make vocals like chipmunks without changing the pitch. The work requiresreview of existing Formant filters and implementing it in the Mixxx code base. Details:\nhttps://github.com/mixxxdj/mixxx/issues/9300",
+    "techstack": ["First-year programming", "JS", "C++"],
+    "github": "https://github.com/mixxxdj/mixxx",
+    "mentors": [
+      {
+        "name": "Daniel Schürmann",
+        "socials": {
+          "linkedin": "",
+          "discord": "daschuer9032",
+          "email": "daschuer@mixxx.org",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Armaan Chowfin",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "by6charm@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "libcupsfilters",
+    "developer": "Open Printing",
+    "desc": "Complete CI testing for OpenPrinting projects\n\nProblem statement\nAs the software components we develop at OpenPrinting are an essential part of the operatingsystem infrastructure, we want to have a solid CI testing of each commit to our GitHubrepositories. CUPS (“cups” repository for 2.x) has already excellent CI done by Michael Sweet,consisting of GitHub actions/workflows which automatically apply static analysers, build andexecution tests on different architectures and distros, ... This we want to have also in the otherprojects on OpenPrinting.\n\nFocus Areas\n● Creating GitHub workflows and make them triggered with commits\n● Scripting to run analysers, build code, run test programs ...\n● C programming to write test programs\n\nStudent Contribution Guide\nThe contributor will study at first the CI done by Michael Sweet, especially in OpenPrinting’sCUPS repository but also in the repositories of Michael’s personal GitHub, especially PAPPL,PDFio, ... Michael is an excellent example here.Then they will check the repository of the OpenPrinting project they are working on andimplement the same functionality there. One part is to overtake and adapt the scripting, which isprobably the smaller part, the other is to add extra tests to the “make check” run which will getexecuted after each build test.Each added test functionality the contributor will have to test, and make sure that if the codeunder test is OK, the tests pass and in case of the tests failing to check whether it is their fault ora bug in the code under test (which they report).",
+    "techstack": ["C", "Shell", "Git", "Github Actions/Workflows", "Static Analysers and similar tools"],
+    "github": "https://github.com/OpenPrinting/libcupsfilters",
+    "mentors": [
+      {
+        "name": "Till Kamppeter",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kamppetertill/",
+          "discord": "tillkamppeter",
+          "email": "till.kamppeter@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "cups-filters",
+    "developer": "Open Printing",
+    "desc": "Complete CI testing for OpenPrinting projects\n\nProblem statement\nAs the software components we develop at OpenPrinting are an essential part of the operatingsystem infrastructure, we want to have a solid CI testing of each commit to our GitHubrepositories. CUPS (“cups” repository for 2.x) has already excellent CI done by Michael Sweet,consisting of GitHub actions/workflows which automatically apply static analysers, build andexecution tests on different architectures and distros, ... This we want to have also in the otherprojects on OpenPrinting.\n\nFocus Areas\n● Creating GitHub workflows and make them triggered with commits\n● Scripting to run analysers, build code, run test programs ...\n● C programming to write test programs\n\nStudent Contribution Guide\nThe contributor will study at first the CI done by Michael Sweet, especially in OpenPrinting’sCUPS repository but also in the repositories of Michael’s personal GitHub, especially PAPPL,PDFio, ... Michael is an excellent example here.Then they will check the repository of the OpenPrinting project they are working on andimplement the same functionality there. One part is to overtake and adapt the scripting, which isprobably the smaller part, the other is to add extra tests to the “make check” run which will getexecuted after each build test.Each added test functionality the contributor will have to test, and make sure that if the codeunder test is OK, the tests pass and in case of the tests failing to check whether it is their fault ora bug in the code under test (which they report).",
+    "techstack": ["C", "Shell", "Git", "Github Actions/Workflows", "Static Analysers and similar tools"],
+    "github": "https://github.com/OpenPrinting/cups-filters",
+    "mentors": [
+      {
+        "name": "Till Kamppeter",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kamppetertill/",
+          "discord": "tillkamppeter",
+          "email": "till.kamppeter@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "cpdb-libs",
+    "developer": "Open Printing",
+    "desc": "Complete CI testing for OpenPrinting projects\n\nProblem statement\nAs the software components we develop at OpenPrinting are an essential part of the operatingsystem infrastructure, we want to have a solid CI testing of each commit to our GitHubrepositories. CUPS (“cups” repository for 2.x) has already excellent CI done by Michael Sweet,consisting of GitHub actions/workflows which automatically apply static analysers, build andexecution tests on different architectures and distros, ... This we want to have also in the otherprojects on OpenPrinting.\n\nFocus Areas\n● Creating GitHub workflows and make them triggered with commits\n● Scripting to run analysers, build code, run test programs ...\n● C programming to write test programs\n\nStudent Contribution Guide\nThe contributor will study at first the CI done by Michael Sweet, especially in OpenPrinting’sCUPS repository but also in the repositories of Michael’s personal GitHub, especially PAPPL,PDFio, ... Michael is an excellent example here.Then they will check the repository of the OpenPrinting project they are working on andimplement the same functionality there. One part is to overtake and adapt the scripting, which isprobably the smaller part, the other is to add extra tests to the “make check” run which will getexecuted after each build test.Each added test functionality the contributor will have to test, and make sure that if the codeunder test is OK, the tests pass and in case of the tests failing to check whether it is their fault ora bug in the code under test (which they report).",
+    "techstack": ["C", "Shell", "Git", "Github Actions/Workflows", "Static Analysers and similar tools"],
+    "github": "https://github.com/OpenPrinting/cpdb-libs",
+    "mentors": [
+      {
+        "name": "Till Kamppeter",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kamppetertill/",
+          "discord": "tillkamppeter",
+          "email": "till.kamppeter@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "cpdb-backend-cups",
+    "developer": "Open Printing",
+    "desc": "Complete CI testing for OpenPrinting projects\n\nProblem statement\nAs the software components we develop at OpenPrinting are an essential part of the operatingsystem infrastructure, we want to have a solid CI testing of each commit to our GitHubrepositories. CUPS (“cups” repository for 2.x) has already excellent CI done by Michael Sweet,consisting of GitHub actions/workflows which automatically apply static analysers, build andexecution tests on different architectures and distros, ... This we want to have also in the otherprojects on OpenPrinting.\n\nFocus Areas\n● Creating GitHub workflows and make them triggered with commits\n● Scripting to run analysers, build code, run test programs ...\n● C programming to write test programs\n\nStudent Contribution Guide\nThe contributor will study at first the CI done by Michael Sweet, especially in OpenPrinting’sCUPS repository but also in the repositories of Michael’s personal GitHub, especially PAPPL,PDFio, ... Michael is an excellent example here.Then they will check the repository of the OpenPrinting project they are working on andimplement the same functionality there. One part is to overtake and adapt the scripting, which isprobably the smaller part, the other is to add extra tests to the “make check” run which will getexecuted after each build test.Each added test functionality the contributor will have to test, and make sure that if the codeunder test is OK, the tests pass and in case of the tests failing to check whether it is their fault ora bug in the code under test (which they report).",
+    "techstack": ["C", "Shell", "Git", "Github Actions/Workflows", "Static Analysers and similar tools"],
+    "github": "https://github.com/OpenPrinting/cpdb-backend-cups",
+    "mentors": [
+      {
+        "name": "Till Kamppeter",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kamppetertill/",
+          "discord": "tillkamppeter",
+          "email": "till.kamppeter@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "cups-snap",
+    "developer": "Open Printing",
+    "desc": "Complete CI testing for OpenPrinting projects\n\nProblem statement\nAs the software components we develop at OpenPrinting are an essential part of the operatingsystem infrastructure, we want to have a solid CI testing of each commit to our GitHubrepositories. CUPS (“cups” repository for 2.x) has already excellent CI done by Michael Sweet,consisting of GitHub actions/workflows which automatically apply static analysers, build andexecution tests on different architectures and distros, ... This we want to have also in the otherprojects on OpenPrinting.\n\nFocus Areas\n● Creating GitHub workflows and make them triggered with commits\n● Scripting to run analysers, build code, run test programs ...\n● C programming to write test programs\n\nStudent Contribution Guide\nThe contributor will study at first the CI done by Michael Sweet, especially in OpenPrinting’sCUPS repository but also in the repositories of Michael’s personal GitHub, especially PAPPL,PDFio, ... Michael is an excellent example here.Then they will check the repository of the OpenPrinting project they are working on andimplement the same functionality there. One part is to overtake and adapt the scripting, which isprobably the smaller part, the other is to add extra tests to the “make check” run which will getexecuted after each build test.Each added test functionality the contributor will have to test, and make sure that if the codeunder test is OK, the tests pass and in case of the tests failing to check whether it is their fault ora bug in the code under test (which they report).",
+    "techstack": ["C", "Shell", "Git", "Github Actions/Workflows", "Static Analysers and similar tools"],
+    "github": "https://github.com/OpenPrinting/cups-snap",
+    "mentors": [
+      {
+        "name": "Till Kamppeter",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kamppetertill/",
+          "discord": "tillkamppeter",
+          "email": "till.kamppeter@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "libppd",
+    "developer": "Open Printing",
+    "desc": "Complete CI testing for OpenPrinting projects\n\nProblem statement\nAs the software components we develop at OpenPrinting are an essential part of the operatingsystem infrastructure, we want to have a solid CI testing of each commit to our GitHubrepositories. CUPS (“cups” repository for 2.x) has already excellent CI done by Michael Sweet,consisting of GitHub actions/workflows which automatically apply static analysers, build andexecution tests on different architectures and distros, ... This we want to have also in the otherprojects on OpenPrinting.\n\nFocus Areas\n● Creating GitHub workflows and make them triggered with commits\n● Scripting to run analysers, build code, run test programs ...\n● C programming to write test programs\n\nStudent Contribution Guide\nThe contributor will study at first the CI done by Michael Sweet, especially in OpenPrinting’sCUPS repository but also in the repositories of Michael’s personal GitHub, especially PAPPL,PDFio, ... Michael is an excellent example here.Then they will check the repository of the OpenPrinting project they are working on andimplement the same functionality there. One part is to overtake and adapt the scripting, which isprobably the smaller part, the other is to add extra tests to the “make check” run which will getexecuted after each build test.Each added test functionality the contributor will have to test, and make sure that if the codeunder test is OK, the tests pass and in case of the tests failing to check whether it is their fault ora bug in the code under test (which they report).",
+    "techstack": ["C", "Shell", "Git", "Github Actions/Workflows", "Static Analysers and similar tools"],
+    "github": "https://github.com/OpenPrinting/libppd",
+    "mentors": [
+      {
+        "name": "Till Kamppeter",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kamppetertill/",
+          "discord": "tillkamppeter",
+          "email": "till.kamppeter@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "pappl-retrofit",
+    "developer": "Open Printing",
+    "desc": "Complete CI testing for OpenPrinting projects\n\nProblem statement\nAs the software components we develop at OpenPrinting are an essential part of the operatingsystem infrastructure, we want to have a solid CI testing of each commit to our GitHubrepositories. CUPS (“cups” repository for 2.x) has already excellent CI done by Michael Sweet,consisting of GitHub actions/workflows which automatically apply static analysers, build andexecution tests on different architectures and distros, ... This we want to have also in the otherprojects on OpenPrinting.\n\nFocus Areas\n● Creating GitHub workflows and make them triggered with commits\n● Scripting to run analysers, build code, run test programs ...\n● C programming to write test programs\n\nStudent Contribution Guide\nThe contributor will study at first the CI done by Michael Sweet, especially in OpenPrinting’sCUPS repository but also in the repositories of Michael’s personal GitHub, especially PAPPL,PDFio, ... Michael is an excellent example here.Then they will check the repository of the OpenPrinting project they are working on andimplement the same functionality there. One part is to overtake and adapt the scripting, which isprobably the smaller part, the other is to add extra tests to the “make check” run which will getexecuted after each build test.Each added test functionality the contributor will have to test, and make sure that if the codeunder test is OK, the tests pass and in case of the tests failing to check whether it is their fault ora bug in the code under test (which they report).",
+    "techstack": ["C", "Shell", "Git", "Github Actions/Workflows", "Static Analysers and similar tools"],
+    "github": "https://github.com/OpenPrinting/pappl-retrofit",
+    "mentors": [
+      {
+        "name": "Till Kamppeter",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/kamppetertill/",
+          "discord": "tillkamppeter",
+          "email": "till.kamppeter@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "go-avahi",
+    "developer": "Open Printing",
+    "desc": "Adding Fuzzing Support to go-avahi in OpenPrinting\n\nProblem statement\nThe go-avahi project provides Go bindings for the Avahi/mDNS/DNS-SD stack and is used fornetwork service discovery functionality within the OpenPrinting ecosystem. It acts as a bridgebetween Go applications and the underlying Avahi daemon through D-Bus.\nCurrently, go-avahi has no fuzz testing, limited test coverage, and several input-handling pathsmay fail in unexpected ways for malformed or adversarial input. For this project,, fuzzing isespecially important to uncover crashes, panics, and edge cases.\n\nThis project aims to develop a comprehensive fuzzing setup for go-avahi, improve testcoverage, and integrate the project into the OSS-Fuzz ecosystem to enable continuous,long-term fuzz testing.\n\nFocus Areas\n● Identify suitable fuzzing targets in go-avahi\n● Write Go fuzz tests for identified functions\n● Add mocks if needed to test\n● Prepare build scripts and configuration for OSS-Fuzz\n● Validate that fuzzers run in the OSS-Fuzz environment\n● Submit a PR to OSS-Fuzz\n\nStudent Contribution Guide\nThe contributor will begin by reviewing how fuzzing is already set up in the OpenPrinting/fuzzingrepository and how other OpenPrinting projects are integrated into OSS-Fuzz. The contributorwill study the structure of go-avahi, select entry points that benefit from fuzzing, and add fuzztests using Go's built-in fuzzing engine. They will introduce mocks if required to make fuzzingreproducible. After fuzzers work locally, the contributor will create the necessary OSS-Fuzz filesand submit an integration. Throughout the project, they will review crashes, minimize test cases,and collaborate with maintainers to address issues found by the fuzzers.",
+    "techstack": ["Go", "FUZZ Testing", "Security"],
+    "github": "https://github.com/OpenPrinting/go-avahi",
+    "mentors": [
+      {
+        "name": "Mohammed Imaduddin",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/mdimado/",
+          "discord": "",
+          "email": "mdimad005@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "fuzzing",
+    "developer": "Open Printing",
+    "desc": "Adding Fuzzing Support to go-avahi in OpenPrinting\n\nProblem statement\nThe go-avahi project provides Go bindings for the Avahi/mDNS/DNS-SD stack and is used fornetwork service discovery functionality within the OpenPrinting ecosystem. It acts as a bridgebetween Go applications and the underlying Avahi daemon through D-Bus.\nCurrently, go-avahi has no fuzz testing, limited test coverage, and several input-handling pathsmay fail in unexpected ways for malformed or adversarial input. For this project,, fuzzing isespecially important to uncover crashes, panics, and edge cases.\n\nThis project aims to develop a comprehensive fuzzing setup for go-avahi, improve testcoverage, and integrate the project into the OSS-Fuzz ecosystem to enable continuous,long-term fuzz testing.\n\nFocus Areas\n● Identify suitable fuzzing targets in go-avahi\n● Write Go fuzz tests for identified functions\n● Add mocks if needed to test\n● Prepare build scripts and configuration for OSS-Fuzz\n● Validate that fuzzers run in the OSS-Fuzz environment\n● Submit a PR to OSS-Fuzz\n\nStudent Contribution Guide\nThe contributor will begin by reviewing how fuzzing is already set up in the OpenPrinting/fuzzingrepository and how other OpenPrinting projects are integrated into OSS-Fuzz. The contributorwill study the structure of go-avahi, select entry points that benefit from fuzzing, and add fuzztests using Go's built-in fuzzing engine. They will introduce mocks if required to make fuzzingreproducible. After fuzzers work locally, the contributor will create the necessary OSS-Fuzz filesand submit an integration. Throughout the project, they will review crashes, minimize test cases,and collaborate with maintainers to address issues found by the fuzzers.",
+    "techstack": ["Go", "FUZZ Testing", "Security"],
+    "github": "https://github.com/OpenPrinting/fuzzing",
+    "mentors": [
+      {
+        "name": "Mohammed Imaduddin",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/mdimado/",
+          "discord": "",
+          "email": "mdimad005@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "go-mfp",
+    "developer": "Open Printing",
+    "desc": "Implementing WS-Scan support to go-mfp in OpenPrinting\n\nProblem statement\nCurrently, the go-mfp project, aimed to implement a full-featured behaviour-accurate MFPsimulator together with collection of the MFP testing/validation/troubleshooting tools, lacks thesupport of WS-Scan protocol. We already have eSCL, partially implemented IPP, virtual USBMFP simulation (IPP over USB and legacy 7/1/1 USB printer), but WS-Scan support is not yetcompleted.\n\nFocus Areas\n● Complete full-featured, specification-based WS-Scan protocol implementation\n● Integrate this part with the whole project\n● Provide a good test coverage for the newly added code\n\nStudent Contribution Guide\nWS-Scan protocol is technically and semantically similar to the eSCL protocol, which is alreadyimplemented. The contributor will study the existing eSCL implementation and create WS-Scanimplementation, using the similar architectural approach. The ability to read and understandtechnical specifications is strongly required, because we need the high-quality, reference-classprotocol implementation, strictly based on the protocol specification, published by Microsoft.",
+    "techstack": ["Go"],
+    "github": "https://github.com/OpenPrinting/go-mfp",
+    "mentors": [
+      {
+        "name": "Alexander Pevzner",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/alexander-pevzner-6046161/",
+          "discord": "",
+          "email": "pzz@apevzner.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "go-mfp escl",
+    "developer": "Open Printing",
+    "desc": "Implementing WS-Scan support to go-mfp in OpenPrinting\n\nProblem statement\nCurrently, the go-mfp project, aimed to implement a full-featured behaviour-accurate MFPsimulator together with collection of the MFP testing/validation/troubleshooting tools, lacks thesupport of WS-Scan protocol. We already have eSCL, partially implemented IPP, virtual USBMFP simulation (IPP over USB and legacy 7/1/1 USB printer), but WS-Scan support is not yetcompleted.\n\nFocus Areas\n● Complete full-featured, specification-based WS-Scan protocol implementation\n● Integrate this part with the whole project\n● Provide a good test coverage for the newly added code\n\nStudent Contribution Guide\nWS-Scan protocol is technically and semantically similar to the eSCL protocol, which is alreadyimplemented. The contributor will study the existing eSCL implementation and create WS-Scanimplementation, using the similar architectural approach. The ability to read and understandtechnical specifications is strongly required, because we need the high-quality, reference-classprotocol implementation, strictly based on the protocol specification, published by Microsoft.",
+    "techstack": ["Go"],
+    "github": "https://github.com/OpenPrinting/go-mfp/tree/master/proto/escl",
+    "mentors": [
+      {
+        "name": "Alexander Pevzner",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/alexander-pevzner-6046161/",
+          "discord": "",
+          "email": "pzz@apevzner.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "go-mfp IEEE",
+    "developer": "Open Printing",
+    "desc": "Adding the legacy IEEE-1284 printers support to go-mft in OpenPrinting\n\nProblem statement\nCurrently, the go-mfp simulator already has very basic support of the legacy USB 7/1/1 printeremulation. However, it doesn’t somehow interpret the data sent to the emulated printer anddoesn’t provide any response (as 7/1/2 devices should do).\nThe project goal is to implement the Go io.Reader (for 7/1/1 devices) and Go io.ReadWriter thatconsumes raw data bytes, sent to the emulated printer and able to properly identify documentformat being sent (i.e., PostScript, PDF, PCL5, ESC/P, ...) and based on that identificationproperly detect the document or page boundaries (for example, PostScript and PDF documentsare terminated by the Ctrl-D character, ESC/P and PCL5 may use end-of-page character etc).\nHaving that implemented we can add saving documents to file for further analysis andtroubleshooting and document rendering for printed image evaluation.\nAlso, the bidirectional (USB 7/1/2) printers implement a simple PJL interpreter and generateproper responses, which also needs to be implemented in the io.ReadWriter interface withfunctionality enough to make CUPS happy.\n\nFocus Areas\n● Understanding the already implemented parts of the legacy printer simulation\n● Understanding the relevant documents formats in details enough to be able to perform the automatic format identification and to detect page or job boundaries\n● Understanding PJL in details enough to be able to process commands generated by CUPS and provide a proper responses\n\nStudent Contribution Guide\nThe contributor should study how the legacy printer works, how the graphical documents aresent to the printer and how the printer recognizes that document transmission is finished. Theprinted documents need to be extracted from the unstructured host to printer data flow andpassed separately to the upper layer, which will decide what to do with these documents (just tosave to the log file, to render etc).\nRendering of printed documents is out of the scope of this project, so very detailedunderstanding of the relevant formats is not required.\nAlso, for the implementation of the bidirectional (USB 7/1/2) printers the contributor needs tounderstand the behaviour expectations, based on specifications and CUPS implementation andto write a simple simulator.\nThe representation of the emulated printer as a virtual USB device already done in the go-mfpand out of scope of this project. At this level the contributor needs only to implement the Goio.Reader and io.ReadWriter interfaces that can properly consume the data sent to the printerand to generate the proper response, the task of transporting this data from/to the host is out ofscope of this project (and already solved at the first glance).\nAs result of this project, the code contribution into the go-mfp is expected, with the reasonabletest coverage and integration with the “big project”.",
+    "techstack": ["Go", "C"],
+    "github": "https://github.com/OpenPrinting/go-mfp",
+    "mentors": [
+      {
+        "name": "Alexander Pevzner",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/alexander-pevzner-6046161/",
+          "discord": "",
+          "email": "pzz@apevzner.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "go-mfp escl IEEE",
+    "developer": "Open Printing",
+    "desc": "Adding the legacy IEEE-1284 printers support to go-mft in OpenPrinting\n\nProblem statement\nCurrently, the go-mfp simulator already has very basic support of the legacy USB 7/1/1 printeremulation. However, it doesn’t somehow interpret the data sent to the emulated printer anddoesn’t provide any response (as 7/1/2 devices should do).\nThe project goal is to implement the Go io.Reader (for 7/1/1 devices) and Go io.ReadWriter thatconsumes raw data bytes, sent to the emulated printer and able to properly identify documentformat being sent (i.e., PostScript, PDF, PCL5, ESC/P, ...) and based on that identificationproperly detect the document or page boundaries (for example, PostScript and PDF documentsare terminated by the Ctrl-D character, ESC/P and PCL5 may use end-of-page character etc).\nHaving that implemented we can add saving documents to file for further analysis andtroubleshooting and document rendering for printed image evaluation.\nAlso, the bidirectional (USB 7/1/2) printers implement a simple PJL interpreter and generateproper responses, which also needs to be implemented in the io.ReadWriter interface withfunctionality enough to make CUPS happy.\n\nFocus Areas\n● Understanding the already implemented parts of the legacy printer simulation\n● Understanding the relevant documents formats in details enough to be able to perform the automatic format identification and to detect page or job boundaries\n● Understanding PJL in details enough to be able to process commands generated by CUPS and provide a proper responses\n\nStudent Contribution Guide\nThe contributor should study how the legacy printer works, how the graphical documents aresent to the printer and how the printer recognizes that document transmission is finished. Theprinted documents need to be extracted from the unstructured host to printer data flow andpassed separately to the upper layer, which will decide what to do with these documents (just tosave to the log file, to render etc).\nRendering of printed documents is out of the scope of this project, so very detailedunderstanding of the relevant formats is not required.\nAlso, for the implementation of the bidirectional (USB 7/1/2) printers the contributor needs tounderstand the behaviour expectations, based on specifications and CUPS implementation andto write a simple simulator.\nThe representation of the emulated printer as a virtual USB device already done in the go-mfpand out of scope of this project. At this level the contributor needs only to implement the Goio.Reader and io.ReadWriter interfaces that can properly consume the data sent to the printerand to generate the proper response, the task of transporting this data from/to the host is out ofscope of this project (and already solved at the first glance).\nAs result of this project, the code contribution into the go-mfp is expected, with the reasonabletest coverage and integration with the “big project”.",
+    "techstack": ["Go", "C"],
+    "github": "https://github.com/OpenPrinting/go-mfp/tree/master/proto/escl",
+    "mentors": [
+      {
+        "name": "Alexander Pevzner",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/alexander-pevzner-6046161/",
+          "discord": "",
+          "email": "pzz@apevzner.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "pdfio",
+    "developer": "Open Printing",
+    "desc": "Implementing Form XObject Rendering in libpdfrip for OpenPrinting\n\nProblem statement\nlibpdfrip is a PDF renderer in development, aiming to be the first fully open, permissivelylicensed PDF renderer built on top of PDFio and using Cairo as its backend.\n\nA key missing feature for real-world PDFs is Form XObject (/Subtype /Form) rendering. FormXObjects are reusable content blocks (logos, icons, repeated UI elements, stamps, etc.) that arereferenced via the “Do” operator in content streams. Many production PDFs rely on forms toavoid duplicating vector content.\n\nCurrently, libpdfrip does not support Form XObjects.\n\nThis project aims to add Form XObject rendering support to libpdfrip, including lookup throughthe resource dictionary, proper graphics state handling, and recursive interpretation of formcontent streams, with a minimal test suite and demo tooling to validate the implementation.\n\nFocus Areas\n● Understand PDF Form XObjects in the PDF specification such as :/Subtype /Form, /BBox, /Matrix, /Resources, and content streams\n\nStudent Contribution Guide\nThe contributor will begin by setting up a local development environment for libpdfrip, buildingthe library and any existing demo tools. After this, they should study the basic structure of PDFfiles: how pages, resources, XObjects, and content streams are organized, and how differentelements are referenced and reused within a document.\n\nNext, the contributor should go through the PDFio documentation to understand how to accessPDF metadata and structure using the library’s APIs. This includes learning how to locatepages, resource dictionaries, XObjects, and content streams through PDFio.\n\nWith this foundation in place, the student can start with the implementation of the actual FormXObject rendering path: saving the current graphics state, applying the form’s transformationmatrix, clipping based on /BBox, recursively interpreting the form’s content stream with thecorrect resource dictionary, and finally restoring the graphics state. They will ensure that thesame form can be reused multiple times at different positions and scales, and add safeguardsagainst infinite recursion when forms reference each other.\n\nThis work can be submitted as a standalone module or contributed directly to the libpdfripcodebase. To validate the implementation, the contributor will have to create a small set ofsynthetic PDFs (manually or via a generator) that use Form XObjects for simple shapes andlogos, and add C tests or a lightweight test harness that renders these PDFs with libpdfrip (forexample, to PNG via Cairo) and checks for successful execution and basic correctness.",
+    "techstack": ["C", "Shell Scripting"],
+    "github": "https://github.com/michaelrsweet/pdfio",
+    "mentors": [
+      {
+        "name": "Uddhav Phatak",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/uddhavphatak",
+          "discord": "",
+          "email": "uddhavphatak@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "libpdfrip",
+    "developer": "Open Printing",
+    "desc": "Implementing Form XObject Rendering in libpdfrip for OpenPrinting\n\nProblem statement\nlibpdfrip is a PDF renderer in development, aiming to be the first fully open, permissivelylicensed PDF renderer built on top of PDFio and using Cairo as its backend.\n\nA key missing feature for real-world PDFs is Form XObject (/Subtype /Form) rendering. FormXObjects are reusable content blocks (logos, icons, repeated UI elements, stamps, etc.) that arereferenced via the “Do” operator in content streams. Many production PDFs rely on forms toavoid duplicating vector content.\n\nCurrently, libpdfrip does not support Form XObjects.\n\nThis project aims to add Form XObject rendering support to libpdfrip, including lookup throughthe resource dictionary, proper graphics state handling, and recursive interpretation of formcontent streams, with a minimal test suite and demo tooling to validate the implementation.\n\nFocus Areas\n● Understand PDF Form XObjects in the PDF specification such as :/Subtype /Form, /BBox, /Matrix, /Resources, and content streams\n\nStudent Contribution Guide\nThe contributor will begin by setting up a local development environment for libpdfrip, buildingthe library and any existing demo tools. After this, they should study the basic structure of PDFfiles: how pages, resources, XObjects, and content streams are organized, and how differentelements are referenced and reused within a document.\n\nNext, the contributor should go through the PDFio documentation to understand how to accessPDF metadata and structure using the library’s APIs. This includes learning how to locatepages, resource dictionaries, XObjects, and content streams through PDFio.\n\nWith this foundation in place, the student can start with the implementation of the actual FormXObject rendering path: saving the current graphics state, applying the form’s transformationmatrix, clipping based on /BBox, recursively interpreting the form’s content stream with thecorrect resource dictionary, and finally restoring the graphics state. They will ensure that thesame form can be reused multiple times at different positions and scales, and add safeguardsagainst infinite recursion when forms reference each other.\n\nThis work can be submitted as a standalone module or contributed directly to the libpdfripcodebase. To validate the implementation, the contributor will have to create a small set ofsynthetic PDFs (manually or via a generator) that use Form XObjects for simple shapes andlogos, and add C tests or a lightweight test harness that renders these PDFs with libpdfrip (forexample, to PNG via Cairo) and checks for successful execution and basic correctness.",
+    "techstack": ["C", "Shell Scripting"],
+    "github": "https://github.com/OpenPrinting/libpdfrip",
+    "mentors": [
+      {
+        "name": "Uddhav Phatak",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/uddhavphatak",
+          "discord": "",
+          "email": "uddhavphatak@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "redis operator",
+    "developer": "OpsTree Global",
+    "desc": "Problem Statement\nA golang based redis operator that willmake/oversee Redisstandalone/cluster/replication/sentinelmode setup on top of the Kubernetes.\n\nFocus Areas\nThe focus area will be backendcontroller development along withperformance optimization.\n\nStudent Contribution Guide (IdeaPage)\n• Backup & Restore CRD\n• Add a RedisBackup CR to trigger backups (e.g., using BGSAVE, snapshots, or RDB dumps).\n• Similarly, a RedisRestore CR to restore from snapshot.\n• Integrate with object storage (S3, GCS) for snapshot uploads.\n• Automated Certificate Management\n• Integrate with cert-manager to automate TLS certificates for Redis and Sentinel pods.\n• Support cert rotation.\n• Auto-Scaling\n• Add horizontal scaling logic: based on usage (memory, CPU, keyspace, throughput), operator can scale the number of replicas or shards.\n• Alternatively, integrate with Kubernetes Horizontal Pod Autoscaler (HPA) or a custom scaler.\n• Advanced Configuration Customization\n• Allow users to pass raw Redis config via CRD (configMap or embedded).\n• Support config version upgrades / migrations (managing rolling restarts when config changes happen).",
+    "techstack": ["GoLang"],
+    "github": "https://github.com/OT-CONTAINER-KIT/redis-operator",
+    "mentors": [
+      {
+        "name": "Abhishek Dubey",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/abhishek-dubey-09b43ab6/",
+          "discord": "iamabhishekdubey",
+          "email": "abhishek.dubey@opstree.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Shubham Gupta",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/shubham-gupta-8b1168244/",
+          "discord": "shubamgupta6536",
+          "email": "iamshubhamgupta200@gmail.com ",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "K8s Vault Webhook",
+    "developer": "OpsTree Global",
+    "desc": "Problem Statement\nk8s-vault-webhook is a Kubernetes admission webhook which listen for the events related to Kubernetes resources for injecting secret directly from secret manager to pod, secret, and configmap. The motive of creating this project is to provide a dynamic secret injection to containers/pods running inside Kubernetes from different secret managers for enhanced security.\n\nFocus Area\nThe focus should be to stabilize the existing secret manager integrations, along with new feature support for secret manager.\n\nStudent Contribution Guide\nSupport for more secret managers / backends: maybe add support for secret managers not yet supported, or improve existing ones.\n• Secrets versioning and rotation: introduce versioning of secrets, or periodic re-injection when secrets change in Vault.\n• Custom annotations or templating: allow more flexible templating for how secrets should be injected (e.g., naming conventions, path transformations).\n• RBAC / policy management UI or CRD: build a CRD or UI to manage which service accounts map to which Vault policies, instead of manual policy definitions.\n• Backup/reconciliation: maintain a reconciliation loop that ensures injected secrets remain up-to-date even after pod restarts, or if secret manager data changes.\n• Observability: expose metrics from the webhook (such as number of admission requests, failed injections, latency) via Prometheus.\n• Fault tolerance: handle cases when the secret manager is down, or when the webhook’s certificate expires, more gracefully.",
+    "techstack": ["GoLang"],
+    "github": "https://github.com/OT-CONTAINER-KIT/k8s-vault-webhook",
+    "mentors": [
+      {
+        "name": "Abhishek Dubey",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/abhishek-dubey-09b43ab6/",
+          "discord": "iamabhishekdubey",
+          "email": "abhishek.dubey@opstree.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Samyak Jain",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/samyyaakk",
+          "discord": "samyyaakk",
+          "email": "samyak.jain@opstree.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Logging Operator",
+    "developer": "OpsTree Global",
+    "desc": " Problem Statement\nA golang based operator to create and manage EFK (Elasticsearch, Fluentd, and Kibana) stack on Kubernetes \n\nFocus Area\n• Development of backend API features to support elasticsearch, fluentd, and kibana integration.\n\nStudent Contribution Guide\nSupport for Alternative Log Collectors / Forwarders\n• Add support for Fluent Bit as a daemonset collector + Fluentd / ES / other outputs. (Although some upstream logging operators use Fluent Bit + Fluentd; if not present, this is big.)\n• Support for Loki as a storage backend (instead of or in addition to Elasticsearch) or other outputs (S3, Kafka, etc.).\n• Automatic Scaling & Lifecycle Management\n• Add CR-driven scaling for Elasticsearch nodes (master / data / ingestion) based on resource usage.\n• Implement lifecycle management of indices: rollover, retention, deleteold-index policies via CRD (or enhance existing index lifecycle CR).\n• Secure Multi-Tenancy / Namespacing\n• Build better namespace isolation of logging pipelines: allow CR per namespace, or per team, with RBAC.\n• Add validation / policy CRs to enforce which namespaces can write to which logging pipeline, or limit ES resources per tenant.\n• Observability Enhancements\n• Expose metrics from the operator: reconciliation time, number of CRs, failures, etc., via Prometheus.\n• Build Grafana dashboards for EFK stack health (ES metrics, Fluentd throughput, Kibana usage).",
+    "techstack": ["GoLang"],
+    "github": "https://github.com/OT-CONTAINER-KIT/logging-operator",
+    "mentors": [
+      {
+        "name": "Abhishek Dubey",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/abhishek-dubey-09b43ab6/",
+          "discord": "iamabhishekdubey",
+          "email": "abhishek.dubey@opstree.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Samyak Jain",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/samyyaakk",
+          "discord": "samyyaakk",
+          "email": "samyak.jain@opstree.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "ReZygisk",
+    "developer": "The PerformanC Organization",
+    "desc": "Difficulty/Complex: Hard-medium/High-medium\n\nDetailed Project Description:\nZygote injection implementation, allowing to inject into Android application processes through injection into Zygote. Students are meant to improve the project's control flow by simplifying the codebase; Find better ways to implement some sub-system. E.g. ptrace injection; Improve project performance while maintaining its hiding capabilities.",
+    "techstack": ["C", "C++"],
+    "github": "https://github.com/PerformanC/ReZygisk",
+    "mentors": [
+      {
+        "name": "Pedro",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/abhishek-dubey-09b43ab6/",
+          "discord": "@pedro.js",
+          "email": "pedroolimpio@proton.me",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "RainyXeon",
+        "socials": {
+          "linkedin": "",
+          "discord": "@rainyxeon",
+          "email": "rainyxeon@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Lucas",
+        "socials": {
+          "linkedin": "",
+          "discord": "@1lucas1.apk",
+          "email": "1lucas1apk@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "NodeLink",
+    "developer": "The PerformanC Organization",
+    "desc": "Difficulty/Complex: Medium\n\nDetailed Project Description:\nA standalone music node to allow Discord bots to easily interact with Discord Voice API and play audios from multiple different sources, being interacted via LavaLink API. Students are meant to improve the project's control flow; Implement new sources to be played; Add support to more audio codecs.",
+    "techstack": ["JavaScript"],
+    "github": "https://github.com/PerformanC/NodeLink",
+    "mentors": [
+      {
+        "name": "Pedro",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/abhishek-dubey-09b43ab6/",
+          "discord": "@pedro.js",
+          "email": "pedroolimpio@proton.me",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "RainyXeon",
+        "socials": {
+          "linkedin": "",
+          "discord": "@rainyxeon",
+          "email": "rainyxeon@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Lucas",
+        "socials": {
+          "linkedin": "",
+          "discord": "@1lucas1.apk",
+          "email": "1lucas1apk@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
   }
 ]

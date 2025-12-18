@@ -48,7 +48,7 @@ const PastOrganizations = () => {
             </div>
 
             {/* Winter of Code 4.0 */}
-            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-8"> 
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-16"> 
                 <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30-5 bg-black text-brand hover:scale-110 duration-700 cursor-pointer text-nowrap font-kleemax">
                     <Link href="https://winter-of-code-4-0.vercel.app/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
@@ -65,7 +65,7 @@ const PastOrganizations = () => {
             </div>
 
             {/* Winter of Code 3.0 */}
-            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-8"> 
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-16"> 
                 <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30-5 bg-black text-brand hover:scale-110 duration-700 cursor-pointer text-nowrap font-kleemax">
                     <Link href="https://winter-of-code-3-0.vercel.app/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
@@ -82,7 +82,7 @@ const PastOrganizations = () => {
             </div>
             
             {/* Winter of Code 2.0 */}
-            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-8"> 
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-16"> 
                 <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30-5 bg-black text-brand hover:scale-110 duration-700 cursor-pointer text-nowrap font-kleemax">
                     <Link href="https://winter-of-code-77957.web.app/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
@@ -99,7 +99,7 @@ const PastOrganizations = () => {
             </div>
             
             {/* Winter of Code 1.0 */}
-            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-8"> 
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-16"> 
                 <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30-5 bg-black text-brand hover:scale-110 duration-700 cursor-pointer text-nowrap font-kleemax">
                     <Link href="https://saksham-jaiswal-2004.github.io/Winter-of-Code-1.0/" rel="noopener noreferrer" target="_blank" className="text-nowrap font-kleemax">

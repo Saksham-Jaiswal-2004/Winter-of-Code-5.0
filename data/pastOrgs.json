@@ -186,87 +186,87 @@
         "version": "3"
     },
     {
-        "name": "",
+        "name": "Doclense",
         "link": "",
-        "image": "",
+        "image": "doclense.png",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Encodn",
         "link": "",
-        "image": "",
+        "image": "encodn.png",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Face Recog",
         "link": "",
-        "image": "",
+        "image": "face-recog.jpeg",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Facex",
         "link": "",
-        "image": "",
+        "image": "facex.jpeg",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Gepton",
         "link": "",
-        "image": "",
+        "image": "gepton.png",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "IC Launcher",
         "link": "",
-        "image": "",
+        "image": "ic_launcher.png",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Lazy",
         "link": "",
-        "image": "",
+        "image": "lazy.jpeg",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Rotten Scripts",
         "link": "",
-        "image": "",
+        "image": "rotten.jpeg",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Fusion VAE",
         "link": "",
-        "image": "",
+        "image": "vae.jpeg",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Video Trimmer",
         "link": "",
-        "image": "",
+        "image": "video_trim.jpeg",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Structurex",
         "link": "",
-        "image": "",
+        "image": "Structurex.png",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Codechef Practical Tool",
         "link": "",
-        "image": "",
+        "image": "codechef.png",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "NLP Processing",
         "link": "",
-        "image": "",
+        "image": "NLP.png",
         "version": "1"
     },
     {
-        "name": "",
+        "name": "Num Dart",
         "link": "",
-        "image": "",
+        "image": "numdart.png",
         "version": "1"
     }
 ]

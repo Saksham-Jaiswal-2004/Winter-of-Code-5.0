@@ -186,6 +186,84 @@
         "version": "3"
     },
     {
+        "name": "Moja Global",
+        "link": "",
+        "image": "mojaGlobal.png",
+        "version": "2"
+    },
+    {
+        "name": "Async API",
+        "link": "",
+        "image": "asyncAPI.png",
+        "version": "2"
+    },
+    {
+        "name": "Gita Init",
+        "link": "",
+        "image": "gitaInit.png",
+        "version": "2"
+    },
+    {
+        "name": "Edualgo Academy",
+        "link": "",
+        "image": "abc.jpg",
+        "version": "2"
+    },
+    {
+        "name": "Auto-DL",
+        "link": "",
+        "image": "auto-dl.png",
+        "version": "2"
+    },
+    {
+        "name": "Code Digger",
+        "link": "",
+        "image": "Codedigger.png",
+        "version": "2"
+    },
+    {
+        "name": "Dezenix",
+        "link": "",
+        "image": "Dezenix.png",
+        "version": "2"
+    },
+    {
+        "name": "Hoppscotch",
+        "link": "",
+        "image": "Hoppscotch.png",
+        "version": "2"
+    },
+    {
+        "name": "Jina",
+        "link": "",
+        "image": "jinaAi.png",
+        "version": "2"
+    },
+    {
+        "name": "Laayak",
+        "link": "",
+        "image": "laayak.png",
+        "version": "2"
+    },
+    {
+        "name": "LLVM",
+        "link": "",
+        "image": "llvm.png",
+        "version": "2"
+    },
+    {
+        "name": "Skit",
+        "link": "",
+        "image": "skit.png",
+        "version": "2"
+    },
+    {
+        "name": "Google Developer Student Clubs",
+        "link": "",
+        "image": "gdsc.png",
+        "version": "2"
+    },
+    {
         "name": "Doclense",
         "link": "",
         "image": "doclense.png",

@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import partnercard from '../public/partner.svg'
-import BorderText from '@/components/bordertext'
+import faqCard from '../public/faqcard1.svg'
 import JumbleText from '@/components/jumble'
 import Link from 'next/link'
 import pastOrgs from '../data/pastOrgs.json'
+import pastStat from '../data/pastStats.json'
 
 interface PastOrg {
     name: string;
@@ -12,7 +13,14 @@ interface PastOrg {
     version: string;
 }
 
+interface PastStats {
+    name: string;
+    data: string;
+    version: string;
+}
+
 const pastOrgData: PastOrg[] = pastOrgs
+const pastStatData: PastStats[] = pastStat
 
 const PastOrgCard = ({ org }: { org: PastOrg }) => {
     return (
@@ -40,6 +48,21 @@ const PastOrgCard = ({ org }: { org: PastOrg }) => {
     );
 };
 
+const PastStatCard = ({ stats }: { stats: PastStats }) => {
+    return (
+        <div className="relative w-[45%] sm:w-[22%] gap-[2%] my-[2%]">
+            <Image className="backdrop-blur" src={faqCard} alt="" />
+            <div className='absolute top-[4%] left-[10%] w-[80%] font-chakra font-bold text-scale-40-4 text-center text-faq text-nowrap overflow-hidden'>
+                <p className='text-lg'>{stats.name}</p>
+            </div>
+
+            <div className="absolute left-[50%] -translate-x-[50%] top-[28%] w-[65%] h-[55%] text-grey justify-center items-center flex overflow-hidden font-kleemax">
+              <p className='text-2xl'>{stats.data}</p>
+            </div>
+        </div>
+    );
+};
+
 const PastOrganizations = () => {
     return (
         <section className='w-full h-full mx-auto pt-[10%]' id="past-orgs">
@@ -56,6 +79,12 @@ const PastOrganizations = () => {
                     </Link>
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastStatData.map((stat, index) =>
+                    stat.version === "4" ? <PastStatCard key={index} stats={stat} /> : ""
+                )}
             </div>
 
             <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
@@ -76,6 +105,12 @@ const PastOrganizations = () => {
             </div>
 
             <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastStatData.map((stat, index) =>
+                    stat.version === "3" ? <PastStatCard key={index} stats={stat} /> : ""
+                )}
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
                 {pastOrgData.map((org, index) =>
                     org.version === "3" ? <PastOrgCard key={index} org={org} /> : ""
                 )}
@@ -93,6 +128,12 @@ const PastOrganizations = () => {
             </div>
 
             <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastStatData.map((stat, index) =>
+                    stat.version === "2" ? <PastStatCard key={index} stats={stat} /> : ""
+                )}
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
                 {pastOrgData.map((org, index) =>
                     org.version === "2" ? <PastOrgCard key={index} org={org} /> : ""
                 )}
@@ -107,6 +148,12 @@ const PastOrganizations = () => {
                     </Link>
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastStatData.map((stat, index) =>
+                    stat.version === "1" ? <PastStatCard key={index} stats={stat} /> : ""
+                )}
             </div>
 
             <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>

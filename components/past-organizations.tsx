@@ -1,94 +1,18 @@
 import Image from 'next/image'
 import partnercard from '../public/partner.svg'
+import BorderText from '@/components/bordertext'
+import JumbleText from '@/components/jumble'
+import Link from 'next/link'
+import pastOrgs from '../data/pastOrgs.json'
 
 interface PastOrg {
     name: string;
     link: string;
     image: string;
+    version: string;
 }
 
-const pastOrgData: PastOrg[] = [
-    {
-        name: "OpenPrinting",
-        link: "https://openprinting.github.io/",
-        image: "OpenPrinting.webp"
-    },
-    {
-        name: "DebugSwift",
-        link: "https://github.com/DebugSwift/DebugSwift",
-        image: "Debug Swift.webp"
-    },
-    {
-        name: "Tiled",
-        link: "https://www.mapeditor.org/",
-        image: "Tiled.png"
-    },
-    {
-        name: "ClassroomIO",
-        link: "https://www.classroomio.com/",
-        image: "ClassroomIO.webp"
-    },
-    {
-        name: "ChartDB",
-        link: "https://chartdb.io/",
-        image: "ChartDB.webp"
-    },
-    {
-        name: "Brisa",
-        link: "https://brisa.build/",
-        image: "Brisa.webp"
-    },
-    {
-        name: "TensorZero",
-        link: "https://www.tensorzero.com/",
-        image: "TensorZero.webp"
-    },
-    {
-        name: "Mixxx",
-        link: "https://mixxx.org/",
-        image: "Mixxx.webp"
-    },
-    {
-        name: "GDevelop",
-        link: "https://gdevelop.io/",
-        image: "GDevelop.webp"
-    },
-    {
-        name: "SQL Page",
-        link: "https://sql.datapage.app/",
-        image: "SQLPage.webp"
-    },
-    {
-        name: "Holidays Framework",
-        link: "https://github.com/vacanza/holidays",
-        image: "HolidaysFramework.webp"
-    },
-    {
-        name: "Laudspeaker",
-        link: "https://laudspeaker.com/",
-        image: "Laudspeaker.webp"
-    },
-    {
-        name: "Snapcrafters",
-        link: "https://snapcrafters.org/",
-        image: "Snapcrafters.webp"
-    },
-    {
-        name: "Mifos",
-        link: "https://mifos.org/",
-        image: "Mifos.webp"
-    },
-    {
-        name: "API Dash",
-        link: "https://apidash.dev/",
-        image: "APIDash.png"
-    },
-    {
-        name: "The Stellar Group",
-        link: "https://stellar-group.org/",
-        image: "TheStellarGroup.webp"
-    }
-];
+const pastOrgData: PastOrg[] = pastOrgs
 
 const PastOrgCard = ({ org }: { org: PastOrg }) => {
     return (
@@ -123,9 +47,71 @@ const PastOrganizations = () => {
                 PAST ORGANIZATIONS
             </div>
 
-            <div className='w-full pt-[8%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+            {/* Winter of Code 4.0 */}
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-8"> 
+                <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
+                <div className="relative flex justify-center text-scale-30-5 bg-black text-brand hover:scale-110 duration-700 cursor-pointer text-nowrap pt-[1.5%] font-kleemax">
+                    <Link href="https://winter-of-code-4-0.vercel.app/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
+                        <JumbleText text="WINTER OF CODE 4.0" id="registerhere"/>
+                    </Link>
+                </div>
+                <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
                 {pastOrgData.map((org, index) =>
-                    <PastOrgCard key={index} org={org} />
+                    org.version === "4" ? <PastOrgCard key={index} org={org} /> : ""
+                )}
+            </div>
+
+            {/* Winter of Code 3.0 */}
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-8"> 
+                <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
+                <div className="relative flex justify-center text-scale-30-5 bg-black text-brand hover:scale-110 duration-700 cursor-pointer text-nowrap pt-[1.5%] font-kleemax">
+                    <Link href="https://winter-of-code-3-0.vercel.app/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
+                        <JumbleText text="WINTER OF CODE 3.0" id="registerhere"/>
+                    </Link>
+                </div>
+                <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastOrgData.map((org, index) =>
+                    org.version === "3" ? <PastOrgCard key={index} org={org} /> : ""
+                )}
+            </div>
+            
+            {/* Winter of Code 2.0 */}
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-8"> 
+                <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
+                <div className="relative flex justify-center text-scale-30-5 bg-black text-brand hover:scale-110 duration-700 cursor-pointer text-nowrap pt-[1.5%] font-kleemax">
+                    <Link href="https://winter-of-code-77957.web.app/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
+                        <JumbleText text="WINTER OF CODE 2.0" id="registerhere"/>
+                    </Link>
+                </div>
+                <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastOrgData.map((org, index) =>
+                    org.version === "2" ? <PastOrgCard key={index} org={org} /> : ""
+                )}
+            </div>
+            
+            {/* Winter of Code 1.0 */}
+            <div className="hidden sm:flex justify-center items-center w-full 2xl:pt-[2.5%] mt-8"> 
+                <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
+                <div className="relative flex justify-center text-scale-30-5 bg-black text-brand hover:scale-110 duration-700 cursor-pointer text-nowrap pt-[1.5%] font-kleemax">
+                    <Link href="https://saksham-jaiswal-2004.github.io/Winter-of-Code-1.0/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
+                        <JumbleText text="WINTER OF CODE 1.0" id="registerhere"/>
+                    </Link>
+                </div>
+                <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
+            </div>
+
+            <div className='w-full pt-[2%] px-[10%] sm:px-[5%] gap-[2%] flex justify-center flex-wrap'>
+                {pastOrgData.map((org, index) =>
+                    org.version === "1" ? <PastOrgCard key={index} org={org} /> : ""
                 )}
             </div>
 

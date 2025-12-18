@@ -1,0 +1,98 @@
+[
+    {
+        "name": "OpenPrinting",
+        "link": "https://openprinting.github.io/",
+        "image": "OpenPrinting.webp",
+        "version": "4"
+    },
+    {
+        "name": "DebugSwift",
+        "link": "https://github.com/DebugSwift/DebugSwift",
+        "image": "Debug Swift.webp",
+        "version": "4"
+    },
+    {
+        "name": "Tiled",
+        "link": "https://www.mapeditor.org/",
+        "image": "Tiled.png",
+        "version": "4"
+    },
+    {
+        "name": "ClassroomIO",
+        "link": "https://www.classroomio.com/",
+        "image": "ClassroomIO.webp",
+        "version": "4"
+    },
+    {
+        "name": "ChartDB",
+        "link": "https://chartdb.io/",
+        "image": "ChartDB.webp",
+        "version": "4"
+    },
+    {
+        "name": "Brisa",
+        "link": "https://brisa.build/",
+        "image": "Brisa.webp",
+        "version": "4"
+    },
+    {
+        "name": "TensorZero",
+        "link": "https://www.tensorzero.com/",
+        "image": "TensorZero.webp",
+        "version": "4"
+    },
+    {
+        "name": "Mixxx",
+        "link": "https://mixxx.org/",
+        "image": "Mixxx.webp",
+        "version": "4"
+    },
+    {
+        "name": "GDevelop",
+        "link": "https://gdevelop.io/",
+        "image": "GDevelop.webp",
+        "version": "4"
+    },
+    {
+        "name": "SQL Page",
+        "link": "https://sql.datapage.app/",
+        "image": "SQLPage.webp",
+        "version": "4"
+    },
+    {
+        "name": "Holidays Framework",
+        "link": "https://github.com/vacanza/holidays",
+        "image": "HolidaysFramework.webp",
+        "version": "4"
+    },
+    {
+        "name": "Laudspeaker",
+        "link": "https://laudspeaker.com/",
+        "image": "Laudspeaker.webp",
+        "version": "4"
+    },
+    {
+        "name": "Snapcrafters",
+        "link": "https://snapcrafters.org/",
+        "image": "Snapcrafters.webp",
+        "version": "4"
+    },
+    {
+        "name": "Mifos",
+        "link": "https://mifos.org/",
+        "image": "Mifos.webp",
+        "version": "4"
+    },
+    {
+        "name": "API Dash",
+        "link": "https://apidash.dev/",
+        "image": "APIDash.png",
+        "version": "4"
+    },
+    {
+        "name": "The Stellar Group",
+        "link": "https://stellar-group.org/",
+        "image": "TheStellarGroup.webp",
+        "version": "4"
+    }
+]

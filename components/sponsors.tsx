@@ -1,13 +1,15 @@
 import Image from 'next/image';
 
 const SponsorData: string[][] = [
-    ["Devfolio", "Fueler"], // Platinum
+    ["Devfolio", "Fueler"],
+    [], // Platinum
     ["ETHIndia", "interviewBuddy"], // Gold
     ["aops"], // Silver
-    []  // Bronze
+    [],
+    ["xyz"]  // Bronze
 ];
 
-const tier = ["Platinum", "Gold", "Silver", "Bronze"];
+const tier = ["Platinum", "Diamond", "Gold", "Silver", "Bronze", "Domain Partner"];
 
 const Sponsors = () => {
     const TBA = false; // change to true if sponsors not announced

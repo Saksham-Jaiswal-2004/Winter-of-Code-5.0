@@ -13,7 +13,7 @@ import submit from '../public/submit.svg'
 const resources = [
     { title: "Past Organizations", link: "/past-organizations" },
     { title: "Organisation Brochure", link: "https://drive.google.com/file/d/117rMEB4imPUtNh0RtCQ-A-FK5wGMWM-y/view?usp=sharing" },
-    { title: "Sponsorship Brochure", link: "https://drive.google.com/file/d/1vOyyjSdUysjeUrpb87Ubb-Rkl542M9v2/view?usp=sharing" },
+    { title: "Sponsorship Brochure", link: "https://drive.google.com/file/d/1PoIAPuFCb9t3JXuMxfALirBnIrGs9GmT/view?usp=sharing" },
     { title: "WoC 5.0 Policies & Guidelines", link: "https://www.notion.so/Winter-of-Code-5-0-Official-Policies-Legal-Guidelines-2a6489c63bf4806593abcfd35a481976?source=copy_link" },
 ]
 

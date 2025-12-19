@@ -1,15 +1,16 @@
 import Image from 'next/image';
 
 const SponsorData: string[][] = [
-    ["Devfolio", "Fueler"],
-    [], // Platinum
+    ["Devfolio", "Fueler"], // Platinum
+    [], // Diamond
     ["ETHIndia", "interviewBuddy"], // Gold
-    ["aops"], // Silver
-    [],
-    ["xyz"]  // Bronze
+    ["aops", "Keploy"], // Silver
+    [], // Bronze
+    ["xyz"], // Domain Partner
+    ["StockEdge"], // Knowledge Partner
 ];
 
-const tier = ["Platinum", "Diamond", "Gold", "Silver", "Bronze", "Domain Partner"];
+const tier = ["Platinum", "Diamond", "Gold", "Silver", "Bronze", "Domain Partner", "Knowledge Partner"];
 
 const Sponsors = () => {
     const TBA = false; // change to true if sponsors not announced
@@ -22,6 +23,7 @@ const Sponsors = () => {
         interviewbuddy: 'interviewBuddy.png',
         aops: 'aops.png',
         fueler: 'fueler.png',
+        stockedge: 'stockedge.jpeg',
     };
     return (
         <section className='w-full h-full mx-auto pt-[10%]' id="sponsors">

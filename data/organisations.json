@@ -28,6 +28,10 @@
         "website": ""
     },
     {
+        "name": "Keploy",
+        "website": "https://keploy.io/"
+    },
+    {
         "name": "Development Society AEC",
         "website": "https://devsoc-aec.vercel.app/"
     },
@@ -44,7 +48,19 @@
         "website": "https://cookethcompany.xyz/"
     },
     {
+        "name": "PSMRI",
+        "website": "https://amrit.piramalswasthya.org/"
+    },
+    {
         "name": "WallGodds",
         "website": "https://www.linkedin.com/company/wallgodds"
+    },
+    {
+        "name": "Rootsprout",
+        "website": "https://www.rootsprouthub.com/"
+    },
+    {
+        "name": "Programmers' Paradise Technical Society",
+        "website": "https://www.linkedin.com/company/programmers-paradise-csvtu/"
     }
 ]

@@ -987,5 +987,233 @@
       "email": "",
       "twitter": ""
     }
+  },
+  {
+    "name": "TranscribeIt",
+    "developer": "FOSSIA",
+    "desc": "Problem Statement:\nHard of hearing and speech population, people with visual impairments and sensory processing disorders have difficulty navigating video content. With online platforms providing little to no transcriptions or inaccurate transcriptions, especially for live streams, it hinders acccessibility. TransribeIt aims to provide customized and diarized transcriptions for making video content accessible.\n\nFocus Areas:\n• Backend: API development, asynchronous processing, ASR (automatic speech recognition), diariazation, video processing\n• Frontend: Accessibility testing and UI development\n• Deployment: Containerized deployment, monitoring, performance optimization\n• Documentation: Onboarding instructions for developers, technical documentation\n\nStudent Contribution Guide:\n1. Backend Contributions\n\t• Optimize ASR pipelines for both pre-recorded videos and live streams from local content.\n\t• Integrate speaker diarization for multi-speaker videos with customization for speaker identification.\n\t• Streamline asynchronous video processing workflows using Python and FastAPI for real-world usage.\n\t• Provide alternative formats for exporting transcripts and streamline transcript generation\n\nExpected Outcomes:\n• Robust backend capable of handling multiple video formats and live streams.\n• Efficient, accurate transcription with speaker labels in customized manner\n• Formats such as Markdown, PDF and JSON for exports.\n\n2. Frontend Contributions\n• Develop an accessible UI using Next.js and Chakra UI for the features described in backend section.\n• Implement features such as searchable transcripts, speaker highlighting, transcript exporting and timestamps for accessibility.\n• Perform accessibility testing (screen readers, keyboard navigation, color contrast) and integrate accessibility focused tooling for WCAG compliance.\n• Create a responsive design for desktop and mobile.\n\nExpected Outcomes:\n• User-friendly interface for uploading videos and viewing transcriptions and providing URLs.\n• Improved accessibility for users with visual and hearing impairments.\n• Enhanced user experience with intuitive navigation and customization options.\n\n3. Deployment Contributions\n• Set up orchestration using Docker Compose for self-hosting by optimizing existing Docker setup.\n• Implement monitoring for system health and performance metrics for production.\n• Optimize backend performance for large video files or multiple concurrent live streams.\n\nExpected Outcomes:\n• Easy-to-deploy, scalable system for developers and end-users.\n• Improved stability and uptime.\n• Clear deployment guides for development and production environments.\n\n4. Documentation Contributions\n• Write technical documentation for technical implementation in an\nintegrated manner.\n• Create developer onboarding guides, including setup instructions.\n• Document API endpoints and video processing workflows using Swagger and VitePress\n• Maintain changelogs and contribution guidelines for future developers.\n\nExpected Outcomes:\n• Well-documented codebase for future contributors.\n• Reduced onboarding time for new developers.\n• Clear usage instructions for both developers and end-users. Milestones\n\n1. Milestone 1 – Setup & Familiarization\n• Set up local development environment (Docker, FastAPI, Next.js)\n• Explore existing codebase and documentation\n\n2. Milestone 2 – Core Backend Development\n• Create endpoints for video transcriptions in aternative formats\n• Optimize video transcription for larger videos\n• Implement speaker diarization with customisations\n\n3. Milestone 3 – Frontend Integration\n• Display transcription results with timestamps and speaker information\n• Develop user interface for exporting transcripts in prefered format\n\n4. Milestone 4 – Deployment & Monitoring\n• Containerize application for self-hosting and optimize existing Docker setup\n• Add logging, monitoring, and performance optimization for observability\n\n5. Milestone 6 – Documentation & Final Touches\n• Complete developer guide\n• Conduct accessibility testing",
+    "techstack": ["FastAPI", "Python", "Docker", "Next.js", "Chakra UI"],
+    "github": "https://github.com/fossiaorg/transcribeit",
+    "mentors": [
+      {
+        "name": "Keerthana Rajesh Kumar",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/abhishek-dubey-09b43ab6/",
+          "discord": "grittypuffy",
+          "email": "grittypuffy@riseup.net",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Ak-dskit (DsKit)",
+    "developer": "Programmer's Paradise",
+    "desc": "Data scientists and ML engineers often spend 60-80% of their time on repetitive tasks like data cleaning, EDA, preprocessing, and basic modeling. There&#39;s a need for a unified, production-ready toolkit that wraps complex operations into simple 1-line commands while maintaining flexibility and comprehensive feature coverage. Ak-dskit solves this by providing 221+ wrapper functions that streamline the entire ML pipeline - from data loading to model deployment - making data science accessible, efficient, and production-ready.\n\nFocus Areas:\nStudents can contribute to various aspects of the project:\n\nCore Features Enhancement\n Extending data cleaning and preprocessing capabilities\n Adding new feature engineering methods\n Improving automated EDA functions\n Enhancing model validation utilities\n Visualization &amp; Explainability\n Creating new interactive visualization functions\n Improving SHAP integration for model explainability\n Building custom plotting utilities for specific use cases\n Developing hyperplane visualization for advanced algorithms\n AutoML &amp; Optimization\n Expanding hyperparameter tuning capabilities\n Adding support for new ML algorithms\n Implementing ensemble methods\n Building automated feature selection tools\n Documentation &amp; Testing\n Writing comprehensive tutorials and guides\n Creating Jupyter notebook examples\n Developing unit tests for existing functions\n Improving API documentation\n DevOps &amp; Deployment\n Setting up CI/CD pipelines\n Creating Docker containers for deployment\n Building model serving utilities\n Implementing monitoring and logging features\n Database &amp; Time Series\n Enhancing database utility functions\n Expanding time series analysis capabilities\n Adding support for new data sources\n Building data versioning tools\n Student Contribution Guide (Idea Page)\n\nWhat Students Will Work On:\n Beginner Level:\n\t1. Writing documentation and tutorials\n\t2. Creating example notebooks\n\t3. Adding unit tests for existing functions\n\t4. Fixing bugs and improving error handling\n\n5. Enhancing function docstrings\n Intermediate Level:\n\t1. Implementing new preprocessing methods\n\t2. Adding visualization functions\n\t3. Creating data validation utilities\n\t4. Building feature engineering tools\n\t5. Developing data profiling capabilities\n\n Advanced Level:\n\t1. Implementing advanced AutoML features\n\t2. Building custom ML algorithms\n\t3. Creating model deployment pipelines\n\t4. Developing distributed computing support\n\t5. Implementing neural network wrappers\n\nExpected Outcomes:\n1. At least 10-15 new utility functions added to the library\n2. Comprehensive test coverage (target: &gt;80%)\n3. 5+ tutorial notebooks demonstrating real-world use cases\n4. Improved documentation with API reference updates\n5. Performance optimization for core functions\n6. New features like automated report generation, data drift detection, or A/B testing utilities",
+    "techstack": ["Python", "NumPy", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn", "Plotly", "SHAP", "XGBoost", "LightGBM", "CatBoost", "Optuna", "Hyperopt", "PyPI"],
+    "github": "https://github.com/Programmers-Paradise/DsKit",
+    "mentors": [
+      {
+        "name": "Aksh Agrawal",
+        "socials": {
+          "linkedin": "www.linkedin.com/in/akshagr10",
+          "discord": "hextrovert_10",
+          "email": "aksh.300012824005@csvtu.ac.in",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Annie",
+    "developer": "Programmer's Paradise",
+    "desc": "Problem Statement:\nA lightning-fast, Rust-powered Approximate Nearest Neighbour library for Python with multiple backends, thread-safety, and GPU acceleration.\n\nFocus Area:\nStudent need to work on &quot; issues &quot; present in the repository.\n\nCore Features:\n Multiple Backends:\n\to Brute-force (exact) with SIMD acceleration\n\to HNSW (approximate) for large-scale datasets\n Multiple Distance Metrics: Euclidean, Cosine, Manhattan, Chebyshev\n Batch Queries for efficient processing\n Thread-safe indexes with concurrent access\n Zero-copy NumPy integration\n On-disk Persistence with serialization\n Filtered Search with custom Python callbacks\n GPU Acceleration for brute-force calculations\n Multi-platform support (Linux, Windows, macOS)\n Automated CI with performance tracking",
+    "techstack": ["Rust" , "PyO3", "Python", "Machine Learning"],
+    "github": "https://github.com/Programmers-Paradise/Annie",
+    "mentors": [
+      {
+        "name": "Aksh Agrawal",
+        "socials": {
+          "linkedin": "www.linkedin.com/in/akshagr10",
+          "discord": "hextrovert_10",
+          "email": "aksh.300012824005@csvtu.ac.in",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Exsh",
+    "developer": "",
+    "desc": "Focus Area:\n- Students can learn built from scratch implementations.\n- Everything is built in low level language (C), no abstraction.",
+    "techstack": ["C"],
+    "github": "https://github.com/RootSprout/Exsh",
+    "mentors": [
+      {
+        "name": "Meerthika S R",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "rootsprout1@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Vinoth kumar",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "rootsprout1@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "CTP - A Serial datalink transport protocol",
+    "developer": "",
+    "desc": "Focus Area:\n- Students can learn built from scratch implementations.\n- Everything is built in low level language (C), no abstraction.",
+    "techstack": ["C"],
+    "github": "https://github.com/RootSprout/CTP",
+    "mentors": [
+      {
+        "name": "Meerthika S R",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "rootsprout1@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Vinoth kumar",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "rootsprout1@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Kira-Kafka",
+    "developer": "",
+    "desc": "Focus Area:\n- Students can learn built from scratch implementations.\n- Everything is built in low level language (C), no abstraction.",
+    "techstack": ["C"],
+    "github": "https://github.com/RootSprout/Kira-Kafka",
+    "mentors": [
+      {
+        "name": "Meerthika S R",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "rootsprout1@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Vinoth kumar",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "rootsprout1@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "AMRIT",
+    "developer": "",
+    "desc": "Any proposal guidelines, ideas, or focus areas for students.\nAMRIT is an EHR platform. Students will get exposure to healthcare domain and technology that powers grass root level operations in different parts of India. We will file issues under the GitHub issues section. Let me know if there is any template for filing these issues.",
+    "techstack": ["TypeScript",  "Java",  "JavaScript", "Python",  "Kotlin"],
+    "github": "https://github.com/PSMRI/AMRIT/",
+    "mentors": [
+      {
+        "name": "Dr. Mithun James",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "mithun.james@piramalswasthya.org",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Keploy Blog Website",
+    "developer": "",
+    "desc": "● Problem Statement\nWe’re looking to improve the current Keploy blog website. There are several issues already listed in the Keploy repository, please pick one and start working on it. You’re also encouraged to create new issues by taking inspiration from other blog websites and suggesting improvements. The end goal is to enhance the blog website in terms of both UI and performance.\n\n● Focus Areas\nExample: backend API development, UI/UX improvements, documentation, performance optimization, devops.\n\n● Student Contribution Guide (Idea Page)\nFirst, please visit our repository and pick an issue to work on from the list below:\n\nIssues:\nhttps://github.com/keploy/keploy/issues?q=is%3Aissue%20state%3Aopen%20label%3Ablog-website\n\n● You’re also welcome to create a new issue if you have ideas or improvements you’d like to work on.\n\nNote: Please attach a short video of your changes so mentors can review them easily and share feedback quickly.",
+    "techstack": ["TypeScript",  "JavaScript", "Wordpress"],
+    "github": "https://github.com/keploy/blog-website",
+    "mentors": [
+      {
+        "name": "Amaan bhati",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/amaan-bhati/",
+          "discord": "amaan_bhati",
+          "email": "amaan.bhati@keploy.io",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Hermione Dadheech",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/hermione-dadheech/",
+          "discord": "hermione_dadheech_66979",
+          "email": "hermione.dadheech@keploy.io",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
   }
 ]

@@ -10,7 +10,7 @@ interface Partner {
 const partnerData: Partner[] = cps
 
 const PartnerCard = ({ partner }: { partner: Partner }) => {
-    const isLarge = partner.name === 'rootsprout' || partner.name === 'ByteBrigade';
+    const isLarge = partner.name === 'rootsprout' || partner.name === 'ByteBrigade' || partner.name === 'Linux Campus Club';
     return (
         <a
             className="relative w-[45%] sm:w-[30%] gap-[2%] my-[2%] hover:scale-105 duration-700"

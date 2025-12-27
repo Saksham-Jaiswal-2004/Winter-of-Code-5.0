@@ -1,7 +1,13 @@
 "use client"
-
+import JumbleText from '@/components/jumble'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { IoChatbox } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import asset1 from '../public/org.svg'
+import partnercard from '../public/partner.svg'
+import projectbanner from "../public/projectbanner.svg";
 
 type Mentor = {
     name: string
@@ -92,7 +98,7 @@ const org: Org = {
 }
 
 const Badge = ({ text }: { text: string }) => (
-    <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/80">{text}</span>
+    <span className="rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-white/80">{text}</span>
 )
 
 const StatCard = ({ label, value }: { label: string; value: string }) => (
@@ -103,13 +109,13 @@ const StatCard = ({ label, value }: { label: string; value: string }) => (
 )
 
 const MentorCard = ({ mentor }: { mentor: Mentor }) => (
-    <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+    <div className="flex relative items-center justify-between rounded-2xl bg-white/5 px-4 py-3 min-h-60">
         <div>
-            <p className="text-sm font-semibold text-white">{mentor.name}</p>
+            <p className="text-lg font-chakra font-semibold text-white absolute top-0 left-8 rounded-b-xl bg-black px-4 py-2">{mentor.name}</p>
             <p className="text-xs text-white/60">{mentor.role}</p>
         </div>
         {mentor.profile ? (
-            <Link href={mentor.profile} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-brand hover:text-brand/80">
+            <Link href={mentor.profile} target="_blank" rel="noopener noreferrer" className="text-base font-semibold text-brand hover:text-brand/80 absolute bottom-0 right-0 px-4 py-2 bg-black rounded-tl-xl">
                 {mentor.handle || 'Profile'}
             </Link>
         ) : null}
@@ -156,103 +162,91 @@ const ContactItem = ({ contact }: { contact: Contact }) => (
 
 const OrgShowcase = () => {
     return (
-        <section className="relative isolate w-full bg-gradient-to-b from-black via-black to-black pb-20 pt-4">
-            {/* <div className="pointer-events-none absolute inset-0 overflow-hidden">
-                <div className="absolute left-1/2 top-[-5%] h-[420px] w-[620px] -translate-x-1/2 rounded-full bg-brand/25 blur-[140px]" />
-                <div className="absolute right-[6%] top-[12%] h-[260px] w-[260px] rounded-full bg-white/10 blur-[90px]" />
-            </div> */}
+        <section className="relative isolate overflow-x-hidden w-full bg-gradient-to-b from-black via-black to-black pb-20 pt-4">
+            <div className="-z-10 w-[25%] absolute right-[-25%] top-[88vh] translate-x-[-50%] translate-y-[-40.5%]">
+                <Image
+                  className="mx-auto w-full"
+                  src={projectbanner}
+                  alt="projectbanner"
+                />
+            </div>
+            <div className="-z-10 w-[25%] absolute left-[0%] top-[150vh] translate-x-[-50%] translate-y-[-40.5%]">
+                <Image
+                  className="mx-auto w-full"
+                  src={projectbanner}
+                  alt="projectbanner"
+                />
+            </div>
 
             <div className="relative mx-auto flex w-full px-8 flex-col gap-10">
-                <header className="grid gap-8 h-[60vh] rounded-[32px] border border-white/10 bg-white/5 px-24 py-10 backdrop-blur">
+                <header className="grid gap-8 h-[80vh] rounded-[32px] bg-white/5 px-24 py-10 backdrop-blur">
                     <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                         <div className="space-y-4">
-                            <p className="text-xs uppercase tracking-[0.18em] text-brand">Organisation Profile</p>
-                            <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl">{org.name}</h1>
-                            <p className="text-lg font-semibold text-white/80">{org.tagline}</p>
-                            <p className="text-sm text-white/70">{org.description}</p>
-                            <div className="flex flex-wrap gap-2">
+                            <p className="text-base uppercase tracking-[0.18em] text-brand font-kleemax bg-black w-fit px-4 py-4 absolute top-0 rounded-b-xl">Organisation Profile</p>
+                            <h1 className="text-3xl font-bold leading-tight text-white sm:text-5xl font-kleemax"><JumbleText text={org.name.toUpperCase()} id="registerhere"/></h1>
+                            <p className="text-lg font-semibold text-white/80 font-chakra">{org.tagline}</p>
+                            <p className="text-base text-white/70 font-chakra">{org.description}</p>
+                            <div className="flex flex-wrap gap-2 font-chakra">
                                 {org.focusAreas.map((area) => (
                                     <Badge key={area} text={area} />
                                 ))}
                             </div>
-                            <div className="flex flex-wrap gap-3">
-                                <Link href={org.website} target="_blank" rel="noopener noreferrer" className="rounded-full bg-brand px-4 py-2 text-xs font-semibold text-black shadow-[0_14px_38px_-30px_rgba(0,0,0,0.9)] transition hover:brightness-110">
-                                    Visit site
+                            <div className="flex flex-wrap gap-3 font-chakra">
+                                <Link href={org.website} target="_blank" rel="noopener noreferrer" className="rounded-full bg-brand p-3 text-lg flex justify-center items-center font-semibold text-black shadow-[0_14px_38px_-30px_rgba(0,0,0,0.9)] transition hover:brightness-110">
+                                    <FaExternalLinkAlt />
                                 </Link>
-                                <Link href={org.chat} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold text-white transition hover:border-brand/70 hover:text-brand">
-                                    Join chat
+                                <Link href={org.chat} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 bg-white/5 p-3 text-lg flex justify-center items-center font-semibold text-white transition hover:border-brand/70 hover:text-brand">
+                                    <IoChatbox />
                                 </Link>
-                                <Link href={org.repo} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold text-white transition hover:border-brand/70 hover:text-brand">
-                                    View repos
+                                <Link href={org.repo} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 bg-white/5 p-3 text-lg flex justify-center items-center font-semibold text-white transition hover:border-brand/70 hover:text-brand">
+                                    <FaGithub />
                                 </Link>
                             </div>
                         </div>
 
                         <div className="relative flex h-full w-full items-center justify-center">
                             <div className="absolute inset-4 rounded-[28px] bg-gradient-to-br from-white/10 via-white/5 to-transparent blur-2xl" />
-                            <div className="relative overflow-hidden rounded-[24px] border border-white/10 bg-white/5 p-4 shadow-[0_18px_60px_-35px_rgba(0,0,0,0.7)]">
+                            <div className="relative overflow-hidden p-4 shadow-[0_18px_60px_-35px_rgba(0,0,0,0.7)]">
+                                <Image className="backdrop-blur h-full w-[250px] object-contain" src={asset1} alt="" />
                                 <Image
                                     src={org.heroImage}
                                     alt={org.name}
                                     width={920}
                                     height={620}
-                                    className="h-full w-full max-h-[460px] object-contain"
+                                    className="absolute left-[10%] bottom-[12%] w-[80%] h-auto"
                                 />
                             </div>
                         </div>
                     </div>
-
-                    {/* <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                        {org.stats.map((stat) => (
-                            <StatCard key={stat.label} label={stat.label} value={stat.value} />
-                        ))}
-                    </div> */}
                 </header>
 
-                <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+                <div className="px-8">
                     <div className="space-y-6">
-                        <div className="space-y-3">
-                            <div className="flex items-center justify-between">
-                                <h2 className="text-lg font-semibold text-white">Projects</h2>
-                                <span className="text-xs text-white/60">{org.projects.length}</span>
+                        <div className="space-y-3 pt-16">
+                            <div className="flex items-center justify-center text-2xl font-kleemax mb-6">
+                                <h2 className="text-white">MENTORS</h2>
                             </div>
-                            <div className="grid gap-4 lg:grid-cols-2">
-                                {org.projects.map((project) => (
-                                    <ProjectCard key={project.title} project={project} />
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="space-y-3">
-                            <div className="flex items-center justify-between">
-                                <h2 className="text-lg font-semibold text-white">Mentors</h2>
-                                <span className="text-xs text-white/60">{org.mentors.length}</span>
-                            </div>
-                            <div className="grid gap-3 md:grid-cols-2">
+                            <div className="grid gap-3 md:grid-cols-3">
                                 {org.mentors.map((mentor) => (
                                     <MentorCard key={mentor.name} mentor={mentor} />
                                 ))}
                             </div>
                         </div>
-                    </div>
 
-                    <aside className="space-y-4 rounded-3xl border border-white/10 bg-white/5 px-6 py-6 shadow-[0_22px_70px_-50px_rgba(0,0,0,0.7)] backdrop-blur">
-                        <div className="space-y-2">
-                            <h3 className="text-base font-semibold text-white">Contact</h3>
-                            <p className="text-sm text-white/70">Reach out to the org directly for onboarding, project scoping, and collaboration.</p>
+                        <div className="space-y-3 pt-16 pb-8">
+                            <div className="flex items-center justify-center text-2xl font-kleemax mb-6">
+                                <h2 className="text-white">PROJECTS <span className='text-brand'>/</span> PROBLEM STATEMENTS</h2> 
+                            </div>
+                            <div className="grid gap-4 lg:grid-cols-1">
+                                {org.projects.map((project) => (
+                                    <ProjectCard key={project.title} project={project} />
+                                ))}
+                            </div>
                         </div>
-                        <div className="grid gap-3">
-                            {org.contacts.map((contact) => (
-                                <ContactItem key={contact.label} contact={contact} />
-                            ))}
-                        </div>
-                        <div className="rounded-2xl border border-dashed border-white/20 bg-white/5 px-4 py-4 text-sm text-white/70">
-                            Want to customize this page? Replace the dummy `org` object with real data or wire it to your CMS/API.
-                        </div>
-                    </aside>
+                    </div>
                 </div>
 
-                <div className="rounded-3xl border border-white/10 bg-gradient-to-r from-brand/20 via-white/5 to-brand/10 px-8 py-10 text-white shadow-[0_22px_70px_-50px_rgba(0,0,0,0.7)]">
+                <div className="rounded-3xl border border-white/10 bg-gradient-to-r from-brand/20 via-white/5 to-brand/10 px-24 py-10 text-white shadow-[0_22px_70px_-50px_rgba(0,0,0,0.7)]">
                     <div className="flex flex-wrap items-center justify-between gap-4">
                         <div className="space-y-2">
                             <h2 className="text-2xl font-semibold">Ready to collaborate?</h2>

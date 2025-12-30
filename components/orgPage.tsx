@@ -11,7 +11,8 @@ import asset1 from '../public/org.svg'
 import projectbanner from "../public/projectbanner.svg";
 import { MdEmail } from "react-icons/md";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaDiscord } from "react-icons/fa6";
+import { orgs } from "@/data/orgs"
+import { useParams } from "next/navigation"
 
 type Mentor = {
     name: string
@@ -126,10 +127,10 @@ const StatCard = ({ label, value }: { label: string; value: string }) => (
 )
 
 const MentorCard = ({ mentor }: { mentor: Mentor }) => (
-    <div className="flex relative items-center justify-between rounded-2xl bg-white/5 px-4 py-3 min-h-60">
+    <div className="flex relative items-center justify-between rounded-2xl bg-brand/10 px-4 py-3 min-h-20">
         <div>
-            <p className="text-lg font-chakra font-semibold text-white absolute top-0 left-8 rounded-b-xl bg-black px-4 py-2">{mentor.name}</p>
-            <p className="text-sm px-6 text-white/60">{mentor.desc}</p>
+            <p className="text-xl font-chakra font-semibold text-white absolute top-0 left-8 rounded-b-xl bg-black px-4 py-2">{mentor.name}</p>
+            {/* <p className="text-sm px-6 text-white/60">{mentor.desc}</p> */}
         </div>
         <div className='flex gap-2 absolute bottom-0 right-0 px-4 py-2 bg-black rounded-tl-xl'>
             {mentor.email ? (
@@ -208,6 +209,11 @@ const ProjectCard = ({ project }: { project: Project }) => (
 )
 
 const OrgShowcase = () => {
+    const params = useParams()
+    const slug = params.slug as string
+
+    const org = orgs[slug]
+
     return (
         <section className="relative isolate overflow-x-hidden w-full bg-gradient-to-b from-black via-black to-black pb-20 pt-4">
             <div className="-z-10 w-[25%] absolute right-[-25%] top-[88vh] translate-x-[-50%] translate-y-[-40.5%]">

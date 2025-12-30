@@ -1,66 +1,66 @@
 [
     {
         "name": "OWASP Nest",
-        "website": "https://owasp.org/"
+        "website": "/orgsPage/owasp"
     },
     {
         "name": "OpenPrinting",
-        "website": "https://www.openprinting.org/"
+        "website": "/orgsPage/Openprinting"
     },
     {
         "name": "QC Devs",
-        "website": "https://qcdevs.org"
+        "website": "/orgsPage/qcdevs"
     },
     {
         "name": "MIXXX",
-        "website": "https://mixxx.org/"
+        "website": "/orgsPage/mixxx"
     },
     {
         "name": "Open World Holidays Framework",
-        "website": "https://github.com/vacanza/"
+        "website": "/orgsPage/vacanza"
     },
     {
         "name": "OpsTree Global",
-        "website": "https://opstree.com/"
+        "website": "/orgsPage/opstree"
     },
     {
         "name": "PerformanC",
-        "website": ""
+        "website": "/orgsPage/performanc"
     },
     {
         "name": "Keploy",
-        "website": "https://keploy.io/"
+        "website": "/orgsPage/keploy"
     },
     {
         "name": "Development Society AEC",
-        "website": "https://devsoc-aec.vercel.app/"
+        "website": "/orgsPage/devsocaec"
     },
     {
         "name": "FOSSIA",
-        "website": "https://fossia.org"
+        "website": "/orgsPage/fossia"
     },
     {
         "name": "Open Source Chandigarh",
-        "website": ""
+        "website": "/orgsPage/opensourcechandigarh"
     },
     {
         "name": "Cooketh Org",
-        "website": "https://cookethcompany.xyz/"
+        "website": "/orgsPage/cookethorg"
     },
     {
         "name": "PSMRI",
-        "website": "https://amrit.piramalswasthya.org/"
+        "website": "/orgsPage/psmri"
     },
     {
         "name": "WallGodds",
-        "website": "https://www.linkedin.com/company/wallgodds"
+        "website": "/orgsPage/wallgodds"
     },
     {
         "name": "Rootsprout",
-        "website": "https://www.rootsprouthub.com/"
+        "website": "/orgsPage/rootsprout"
     },
     {
         "name": "Programmers' Paradise Technical Society",
-        "website": "https://www.linkedin.com/company/programmers-paradise-csvtu/"
+        "website": "/orgsPage/ppts"
     }
 ]

@@ -69,7 +69,7 @@ const Footer = () => {
                 ))}
 
                 <div className="text-scale-40-6 text-white font-chakra text-wrap w-[90%] m-[1%]">
-                    © GDG IIIT KALYANI 2025
+                    © GDG IIIT KALYANI 2026
                 </div>
             </div>
 

@@ -44,7 +44,7 @@ type Org = {
     description: string
     heroImage: string
     website: string
-    chat: string
+    chat?: string
     repo: string
     email: string
     focusAreas: string[]
@@ -208,6 +208,59 @@ const ProjectCard = ({ project }: { project: Project }) => (
     </div>
 )
 
+// new addition
+
+const IconLink = ({
+  href,
+  children,
+  label,
+  primary = false,
+}: {
+  href?: string
+  children: React.ReactNode
+  label: string
+  primary?: boolean
+}) => {
+  const isActive = Boolean(href)
+
+  const base =
+    "relative group rounded-full p-3 text-lg flex justify-center items-center transition"
+
+  const activePrimary =
+    "bg-brand text-black hover:brightness-110 shadow-[0_14px_38px_-30px_rgba(0,0,0,0.9)] cursor-pointer"
+
+  const activeSecondary =
+    "border border-white/20 bg-white/5 text-white hover:border-brand/70 hover:text-brand cursor-pointer"
+
+  const disabled =
+    "border border-white/10 bg-white/5 text-white/40 cursor-not-allowed opacity-60"
+
+  if (!isActive) {
+    return (
+      <div className={`${base} ${disabled}`}>
+        {children}
+        <span className="absolute -bottom-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-black px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100">
+          {label} not available
+        </span>
+      </div>
+    )
+  }
+
+  return (
+    <Link
+      href={href!}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${base} ${primary ? activePrimary : activeSecondary}`}
+    >
+      {children}
+      <span className="absolute -bottom-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-black px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100">
+        Open {label}
+      </span>
+    </Link>
+  )
+}
+
 const OrgShowcase = () => {
     const params = useParams()
     const slug = params.slug as string
@@ -245,15 +298,15 @@ const OrgShowcase = () => {
                                 ))}
                             </div>
                             <div className="flex flex-wrap gap-3 font-chakra">
-                                <Link href={org.website} target="_blank" rel="noopener noreferrer" className="rounded-full bg-brand p-3 text-lg flex justify-center items-center font-semibold text-black shadow-[0_14px_38px_-30px_rgba(0,0,0,0.9)] transition hover:brightness-110">
+                                <IconLink href={org.website} label="Website" primary>
                                     <FaExternalLinkAlt />
-                                </Link>
-                                <Link href={org.chat} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 bg-white/5 p-3 text-lg flex justify-center items-center font-semibold text-white transition hover:border-brand/70 hover:text-brand">
+                                </IconLink>
+                                <IconLink href={org.chat} label="Chat">
                                     <IoChatbox />
-                                </Link>
-                                <Link href={org.repo} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 bg-white/5 p-3 text-lg flex justify-center items-center font-semibold text-white transition hover:border-brand/70 hover:text-brand">
+                                </IconLink>
+                                <IconLink href={org.repo} label="GitHub">
                                     <FaGithub />
-                                </Link>
+                                </IconLink>
                             </div>
                         </div>
 
@@ -308,12 +361,12 @@ const OrgShowcase = () => {
                             </p>
                         </div>
                         <div className="flex flex-wrap gap-3 absolute right-5 bottom-0 px-4 py-2 rounded-t-xl bg-black">
-                            <Link href={org.chat} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 bg-white/5 p-3 text-lg flex justify-center items-center font-semibold text-white transition hover:border-brand/70 hover:text-brand">
+                            <IconLink href={org.chat} label="Chat">
                                 <IoChatbox />
-                            </Link>
-                            <Link href={org.repo} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/20 bg-white/5 p-3 text-lg flex justify-center items-center font-semibold text-white transition hover:border-brand/70 hover:text-brand">
+                            </IconLink>
+                            <IconLink href={org.repo} label="GitHub">
                                 <FaGithub />
-                            </Link>
+                            </IconLink>
                         </div>
                     </div>
                 </div>

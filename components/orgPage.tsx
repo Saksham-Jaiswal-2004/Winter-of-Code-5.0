@@ -40,7 +40,7 @@ type Contact = {
 
 type Org = {
     name: string
-    tagline: string
+    tagline?: string
     description: string
     heroImage: string
     website: string

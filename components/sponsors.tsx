@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 const SponsorData: string[][] = [
     ["Devfolio", "Fueler"], // Platinum
-    [], // Diamond
+    ["OSEN"], // Diamond
     ["ETHIndia", "interviewBuddy"], // Gold
     ["aops", "Keploy"], // Silver
     [], // Bronze
     ["xyz"], // Domain Partner
     ["StockEdge"], // Knowledge Partner
-    ["OSEN"], // Career Partner
+    ["Wyntrix"], // Career Partner
 ];
 
 const tier = ["Platinum", "Diamond", "Gold", "Silver", "Bronze", "Domain Partner", "Knowledge Partner", "Career Partner"];

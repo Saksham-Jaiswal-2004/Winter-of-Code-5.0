@@ -1257,5 +1257,110 @@
       "email": "",
       "twitter": ""
     }
+  },
+  {
+    "name": "CalDAV-WebUI",
+    "developer": "GDSC MUJ",
+    "desc": "Project Details:\nDAV WebUI - Lightweight CalDAV/CardDAV Web Client\nRight now, if someone self-hosts a CalDAV or CardDAV server (like Baïkal), there is almost\nno simple web interface available to view calendars or contacts. The only popular option is\nNextcloud, but Nextcloud is very heavy and comes with a lot of extra features like file\nstorage, apps, database requirements, etc. This is unnecessary for users who only want a\nbasic calendar and contacts web UI.\nThis project aims to provide a lightweight, fast, and minimal Web UI for CalDAV and\nCardDAV servers. It allows users to view and manage their calendars and contacts without\nneeding to deploy a full Nextcloud instance. The focus is purely on calendar and contact\nfunctionality, making it ideal for low-resource servers and privacy-focused self-hosting users.\nCurrently, the WebUI supports Baïkal CalDAV servers and uses the tsdav library to\ncommunicate with the DAV backend. The project is designed in a way that it can later be\nextended to support other CalDAV/CardDAV servers like Radicale and SabreDAV.\n\nFeatures:\n● Frontend UI/UX improvements (calendar views, contact list UI, responsive design)\n● CalDAV integration and event handling\n● CardDAV integration for contacts\n● Performance optimization and efficient data fetching\n● Authentication handling and security improvements\n● Documentation and deployment support (Docker, setup guides)\nStudents contributing to this project will mainly work on extending functionality and improving\nusability. Possible contributions include adding CardDAV support for contacts, implementing\ncalendar event creation/editing, improving the calendar UI (day/week/month views), adding\nmulti-calendar support, and enhancing error handling and user feedback.\nThe project is suitable for students who want hands-on experience with real-world web\nprotocols, frontend development, and open-source collaboration.\n\nPossible Milestones:\n● Understanding CalDAV/CardDAV protocols and setting up a local Baïkal server\n● Implementing missing features like contact support and event creation\n● Improving UI/UX and performance\n● Adding documentation and deployment support\n\nExpected Outcomes:\nStudents will gain experience with SvelteKit and TypeScript, learn how CalDAV/CardDAV\nprotocols work, build a real production-style Web UI, and understand open-source\ndevelopment workflows.",
+    "techstack": ["SvelteKit", "TypeScript", "tsdav", "Tailwind CSS", "shadcn/ui", "CalDAV", "CardDAV", "Node.js"],
+    "github": "https://github.com/GDSC-Manipal-University-Jaipur/dav-webui",
+    "mentors": [
+      {
+        "name": "Abhimanyu Sharma",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/0xn1nja/",
+          "discord": "0xN1nja",
+          "email": "speedcuberabhi@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Yashaswi Bhardwaj",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/yashaswi-bhardwaj-2936b8283/",
+          "discord": "._.yash",
+          "email": "yashbhardwaj7890@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Better Shell History",
+    "developer": "GDSC MUJ",
+    "desc": "Project Details:\nBSH (Better Shell History): A high-performance, git-aware, predictive terminal history tool with a live predictive TUI.\n\nDetailed Project Description Problem Statement: Traditional shell history (e.g., .bash_history) is context-blind, mixes commands across projects and branches, requires reactive searching (Ctrl+R), and becomes polluted by failed commands and noise. This reduces developer productivity when trying to recall prior commands in the correct context.\n\nWhat problem this project solves?\nBSH replaces flat history files with a structured, low-latency local database of commandsand executions, tagging entries with contextual metadata (CWD, Git branch, exit code,duration). It provides a live predictive TUI (inline suggestions similar to IDE IntelliSense) that surfaces context-relevant, frequently used, and successful commands automatically as the user types.\n\nFocus Areas (good student contribution domains)\n● Backend & database: storage schema, query optimization, concurrency, migrations, unit tests for HistoryDB\n● TUI/UI/UX: improvements to the FTXUI-based suggestion overlay (layout, accessibility, keyboard shortcuts)\n● Shell integration: robust Zsh widget handling, cross-shell integration (e.g., support for Bash/Fish), install/uninstall safety\n● Git & context heuristics: branch detection reliability, workspace-scoped suggestions, fuzzy matching\n● Performance: maintain sub-5ms suggestion latency under realistic workloads, profiling and optimization\n● Privacy & security: ensure zero-cloud, local-only behavior and safe handling of sensitive commands\n● DevOps / Packaging: cross-platform packaging (Homebrew formula, Linux packages), CI for builds/tests\n● Documentation & onboarding: clearer setup, troubleshooting, and contribution guides; example workflows\n\nStudent Contribution Guide (Idea Page):\nOverall Students will enhance and extend an already working, high-performance CLI tool. Contributions can range from small documentation fixes and tests to medium-sized features (new TUI behaviors, query improvements) and larger system work (cross-shell support, packaging).\n\nSuggested Onboarding Tasks (first week)\nLocal setup\n● Fork and build the repo following README/install.sh.\n● Run the tool and interact with the Zsh integration to understand runtime behavior.\n● Read the data model and DB access code; run existing queries to see results.\n● Identify a small first issue: a doc typo, adding a unit test, or polishing an error message.\n● Feature ideas and improvements (sized with expected outcomes)\n\nSmall (1-3 days)\n● Add unit tests for database query helpers (expectation: increased test coverage).\n● Improve README examples and create a “Quick Start” video/GIF.\n● Add CI step to run CMake build and run unit tests on push (expected: automated verification).\n\nMedium (1-2 weeks)\n● TUI polish: improve suggestion highlight, better keybinding hints, accessibility tweaks (expected: improved UX).\n● Extend Zsh integration to gracefully handle removal cases (automated uninstallation script improvements).\n● Add fuzzy matching scoring or adjustable weighting for recency vs. frequency (expected: more relevant suggestions).\n\nLarge (2–6 weeks)\n● Cross-shell support (Bash/Fish): design integration scripts, ensure non-intrusive behavior (expected: wider adoption).\n● Packaging: create Homebrew formula and a Debian package or RPM (expected: one-command install on macOS/Linux).\n● Advanced analytics: per-branch command frequency dashboards or CLI subcommands to export usage stats (expected: new insight tools). Milestones (example roadmap for a 6-week student sprint)\n● Week 0: Repo onboarding, environment setup, and pick a starter issue.\n● Week 1–2: Add tests and CI; fix discovered build/test issues.\n● Week 3–4: Implement a medium feature (TUI polish or fuzzy scoring) with documentation and tests.\n● Week 5–6: Packaging or cross-shell work + final PR, user testing, and demo.\n\nContribution expectations and outcomes:\nClean commits, meaningful PR descriptions, and tests for any non-trivial behavior. Document any new features in README or docs/ and add usage examples. For UI or UX changes, include screenshots/GIFs and keyboard mappings. For performance changes, include before/after microbenchmarks and profiling notes. Starter issues to propose (examples to create on GitHub)",
+    "techstack": ["C++", "Shell scripts", "CMake", "SQLite3", "SQLiteCpp", "libgit2", "FTXUI"],
+    "github": "https://github.com/joshikarthikey/bsh",
+    "mentors": [
+      {
+        "name": "Karthikey",
+        "socials": {
+          "linkedin": "www.linkedin.com/in/karthikeyjoshi",
+          "discord": "karthikeyjoshi",
+          "email": "karthikey.cse@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "ConfigX",
+    "developer": "GDSC MUJ",
+    "desc": "Project Details:\nConfigX - A Universal AI-Powered Hierarchical Data Engine\n\nDetailed Project Description:\nProblem Statement:\nModern applications manage a growing number of parameters - configurations, feature flags, runtime state, metadata, and AI memory, which are often scattered across JSON/YAML files, environment variables, hard-coded values, and ad-hoc state stores.\nThese approaches:\n● Lack structure and explainability\n● Break easily as systems scale\n● Are difficult to reason about at runtime\n● Are not designed for dynamic or AI-driven systems ConfigX solves this by treating parameters as a living, hierarchical graph instead of static files.\nIt provides a structured, queryable, explainable engine where parameters can be created, modified, queried, and persisted dynamically - during runtime.\n\nWhat Problem Does This Project Solve?\n● Eliminates fragile, file-centric configuration management\n● Unifies configuration, runtime state, and metadata\n● Enables reasoning about why a value exists, not just what it is. Making debugging easier for developers\n● Provides persistence, recovery, and consistency guarantees\n● Serves as a parameter database for applications and AI systems\n\nFocus Areas\n● Language design (ConfigXQL)\n● Parser & interpreter development\n● Hierarchical data modeling\n● Persistence systems (WAL, snapshots)\n● Built-in AI-feature bundle\n● CLI tooling and developer experience\n● Performance optimization\n● Extensibility for future language bindings\n● Documentation and examples\n\nStudent Contribution Guide:\nStudents contributing to ConfigX will work on real systems-level engineering problems, similar to databases and language runtimes.\n\nPossible Contribution Areas:\n● Extending ConfigXQL with new operations (batching, filters, functions)\n● Improving grammar and error reporting\n● Enhancing persistence (compaction, incremental snapshots)\n● Building advanced CLI features (interactive REPL, diff views)\n● Adding visualization tools for parameter graphs\n● Writing examples and real-world use cases\n● Performance benchmarking and optimization\n● Designing APIs for future non-Python bindings\n● Improving documentation and onboarding guides\n\nExpected Outcomes\n● Production-quality open-source contributions\n● Hands-on experience with language runtimes and storage engines\n● Understanding of WAL, snapshots, interpreters, and DSLs\n● Exposure to system design beyond CRUD applications\n● Students develop an understanding of low-level language behaviour as well as database design and operation through practical, on-the-go learning.",
+    "techstack": ["Python","Lark","Typer","Rich","prompt-toolkit","Custom AST","Interpreter","Persistence Engine (WAL + Snapshots)","JSON Storage","Binary Snapshots","Write-Ahead Logs","PyPI","GitHub","Python-based Interactive CLI"],
+    "github": "https://github.com/GDSC-Manipal-University-Jaipur/ProjectConfigX",
+    "mentors": [
+      {
+        "name": "Aditya Gaur",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/iamadityagaur",
+          "discord": "xdit.x",
+          "email": "adityagaur.home@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Storage Manager",
+    "developer": "GDSC MUJ",
+    "desc": "\nDetailed Project Description:\nProblem Statement:\nOn Linux systems, the operating system kernel does not reliably prevent users from initiating large downloads or writes when the disk storage is critically low. This often leads to disk saturation, system performance degradation, and, in severe cases, the sudden crashing or freezing of the desktop environment due to file system deadlock. The user receives no proactive warning.\nStorage manager solves this by intercepting download requests in the browser and communicating with a lightweight local agent to verify sufficient disk space before the download is allowed to begin, preventing system-level failures and protecting data integrity.\n\nFocus Areas\nThis project is inherently multi-disciplinary, with key focuses on: Browser Extension Development (Frontend Logic): Download interception, UI/UX for warnings and confirmations, dynamic space display. Native Messaging Host Development (Backend Logic): Linux system programming, secure I/O communication, and binary packaging. DevOps/Deployment: Creating robust, cross-browser, and distribution-agnostic installation scripts for the native host. Performance Optimization: Ensuring the host check is fast and non-blocking\n\nStudent Contribution guide\n1. Cross-System Compatibility\nGoal: Make the Storage manager host work effortlessly on all major systems and browsers.\nTask: Port the existing Python Native Host and create installation scripts for Windows and macOS.\nTask: Ensure the extension works reliably on Chrome, Firefox, and Edge.\nOutcome: A single, tested installer package that achieves cross-OS compatibility.\n\n2. Multi-Download Management (Resource Locking)\nGoal: Prevent system crashes during concurrent downloads by reserving necessary disk space.\nOutcome: The system correctly blocks new downloads if the reserved space for ongoing transfers is too large.\n\n3. Predictive Size & Warning System\nGoal: Move beyond basic space checks to anticipate future problems, especially for dynamic file sizes.\nTask: Develop a Fallback Mode for downloads with unknown sizes, implementing a mandatory free-space buffer\nTask: Integrate system I/O monitoring into the Native Host to measure the real-time disk write speed.\nOutcome: The warning UI displays an 'Estimated Time to Full' based on current usage, giving users a chance to stop high-speed writes before saturation.",
+    "techstack": ["JavaScript","HTML","CSS","Python 3","Flask","PyInstaller","Linux APIs"],
+    "github": "https://github.com/GDSC-Manipal-University-Jaipur/storage-manager",
+    "mentors": [
+      {
+        "name": "Prayash Pratim Baruah",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/prayash-baruah-ba8a14277",
+          "discord": "zrefuj",
+          "email": "prayashpratimbaruah@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
   }
 ]

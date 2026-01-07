@@ -96,14 +96,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
         })}
       </div>
       <div
-        className="absolute bottom-[0.75%] left-[0.75%] w-[48%] h-[16%] p-[2.5%] font-chakra text-scale-30-2 text-center text-brand text-nowrap overflow-hidden hover:scale-110 duration-700"
+        className="absolute bottom-[0.75%] left-[0.75%] w-[48%] h-[16%] p-[2.5%] font-chakra text-scale-30-2 text-center text-brand text-nowrap overflow-hidden hover:scale-110 duration-700 cursor-pointer"
         onClick={openModal}
       >
         Know More
       </div>
       <a
         href={project.github}
-        className="absolute bottom-[0.75%] left-[51.25%] w-[48%] h-[16%] p-[2.5%] font-chakra text-scale-30-2 text-center text-brand text-nowrap overflow-hidden hover:scale-110 duration-700"
+        className="absolute bottom-[0.75%] left-[51.25%] w-[48%] h-[16%] p-[2.5%] font-chakra text-scale-30-2 text-center text-brand text-nowrap overflow-hidden hover:scale-110 duration-700 cursor-pointer"
         rel="noopener noreferrer"
         target="_blank"
       >

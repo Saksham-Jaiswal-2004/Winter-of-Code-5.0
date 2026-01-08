@@ -313,14 +313,16 @@ const OrgShowcase = () => {
                         <div className="relative flex h-full w-full items-center justify-center">
                             <div className="absolute inset-4 rounded-[28px] bg-gradient-to-br from-white/10 via-white/5 to-transparent blur-2xl" />
                             <div className="relative overflow-hidden p-4 shadow-[0_18px_60px_-35px_rgba(0,0,0,0.7)]">
-                                <Image className="backdrop-blur h-full w-[250px] object-contain" src={asset1} alt="" />
+                                <Image className="backdrop-blur h-full w-[250px] object-contain relative" src={asset1} alt="" />
+                                <div className='absolute left-0 bottom-0 flex justify-center items-center w-full h-full'>
                                 <Image
                                     src={org.heroImage}
                                     alt={org.name}
                                     width={920}
                                     height={620}
-                                    className="absolute left-[10%] bottom-[12%] w-[80%] h-auto"
+                                    className="w-[80%] h-auto"
                                 />
+                                </div>
                             </div>
                         </div>
                     </div>

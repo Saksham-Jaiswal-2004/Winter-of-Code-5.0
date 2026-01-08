@@ -39,6 +39,7 @@ type Org = {
 };
 
 export const orgs: Record<string, Org> = {
+  // Openprinting
   Openprinting: {
     name: "Open Printing",
     tagline: "",
@@ -296,6 +297,12 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+  // OWASP
   owasp: {
     name: "Owasp",
     tagline: "Building inclusive tools for global collaboration.",
@@ -409,6 +416,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // QC Devs
   qcdevs: {
     name: "QC Devs",
     tagline: "",
@@ -536,6 +550,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // MIXXX
   mixxx: {
     name: "MIXXX",
     tagline: "",
@@ -640,6 +661,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // Vacanza
   vacanza: {
     name: "Open World Holidays Framework",
     tagline: "At Vacanza, we strive to make global holiday data universally accessible and localized for every community and connect the world through data.",
@@ -714,17 +742,23 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // OpsTree Global
   opstree: {
     name: "OpsTree Global",
-    tagline: "Building inclusive tools for global collaboration.",
-    description:
-      "Example Open Source Lab is a community-driven organization focused on developer experience, accessibility, and data tooling. We mentor newcomers, ship production-grade libraries, and help contributors grow with thoughtful code reviews.",
-    heroImage: "/past-orgs/OpenPrinting.webp",
-    website: "https://example.org",
-    chat: "https://chat.example.org",
-    repo: "https://github.com/example/example-repo",
+    tagline: "",
+    description: "OpsTree Global Consulting is a Digital Transformation and Platform Engineering partner that empowers technology leaders and teams to achieve impactful, scalable tech outcomes. Our expertise spans across Modernization, Data & AI,Observability & SRE, Cloud & DevSecOps, Security, Quality Engineering, and End-to-End Software Delivery — enabling businesses to accelerate their digital journeys with the right outcomes.",
+    heroImage: "/orgs/OpsTree Global.png",
+    website: "https://opstree.com/",
+    chat: "",
+    repo: "https://github.com/OT-CONTAINER-KIT",
     email: "contact@example.org",
-    focusAreas: ["C", "C++", "JavaScript", "Python"],
+    focusAreas: ["GoLang"],
     stats: [
       { label: "Active Mentors", value: "12" },
       { label: "Contributors", value: "350+" },
@@ -751,82 +785,75 @@ export const orgs: Record<string, Org> = {
     ],
     mentors: [
       {
-        name: "Alex Rivera",
+        name: "Abhishek Dubey",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        discord: "@iamabhishekdubey",
+        email: "abhishek.dubey@opstree.com",
+        linkedin: "https://www.linkedin.com/in/abhishek-dubey-09b43ab6/",
       },
       {
-        name: "Alex Rivera",
+        name: "Shubham Gupta",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        discord: "@shubamgupta6536",
+        email: "iamshubhamgupta200@gmail.com",
+        linkedin: "https://www.linkedin.com/in/shubham-gupta-8b1168244/",
       },
       {
-        name: "Priya Verma",
+        name: "Samyak Jain",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Samir Khan",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        discord: "@samyyaakk",
+        email: "samyak.jain@opstree.com",
+        linkedin: "https://www.linkedin.com/in/samyyaakk",
       },
     ],
     projects: [
       {
-        title: "CLI UX Overhaul",
+        title: "Redis Operator",
         description:
-          "A modern overhaul of our CLI to make complex tasks intuitive and traceable. The goal is to reduce friction for contributors and power users with clearer messaging, step-aware progress, and composable subcommands.",
-        tech: ["TypeScript", "Node.js", "CLI", "Jest"],
+          "",
+        tech: ["GoLang"],
         problemStatement:
-          "Our current CLI provides minimal feedback and lacks a robust subcommand architecture. As workflows scale, users cannot easily see what is happening, retry failed steps, or compose commands safely. This results in confusion, longer onboarding, and lower contributor confidence.",
+          "A golang based redis operator that will make/oversee Redis standalone/cluster/replication/sentinel mode setup on top of the Kubernetes.",
         focusArea:
-          "Developer Experience • Command Design • Tracing • Error Handling",
+          "The focus area will be backend controller development along with performance optimization.",
         contributionGuide:
-          "Start by auditing existing commands and grouping related functionality into subcommands. Propose a progress reporting pattern using spinners/bars and structured logs, then add tracing hooks (timestamps, step IDs). Implement retries and helpful error messages. Add unit/integration tests for the new composition layer and update the README with examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "Backup & Restore CRD • Add a RedisBackup CR to trigger backups (e.g., using BGSAVE, snapshots, or RDB dumps). • Similarly, a RedisRestore CR to restore from snapshot. • Integrate with object storage (S3, GCS) for snapshot uploads. • Automated Certificate Management • Integrate with cert-manager to automate TLS certificates for Redis and Sentinel pods. • Support cert rotation. • Auto-Scaling • Add horizontal scaling logic: based on usage (memory, CPU, keyspace, throughput), operator can scale the number of replicas or shards. • Alternatively, integrate with Kubernetes Horizontal Pod Autoscaler (HPA) or a custom scaler. • Advanced Configuration Customization • Allow users to pass raw Redis config via CRD (configMap or embedded). • Support config version upgrades / migrations (managing rolling restarts when config changes happen).",
+        githubLink: "https://github.com/OT-CONTAINER-KIT/redis-operator",
       },
       {
-        title: "Accessibility Audit Dashboard",
+        title: "K8s Vault Webhook",
         description:
-          "A polished audit dashboard that surfaces accessibility findings across builds, product areas, and time. It empowers teams to catch regressions early and prioritize fixes that matter most.",
-        tech: ["React", "Tailwind", "a11y", "Playwright", "Vitest"],
+          "",
+        tech: ["GoLang"],
         problemStatement:
-          "Multiple teams ship changes without unified visibility into accessibility health. Findings are scattered across tools and CI logs, making it difficult to track regressions, identify ownership, and measure improvements over time. This leads to inconsistent standards and user-impacting issues.",
+          "k8s-vault-webhook is a Kubernetes admission webhook which listen for the events related to Kubernetes resources for injecting secret directly from secret manager to pod, secret, and configmap. The motive of creating this project is to provide a dynamic secret injection to containers/pods running inside Kubernetes from different secret managers for enhanced security.",
         focusArea:
-          "Accessibility • Reporting • CI Integration • Trend Analysis",
+          "The focus should be to stabilize the existing secret manager integrations, along with new feature support for secret manager.",
         contributionGuide:
-          "Integrate automated scanners (axe, pa11y) into CI, normalize results, and store them in a lightweight data layer. Build views for trends, severity, and ownership, with filters for releases and components. Add export/share features and a “how to fix” playbook. Write tests for parsers and core UI states, and ship clear docs for integrating new apps.",
-        githubLink: "https://github.com/example/example-repo",
+          "Support for more secret managers / backends: maybe add support for secret managers not yet supported, or improve existing ones. • Secrets versioning and rotation: introduce versioning of secrets, or periodic re-injection whensecrets change in Vault. • Custom annotations or templating: allow more flexible templating for how secrets should be injected (e.g., naming conventions, path transformations). • RBAC / policy management UI or CRD: build a CRD or UI to manage which service accounts map to which Vault policies, instead of manual policy definitions. • Backup/reconciliation: maintain a reconciliation loop that ensures injected secrets remain up-to-date even after pod restarts, or if secret manager data changes. • Observability: expose metrics from the webhook (such as number of admission requests, failed injections, latency) via Prometheus. • Fault tolerance: handle cases when the secret manager is down, or when the webhook’s certificate expires, more gracefully.",
+        githubLink: "https://github.com/OT-CONTAINER-KIT/k8s-vault-webhook",
       },
       {
-        title: "Data Viz Templates",
+        title: "Logging Operator",
         description:
-          "A collection of well-crafted, accessible chart templates with strong defaults that make data storytelling effortless. Focused on practical patterns and maintainable APIs.",
-        tech: ["D3", "TypeScript", "Storybook", "Testing Library"],
+          "",
+        tech: ["GoLang"],
         problemStatement:
-          "Teams repeatedly reinvent chart components, often missing accessibility and consistency. Without opinionated templates and examples, new contributors struggle to create reliable visuals that communicate clearly.",
-        focusArea: "Data Visualization • Component Libraries • Accessibility",
+          "A golang based operator to create and manage EFK (Elasticsearch, Fluentd, and Kibana) stack on Kubernetes",
+        focusArea: "Development of backend API features to support elasticsearch, fluentd, and kibana integration.",
         contributionGuide:
-          "Define a small template API (line, bar, pie) with sensible defaults, keyboard navigation, and color contrast. Add documentation and Storybook demos showcasing real-world data. Include tests for rendering and accessibility. Encourage contributions via a template RFC and starter examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "Support for Alternative Log Collectors / Forwarders • Add support for Fluent Bit as a daemonset collector + Fluentd / ES / other outputs. (Although some upstream logging operators use Fluent Bit + Fluentd; if not present, this is big.) • Support for Loki as a storage backend (instead of or in addition to Elasticsearch) or other outputs (S3, Kafka, etc.). • Automatic Scaling & Lifecycle Management • Add CR-driven scaling for Elasticsearch nodes (master / data / ingestion) based on resource usage. • Implement lifecycle management of indices: rollover, retention, delete- old-index policies via CRD (or enhance existing index lifecycle CR). • Secure Multi-Tenancy / Namespacing • Build better namespace isolation of logging pipelines: allow CR per namespace, or per team, with RBAC. • Add validation / policy CRs to enforce which namespaces can write to which logging pipeline, or limit ES resources per tenant. • Observability Enhancements • Expose metrics from the operator: reconciliation time, number of CRs, failures, etc., via Prometheus. • Build Grafana dashboards for EFK stack health (ES metrics, Fluentd throughput, Kibana usage).",
+        githubLink: "https://github.com/OT-CONTAINER-KIT/logging-operator",
       },
     ],
   },
+
+
+
+
+
+
+  // PerformanC
   performanc: {
     name: "PerformanC",
     tagline: "Building inclusive tools for global collaboration.",
@@ -940,6 +967,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // Keploy
   keploy: {
     name: "Keploy",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1053,6 +1087,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+  
+
+
+
+
+
+  // Development Society AEC
   devsocaec: {
     name: "Development Society AEC",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1166,6 +1207,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+  
+
+
+
+
+
+  // FOSSIA
   fossia: {
     name: "FOSSIA",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1279,6 +1327,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // OpenSource Chandigarh
   opensourcechandigarh: {
     name: "Open Source Chandigarh",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1392,6 +1447,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // Cooketh Org
   cookethorg: {
     name: "Cooketh Org",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1505,6 +1567,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // PSMRI
   psmri: {
     name: "PSMRI",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1618,6 +1687,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // WallGodds
   wallgodds: {
     name: "WallGodds",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1731,6 +1807,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // Rootsprout
   rootsprout: {
     name: "Rootsprout",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1844,6 +1927,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // Programmer's Paradise Technical Society
   ppts: {
     name: "Programmers' Paradise Technical Society",
     tagline: "Building inclusive tools for global collaboration.",
@@ -1957,6 +2047,13 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // Kornia
   Kornia: {
     name: "Kornia",
     tagline: "Building inclusive tools for global collaboration.",

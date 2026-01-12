@@ -1721,15 +1721,15 @@ export const orgs: Record<string, Org> = {
   // Kornia
   Kornia: {
     name: "Kornia",
-    tagline: "Building inclusive tools for global collaboration.",
+    tagline: "",
     description:
-      "Example Open Source Lab is a community-driven organization focused on developer experience, accessibility, and data tooling. We mentor newcomers, ship production-grade libraries, and help contributors grow with thoughtful code reviews.",
-    heroImage: "/past-orgs/OpenPrinting.webp",
-    website: "https://example.org",
-    chat: "https://chat.example.org",
-    repo: "https://github.com/example/example-repo",
+      "Kornia is a high-performance, differentiable computer vision library for PyTorch. Beyond classic operators, it provides a production-ready ecosystem for State-of-the-Art (SOTA) Vision-Language Models (VLM) and Vision-Language-Action (VLA) models, enabling seamless integration of perception and reasoning for the next generation of AI agents.",
+    heroImage: "/orgs/kornia.png",
+    website: "https://kornia.org/",
+    chat: "",
+    repo: "https://github.com/kornia",
     email: "contact@example.org",
-    focusAreas: ["C", "C++", "JavaScript", "Python"],
+    focusAreas: ["Python", "PyTorch", "Kornia", "Ray", "ONNX Runtime", "TensorRT", "Rust", "Zenoh", "MCAP"],
     stats: [
       { label: "Active Mentors", value: "12" },
       { label: "Contributors", value: "350+" },
@@ -1755,80 +1755,64 @@ export const orgs: Record<string, Org> = {
       },
     ],
     mentors: [
-      {
-        name: "Alex Rivera",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Alex Rivera",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Samir Khan",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
+      // {
+      //   name: "",
+      //   desc: "",
+      //   discord: "",
+      //   email: "",
+      //   linkedin: "",
+      // },
     ],
     projects: [
       {
-        title: "CLI UX Overhaul",
+        title: "High-Performance Augmentation Benchmarking",
         description:
-          "A modern overhaul of our CLI to make complex tasks intuitive and traceable. The goal is to reduce friction for contributors and power users with clearer messaging, step-aware progress, and composable subcommands.",
-        tech: ["TypeScript", "Node.js", "CLI", "Jest"],
+          "",
+        tech: ["Python", "PyTorch"],
         problemStatement:
-          "Our current CLI provides minimal feedback and lacks a robust subcommand architecture. As workflows scale, users cannot easily see what is happening, retry failed steps, or compose commands safely. This results in confusion, longer onboarding, and lower contributor confidence.",
+          "Kornia is architected for speed, but we currently lack a robust, automated method to track performance regressions over time. We need to rigorously benchmark our augmentation pipeline against competing libraries (like Albumentations or torchvision) to ensure we maintain our competitive edge.",
         focusArea:
-          "Developer Experience • Command Design • Tracing • Error Handling",
+          "Performance Optimization, DevOps/CI, Data Visualization.",
         contributionGuide:
-          "Start by auditing existing commands and grouping related functionality into subcommands. Propose a progress reporting pattern using spinners/bars and structured logs, then add tracing hooks (timestamps, step IDs). Implement retries and helpful error messages. Add unit/integration tests for the new composition layer and update the README with examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "• Optimize Performance: Refine kornia.augmentation logic to achieve the highest possible speed. • Create Benchmarks: Develop a standardized benchmarking suite specifically for Kornia augmentations. • Automate Tracking: Integrate these benchmarks into our CI/CD pipelines to automatically detect performance drops in new Pull Requests. • Analyze Throughput: Conduct comprehensive comparisons of throughput (images/second) across different hardware (CPU vs. GPU) and modes (single image vs. batch).",
+        githubLink: "https://github.com/kornia",
       },
       {
-        title: "Accessibility Audit Dashboard",
+        title: "Data and Fine-Tuning API + Model Expansion for VLMs",
         description:
-          "A polished audit dashboard that surfaces accessibility findings across builds, product areas, and time. It empowers teams to catch regressions early and prioritize fixes that matter most.",
-        tech: ["React", "Tailwind", "a11y", "Playwright", "Vitest"],
+          "",
+        tech: ["PyTorch", "Kornia", "Ray"],
         problemStatement:
-          "Multiple teams ship changes without unified visibility into accessibility health. Findings are scattered across tools and CI logs, making it difficult to track regressions, identify ownership, and measure improvements over time. This leads to inconsistent standards and user-impacting issues.",
+          "Vision-Language Models (VLMs) represent the current frontier of AI. To stay relevant, Kornia requires a streamlined, native API to fine-tune these models on niche datasets. Additionally, the library needs to be expanded to support the latest VLM architectures.",
         focusArea:
-          "Accessibility • Reporting • CI Integration • Trend Analysis",
+          "Backend API Development, Model Modeling, Deep Learning.",
         contributionGuide:
-          "Integrate automated scanners (axe, pa11y) into CI, normalize results, and store them in a lightweight data layer. Build views for trends, severity, and ownership, with filters for releases and components. Add export/share features and a “how to fix” playbook. Write tests for parsers and core UI states, and ship clear docs for integrating new apps.",
-        githubLink: "https://github.com/example/example-repo",
+          "• Build the API: Implement an experimental, 'Kornia-native' kornia.data and fine-tuning API (kornia.train) designed specifically for VLMs. • Expand Model Support: Integrate 2-3 modern VLM architectures into the Kornia ecosystem and validate them via fine-tuning. • Demonstrate Usage: Create high-quality example notebooks for downstream tasks such as Visual Question Answering (VQA) or Image Captioning.",
+        githubLink: "https://github.com/kornia",
       },
       {
-        title: "Data Viz Templates",
+        title: "Universal Compatibility: ONNX Export & Torch.compile",
         description:
-          "A collection of well-crafted, accessible chart templates with strong defaults that make data storytelling effortless. Focused on practical patterns and maintainable APIs.",
-        tech: ["D3", "TypeScript", "Storybook", "Testing Library"],
+          "",
+        tech: ["Python", "PyTorch", "ONNX Runtime", "TensorRT"],
         problemStatement:
-          "Teams repeatedly reinvent chart components, often missing accessibility and consistency. Without opinionated templates and examples, new contributors struggle to create reliable visuals that communicate clearly.",
-        focusArea: "Data Visualization • Component Libraries • Accessibility",
+          "For production deployment, Kornia operators must be easily exportable. This project ensures the entire codebase is compatible with torch.compile (full graph mode) and exports cleanly to ONNX without relying on inefficient 'fallback' operations.",
+        focusArea: "Production Engineering, Graph Compilers, Performance Optimization.",
         contributionGuide:
-          "Define a small template API (line, bar, pie) with sensible defaults, keyboard navigation, and color contrast. Add documentation and Storybook demos showcasing real-world data. Include tests for rendering and accessibility. Encourage contributions via a template RFC and starter examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "• Audit Codebase: Review current modules to identify compatibility gaps with torch.compile. • Refactor Logic: Rewrite non-traceable code (such as dynamic branching) to be symbolic-friendly. • Verify Outputs: Establish a strict verification suite to ensure ONNX exports match PyTorch outputs within a precise epsilon.",
+        githubLink: "https://github.com/kornia",
+      },
+      {
+        title: "Robot Learning (Advanced)",
+        description:
+          "",
+        tech: ["PyTorch", "Kornia", "Rust", "Zenoh", "MCAP"],
+        problemStatement:
+          "We aim to extend Kornia's capabilities into the robotics domain, focusing on differentiable rendering, spatial transformations, and policy learning. This requires high-level qualifications in robotics integration. Team must have a robot (with mobile platform)",
+        focusArea: "Robotics, Imitation Learning.",
+        contributionGuide:
+          "• Integrate Platform: expand bubbaloop to connect a specific robot (hardware, depending on availability) to a new robot learning framework, create datasets, and train a VLA. https://github.com/kornia/bubbaloop • Structure Data: Iterate on and improve the data structure used for robot learning datasets to ensure scalability and ease of use.",
+        githubLink: "https://github.com/kornia",
       },
     ],
   },

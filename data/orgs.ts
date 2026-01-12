@@ -305,15 +305,15 @@ export const orgs: Record<string, Org> = {
   // OWASP
   owasp: {
     name: "Owasp",
-    tagline: "Building inclusive tools for global collaboration.",
+    tagline: "",
     description:
-      "Example Open Source Lab is a community-driven organization focused on developer experience, accessibility, and data tooling. We mentor newcomers, ship production-grade libraries, and help contributors grow with thoughtful code reviews.",
+      "The Open Worldwide Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of software",
     heroImage: "/orgs/OWASP Nest.png",
-    website: "https://example.org",
-    chat: "https://chat.example.org",
-    repo: "https://github.com/example/example-repo",
-    email: "contact@example.org",
-    focusAreas: ["C", "C++", "JavaScript", "Python"],
+    website: "https://owasp.org/",
+    chat: "",
+    repo: "https://github.com/OWASP/Nest",
+    email: "",
+    focusAreas: ["Python", "Django", "TypeScript", "React", "Next.js", "TailwindCSS", "GraphQL", "Docker", "AWS. Comprehensive test coverage and clean code culture: Pytest, Jest, PlayWright, Snyk, SonarQube, CodeQL, CodeRabbit."],
     stats: [
       { label: "Active Mentors", value: "12" },
       { label: "Contributors", value: "350+" },
@@ -321,11 +321,11 @@ export const orgs: Record<string, Org> = {
       { label: "Good First Issues", value: "18" },
     ],
     contacts: [
-      { label: "Website", value: "example.org", href: "https://example.org" },
+      { label: "Website", value: "owasp.org", href: "https://owasp.org/"},
       {
         label: "Community Chat",
-        value: "chat.example.org",
-        href: "https://chat.example.org",
+        value: "",
+        href: "",
       },
       {
         label: "Email",
@@ -334,85 +334,39 @@ export const orgs: Record<string, Org> = {
       },
       {
         label: "GitHub",
-        value: "github.com/example",
-        href: "https://github.com/example",
+        value: "github.com/OWASp",
+        href: "https://github.com/OWASP/Nest",
       },
     ],
     mentors: [
       {
-        name: "Alex Rivera",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        name: "Arkadii Yakovets",
+        desc: "Cybersecurity lead (OWASP Nest, OWASP Nettacker), open source contributor, home automation enthusiast. A perfectionist with deadlines. CCSP · CISSP · CSSLP.",
+        discord: "@arkid15r",
+        email: "arkadii.yakovets@owasp.org",
+        linkedin: "https://www.linkedin.com/in/arkid15r/",
       },
       {
-        name: "Alex Rivera",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Samir Khan",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        name: "Kateryna Golovanova",
+        desc: "Software Engineer at Skill Struck. CC.",
+        discord: "",
+        email: "kateryna.golovanova@owasp.org",
+        linkedin: "https://www.linkedin.com/in/kate-golovanova/",
       },
     ],
     projects: [
       {
-        title: "CLI UX Overhaul",
+        title: "OWASP Nest",
         description:
-          "A modern overhaul of our CLI to make complex tasks intuitive and traceable. The goal is to reduce friction for contributors and power users with clearer messaging, step-aware progress, and composable subcommands.",
-        tech: ["TypeScript", "Node.js", "CLI", "Jest"],
+          "Your gateway to OWASP. Discover, engage, and help shape the future!",
+        tech: ["Python", "Django", "TypeScript", "React", "Next.js", "TailwindCSS", "GraphQL", "Docker", "AWS. Comprehensive test coverage and clean code culture: Pytest, Jest, PlayWright, Snyk, SonarQube, CodeQL, CodeRabbit."],
         problemStatement:
-          "Our current CLI provides minimal feedback and lacks a robust subcommand architecture. As workflows scale, users cannot easily see what is happening, retry failed steps, or compose commands safely. This results in confusion, longer onboarding, and lower contributor confidence.",
+          "OWASP Nest is a comprehensive platform designed to enhance collaboration and contribution within the OWASP community. The application serves as a central hub for exploring OWASP projects and ways to contribute to them, empowering contributors to find opportunities that align with their interests and expertise.",
         focusArea:
-          "Developer Experience • Command Design • Tracing • Error Handling",
+          "Backend (Python, Django, Ninja, Strawberry) • Frontend (TypeScript, Next.js, React, TailwindCSS) • NestBot (Slack API, Python, OpenAI API)",
         contributionGuide:
-          "Start by auditing existing commands and grouping related functionality into subcommands. Propose a progress reporting pattern using spinners/bars and structured logs, then add tracing hooks (timestamps, step IDs). Implement retries and helpful error messages. Add unit/integration tests for the new composition layer and update the README with examples.",
-        githubLink: "https://github.com/example/example-repo",
-      },
-      {
-        title: "Accessibility Audit Dashboard",
-        description:
-          "A polished audit dashboard that surfaces accessibility findings across builds, product areas, and time. It empowers teams to catch regressions early and prioritize fixes that matter most.",
-        tech: ["React", "Tailwind", "a11y", "Playwright", "Vitest"],
-        problemStatement:
-          "Multiple teams ship changes without unified visibility into accessibility health. Findings are scattered across tools and CI logs, making it difficult to track regressions, identify ownership, and measure improvements over time. This leads to inconsistent standards and user-impacting issues.",
-        focusArea:
-          "Accessibility • Reporting • CI Integration • Trend Analysis",
-        contributionGuide:
-          "Integrate automated scanners (axe, pa11y) into CI, normalize results, and store them in a lightweight data layer. Build views for trends, severity, and ownership, with filters for releases and components. Add export/share features and a “how to fix” playbook. Write tests for parsers and core UI states, and ship clear docs for integrating new apps.",
-        githubLink: "https://github.com/example/example-repo",
-      },
-      {
-        title: "Data Viz Templates",
-        description:
-          "A collection of well-crafted, accessible chart templates with strong defaults that make data storytelling effortless. Focused on practical patterns and maintainable APIs.",
-        tech: ["D3", "TypeScript", "Storybook", "Testing Library"],
-        problemStatement:
-          "Teams repeatedly reinvent chart components, often missing accessibility and consistency. Without opinionated templates and examples, new contributors struggle to create reliable visuals that communicate clearly.",
-        focusArea: "Data Visualization • Component Libraries • Accessibility",
-        contributionGuide:
-          "Define a small template API (line, bar, pie) with sensible defaults, keyboard navigation, and color contrast. Add documentation and Storybook demos showcasing real-world data. Include tests for rendering and accessibility. Encourage contributions via a template RFC and starter examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "Any open and available for work issues from https://github.com/OWASP/Nest/issues We’re accepting new issues too (subject to approval). If accepted we’ll add a WoC 5.0 label for easy search and will help students to come up with meaningful and realistic projects/milestones. ",
+        githubLink: "https://github.com/OWASP/Nest",
       },
     ],
   },
@@ -1419,15 +1373,15 @@ export const orgs: Record<string, Org> = {
   // PSMRI
   psmri: {
     name: "PSMRI",
-    tagline: "Building inclusive tools for global collaboration.",
+    tagline: "",
     description:
-      "Example Open Source Lab is a community-driven organization focused on developer experience, accessibility, and data tooling. We mentor newcomers, ship production-grade libraries, and help contributors grow with thoughtful code reviews.",
-    heroImage: "/past-orgs/OpenPrinting.webp",
-    website: "https://example.org",
-    chat: "https://chat.example.org",
-    repo: "https://github.com/example/example-repo",
-    email: "contact@example.org",
-    focusAreas: ["C", "C++", "JavaScript", "Python"],
+      "At Piramal Swasthya Management and Research Institute (PSMRI), we are committed to leveraging technology and systems thinking to improve public health outcomes and transform lives across India. Our initiatives address systemic challenges in healthcare delivery by fostering digital adoption, decentralization, and evidence-based governance. PSMRI is part of the Piramal Foundation, a purpose-driven organization that has touched over 100 million lives in 27 states over the past 17 years. Focused on creating sustainable impact, we address critical issues in healthcare, education, sustainability, and gender inclusion. Our mission is to build भारत through leadership, digitization, and inclusion, led by women and youth.",
+    heroImage: "/orgs/PSMRI.png",
+    website: "https://www.piramalswasthya.org/",
+    chat: "",
+    repo: "https://github.com/PSMRI/AMRIT/",
+    email: "amrit@piramalswasthya.org",
+    focusAreas: ["Java", "Kotlin", "TypeScript", "Python", "JavaScript"],
     stats: [
       { label: "Active Mentors", value: "12" },
       { label: "Contributors", value: "350+" },
@@ -1435,98 +1389,45 @@ export const orgs: Record<string, Org> = {
       { label: "Good First Issues", value: "18" },
     ],
     contacts: [
-      { label: "Website", value: "example.org", href: "https://example.org" },
+      { label: "Website", value: "psmri.org", href: "https://www.piramalswasthya.org/" },
       {
         label: "Community Chat",
         value: "chat.example.org",
-        href: "https://chat.example.org",
+        href: "",
       },
       {
         label: "Email",
-        value: "contact@example.org",
-        href: "mailto:contact@example.org",
+        value: "amrit@piramalswasthya.org",
+        href: "mailto:amrit@piramalswasthya.org",
       },
       {
         label: "GitHub",
-        value: "github.com/example",
-        href: "https://github.com/example",
+        value: "github.com/PSMRI/AMRIT",
+        href: "https://github.com/PSMRI/AMRIT/",
       },
     ],
     mentors: [
       {
-        name: "Alex Rivera",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Alex Rivera",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Samir Khan",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        name: "Dr. Mithun James",
+        desc: "",
+        discord: "",
+        email: "mithun.james@piramalswasthya.org",
+        linkedin: "",
       },
     ],
     projects: [
       {
-        title: "CLI UX Overhaul",
+        title: "AMRIT",
         description:
-          "A modern overhaul of our CLI to make complex tasks intuitive and traceable. The goal is to reduce friction for contributors and power users with clearer messaging, step-aware progress, and composable subcommands.",
+          "AMRIT is our open-source EHR platform.",
         tech: ["TypeScript", "Node.js", "CLI", "Jest"],
         problemStatement:
-          "Our current CLI provides minimal feedback and lacks a robust subcommand architecture. As workflows scale, users cannot easily see what is happening, retry failed steps, or compose commands safely. This results in confusion, longer onboarding, and lower contributor confidence.",
+          "AMRIT is an EHR platform. Students will get exposure to healthcare domain and technology that powers grass root level operations in different parts of India. We will file issues under the GitHub issues section. All issues will be posted here:  https://github.com/PSMRI/AMRIT/issues",
         focusArea:
-          "Developer Experience • Command Design • Tracing • Error Handling",
+          "",
         contributionGuide:
-          "Start by auditing existing commands and grouping related functionality into subcommands. Propose a progress reporting pattern using spinners/bars and structured logs, then add tracing hooks (timestamps, step IDs). Implement retries and helpful error messages. Add unit/integration tests for the new composition layer and update the README with examples.",
-        githubLink: "https://github.com/example/example-repo",
-      },
-      {
-        title: "Accessibility Audit Dashboard",
-        description:
-          "A polished audit dashboard that surfaces accessibility findings across builds, product areas, and time. It empowers teams to catch regressions early and prioritize fixes that matter most.",
-        tech: ["React", "Tailwind", "a11y", "Playwright", "Vitest"],
-        problemStatement:
-          "Multiple teams ship changes without unified visibility into accessibility health. Findings are scattered across tools and CI logs, making it difficult to track regressions, identify ownership, and measure improvements over time. This leads to inconsistent standards and user-impacting issues.",
-        focusArea:
-          "Accessibility • Reporting • CI Integration • Trend Analysis",
-        contributionGuide:
-          "Integrate automated scanners (axe, pa11y) into CI, normalize results, and store them in a lightweight data layer. Build views for trends, severity, and ownership, with filters for releases and components. Add export/share features and a “how to fix” playbook. Write tests for parsers and core UI states, and ship clear docs for integrating new apps.",
-        githubLink: "https://github.com/example/example-repo",
-      },
-      {
-        title: "Data Viz Templates",
-        description:
-          "A collection of well-crafted, accessible chart templates with strong defaults that make data storytelling effortless. Focused on practical patterns and maintainable APIs.",
-        tech: ["D3", "TypeScript", "Storybook", "Testing Library"],
-        problemStatement:
-          "Teams repeatedly reinvent chart components, often missing accessibility and consistency. Without opinionated templates and examples, new contributors struggle to create reliable visuals that communicate clearly.",
-        focusArea: "Data Visualization • Component Libraries • Accessibility",
-        contributionGuide:
-          "Define a small template API (line, bar, pie) with sensible defaults, keyboard navigation, and color contrast. Add documentation and Storybook demos showcasing real-world data. Include tests for rendering and accessibility. Encourage contributions via a template RFC and starter examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "",
+        githubLink: "https://github.com/PSMRI/AMRIT",
       },
     ],
   },
@@ -1739,15 +1640,15 @@ export const orgs: Record<string, Org> = {
   // Programmer's Paradise Technical Society
   ppts: {
     name: "Programmers' Paradise Technical Society",
-    tagline: "Building inclusive tools for global collaboration.",
+    tagline: "",
     description:
-      "Example Open Source Lab is a community-driven organization focused on developer experience, accessibility, and data tooling. We mentor newcomers, ship production-grade libraries, and help contributors grow with thoughtful code reviews.",
-    heroImage: "/past-orgs/OpenPrinting.webp",
-    website: "https://example.org",
-    chat: "https://chat.example.org",
-    repo: "https://github.com/example/example-repo",
-    email: "contact@example.org",
-    focusAreas: ["C", "C++", "JavaScript", "Python"],
+      "Programmers' Paradise has evolved into a full-fledged Technical Society. We are a vibrant and inclusive community dedicated to fostering innovation, technical excellence, and collaborative learning among students. Whether you're diving into programming for the first time or you're a seasoned developer, there's something here for everyone. Our mission is to empower students through technical skill development, peer collaboration, and hands-on experience. We aim to provide a supportive platform for learning, creating, and growing in diverse areas of technology through events, workshops, and projects.",
+    heroImage: "/orgs/Programmers' Paradise Technical Society.png",
+    website: "https://www.programmers-paradise.tech/",
+    chat: "",
+    repo: "https://github.com/Programmers-Paradise",
+    email: "programmers.paradise.utd@csvtu.ac.in",
+    focusAreas: ["TypeScript", "HTML", "JavaScript", "Python"],
     stats: [
       { label: "Active Mentors", value: "12" },
       { label: "Contributors", value: "350+" },
@@ -1755,99 +1656,60 @@ export const orgs: Record<string, Org> = {
       { label: "Good First Issues", value: "18" },
     ],
     contacts: [
-      { label: "Website", value: "example.org", href: "https://example.org" },
+      { label: "Website", value: "ppts.org", href: "https://www.programmers-paradise.tech/" },
       {
         label: "Community Chat",
         value: "chat.example.org",
-        href: "https://chat.example.org",
+        href: "",
       },
       {
         label: "Email",
-        value: "contact@example.org",
-        href: "mailto:contact@example.org",
+        value: "programmers.paradise.utd@csvtu.ac.in",
+        href: "mailto:programmers.paradise.utd@csvtu.ac.in",
       },
       {
         label: "GitHub",
-        value: "github.com/example",
-        href: "https://github.com/example",
+        value: "github.com/Programmers-Paradise",
+        href: "https://github.com/Programmers-Paradise",
       },
     ],
     mentors: [
       {
-        name: "Alex Rivera",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Alex Rivera",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Priya Verma",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Samir Khan",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        name: "Aksh Agrawal",
+        desc: "",
+        discord: "@hextrovert_10",
+        email: "aksh.300012824005@csvtu.ac.in",
+        linkedin: "www.linkedin.com/in/akshagr10",
       },
     ],
     projects: [
       {
-        title: "CLI UX Overhaul",
+        title: "Ak-dskit (DsKit) - Unified Data Science & ML Toolkit",
         description:
-          "A modern overhaul of our CLI to make complex tasks intuitive and traceable. The goal is to reduce friction for contributors and power users with clearer messaging, step-aware progress, and composable subcommands.",
-        tech: ["TypeScript", "Node.js", "CLI", "Jest"],
+          "",
+        tech: ["Python", "NumPy", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn", "Plotly", "SHAP", "XGBoost", "LightGBM", "CatBoost", "Optuna", "Hyperopt", "PyPI"],
         problemStatement:
-          "Our current CLI provides minimal feedback and lacks a robust subcommand architecture. As workflows scale, users cannot easily see what is happening, retry failed steps, or compose commands safely. This results in confusion, longer onboarding, and lower contributor confidence.",
+          "Data scientists and ML engineers often spend 60-80% of their time on repetitive tasks like data cleaning, EDA, preprocessing, and basic modeling. There's a need for a unified, production-ready toolkit that wraps complex operations into simple 1-line commands while maintaining flexibility and comprehensive feature coverage. Ak-dskit solves this by providing 221+ wrapper functions that streamline the entire ML pipeline - from data loading to model deployment - making data science accessible, efficient, and production-ready. What Students Will Work On: • Beginner Level: 1. Writing documentation and tutorials 2. Creating example notebooks 3. Adding unit tests for existing functions 4. Fixing bugs and improving error handling 5. Enhancing function docstrings • Intermediate Level: 1. Implementing new preprocessing methods 2. Adding visualization functions 3. Creating data validation utilities 4. Building feature engineering tools 5. Developing data profiling capabilities • Advanced Level: 1. Implementing advanced AutoML features 2. Building custom ML algorithms 3. Creating model deployment pipelines 4. Developing distributed computing support 5. Implementing neural network wrappers Expected Outcomes:  1. At least 10-15 new utility functions added to the library 2. Comprehensive test coverage (target: >80%)  3. 5+ tutorial notebooks demonstrating real-world use cases 4. Improved documentation with API reference updates 5. Performance optimization for core functions 6. New features like automated report generation, data drift detection, or A/B testing utilities",
         focusArea:
-          "Developer Experience • Command Design • Tracing • Error Handling",
+          "Extending data cleaning and preprocessing capabilitie • Adding new feature engineering methods • Improving automated EDA functions • Enhancing model validation utilities • Visualization & Explainability • Creating new interactive visualization functions • Improving SHAP integration for model explainability • Building custom plotting utilities for specific use cases • Developing hyperplane visualization for advanced algorithms • AutoML & Optimization • Expanding hyperparameter tuning capabilities • Adding support for new ML algorithms • Implementing ensemble methods • Building automated feature selection tools • Documentation & Testing • Writing comprehensive tutorials and guides • Creating Jupyter notebook examples • Developing unit tests for existing functions • Improving API documentation • DevOps & Deployment • Setting up CI/CD pipelines • Creating Docker containers for deployment • Building model serving utilities • Implementing monitoring and logging features • Database & Time Series • Enhancing database utility functions • Expanding time series analysis capabilities • Adding support for new data sources • Building data versioning tools • Student Contribution Guide (Idea Page)",
         contributionGuide:
-          "Start by auditing existing commands and grouping related functionality into subcommands. Propose a progress reporting pattern using spinners/bars and structured logs, then add tracing hooks (timestamps, step IDs). Implement retries and helpful error messages. Add unit/integration tests for the new composition layer and update the README with examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "",
+        githubLink: "https://github.com/Programmers-Paradise/DsKit",
       },
       {
-        title: "Accessibility Audit Dashboard",
+        title: "Annie",
         description:
-          "A polished audit dashboard that surfaces accessibility findings across builds, product areas, and time. It empowers teams to catch regressions early and prioritize fixes that matter most.",
-        tech: ["React", "Tailwind", "a11y", "Playwright", "Vitest"],
+          "",
+        tech: ["Rust", "PyO3", "Python", "ML"],
         problemStatement:
-          "Multiple teams ship changes without unified visibility into accessibility health. Findings are scattered across tools and CI logs, making it difficult to track regressions, identify ownership, and measure improvements over time. This leads to inconsistent standards and user-impacting issues.",
+          "A lightning-fast, Rust-powered Approximate Nearest Neighbour library for Python with multiple backends, thread-safety, and GPU acceleration. Core Features: • Multiple Backends:  ◦ Brute-force (exact) with SIMD acceleration    ◦ HNSW (approximate) for large-scale datasets • Multiple Distance Metrics: Euclidean, Cosine, Manhattan, Chebyshev • Batch Queries for efficient processing • Thread-safe indexes with concurrent access • Zero-copy NumPy integration • On-disk Persistence with serialization • Filtered Search with custom Python callbacks • GPU Acceleration for brute-force calculations • Multi-platform support (Linux, Windows, macOS) • Automated CI with performance tracking",
         focusArea:
-          "Accessibility • Reporting • CI Integration • Trend Analysis",
+          "Student need to work on 'issues' present in the repository.",
         contributionGuide:
-          "Integrate automated scanners (axe, pa11y) into CI, normalize results, and store them in a lightweight data layer. Build views for trends, severity, and ownership, with filters for releases and components. Add export/share features and a “how to fix” playbook. Write tests for parsers and core UI states, and ship clear docs for integrating new apps.",
-        githubLink: "https://github.com/example/example-repo",
+          "",
+        githubLink: "https://github.com/Programmers-Paradise/Annie",
       },
-      {
-        title: "Data Viz Templates",
-        description:
-          "A collection of well-crafted, accessible chart templates with strong defaults that make data storytelling effortless. Focused on practical patterns and maintainable APIs.",
-        tech: ["D3", "TypeScript", "Storybook", "Testing Library"],
-        problemStatement:
-          "Teams repeatedly reinvent chart components, often missing accessibility and consistency. Without opinionated templates and examples, new contributors struggle to create reliable visuals that communicate clearly.",
-        focusArea: "Data Visualization • Component Libraries • Accessibility",
-        contributionGuide:
-          "Define a small template API (line, bar, pie) with sensible defaults, keyboard navigation, and color contrast. Add documentation and Storybook demos showcasing real-world data. Include tests for rendering and accessibility. Encourage contributions via a template RFC and starter examples.",
-        githubLink: "https://github.com/example/example-repo",
-      },
+
     ],
   },
 

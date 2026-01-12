@@ -1362,5 +1362,101 @@
       "email": "",
       "twitter": ""
     }
+  },
+  {
+    "name": "High-Performance Augmentation Benchmarking",
+    "developer": "Kornia",
+    "desc": "Problem Statement: \nKornia is architected for speed, but we currently lack a robust, automated method to track performance regressions over time. We need to rigorously benchmark our augmentation pipeline against competing libraries (like Albumentations or torchvision) to ensure we maintain our competitive edge.\n\nFocus Areas: \nPerformance Optimization, DevOps/CI, Data Visualization.\n\nStudent Contribution:\nOptimize Performance: Refine kornia.augmentation logic to achieve the highest possible speed.\nCreate Benchmarks: Develop a standardized benchmarking suite specifically for Kornia augmentations.\nAutomate Tracking: Integrate these benchmarks into our CI/CD pipelines to automatically detect performance drops in new Pull Requests.\nAnalyze Throughput: Conduct comprehensive comparisons of throughput (images/second) across different hardware (CPU vs. GPU) and modes (single image vs. batch).",
+    "techstack": ["Python", "PyTorch"],
+    "github": "https://github.com/kornia",
+    "mentors": [
+      {
+        "name": "",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Data and Fine-Tuning API + Model Expansion for VLMs",
+    "developer": "Kornia",
+    "desc": "Problem Statement: \nVision-Language Models (VLMs) represent the current frontier of AI. To stay relevant, Kornia requires a streamlined, native API to fine-tune these models on niche datasets. Additionally, the library needs to be expanded to support the latest VLM architectures.\n\nFocus Areas: \nBackend API Development, Model Modeling, Deep Learning.\n\nStudent Contribution:\nBuild the API: Implement an experimental, 'Kornia-native' kornia.data and fine-tuning API (kornia.train) designed specifically for VLMs.\nExpand Model Support: Integrate 2-3 modern VLM architectures into the Kornia ecosystem and validate them via fine-tuning.\nDemonstrate Usage: Create high-quality example notebooks for downstream tasks such as Visual Question Answering (VQA) or Image Captioning.",
+    "techstack": ["PyTorch", "Kornia", "Ray"],
+    "github": "https://github.com/kornia",
+    "mentors": [
+      {
+        "name": "",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Universal Compatibility: ONNX Export & Torch.compile",
+    "developer": "Kornia",
+    "desc": "Problem Statement: \nFor production deployment, Kornia operators must be easily exportable. This project ensures the entire codebase is compatible with torch.compile (full graph mode) and exports cleanly to ONNX without relying on inefficient 'fallback' operations.\n\nFocus Areas: \nProduction Engineering, Graph Compilers, Performance Optimization.\n\nStudent Contribution:\nAudit Codebase: Review current modules to identify compatibility gaps with torch.compile.\nRefactor Logic: Rewrite non-traceable code (such as dynamic branching) to be symbolic-friendly.\nVerify Outputs: Establish a strict verification suite to ensure ONNX exports match PyTorch outputs within a precise epsilon.",
+    "techstack": ["Python", "PyTorch", "ONNX Runtime", "TensorRT"],
+    "github": "https://github.com/kornia",
+    "mentors": [
+      {
+        "name": "",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Robot Learning (Advanced)",
+    "developer": "Kornia",
+    "desc": "Problem Statement: \nWe aim to extend Kornia's capabilities into the robotics domain, focusing on differentiable rendering, spatial transformations, and policy learning. This requires high-level qualifications in robotics integration. Team must have a robot (with mobile platform)\n\nFocus Areas: \nRobotics, Imitation Learning.\n\nStudent Contribution:\nIntegrate Platform: expand bubbaloop to connect a specific robot (hardware, depending on availability) to a new robot learning framework, create datasets, and train a VLA. https://github.com/kornia/bubbaloop\nStructure Data: Iterate on and improve the data structure used for robot learning datasets to ensure scalability and ease of use.",
+    "techstack": ["PyTorch", "Kornia", "Rust", "Zenoh", "MCAP"],
+    "github": "https://github.com/kornia",
+    "mentors": [
+      {
+        "name": "",
+        "socials": {
+          "linkedin": "",
+          "discord": "",
+          "email": "",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
   }
 ]

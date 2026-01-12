@@ -1724,7 +1724,7 @@ export const orgs: Record<string, Org> = {
     tagline: "",
     description:
       "Kornia is a high-performance, differentiable computer vision library for PyTorch. Beyond classic operators, it provides a production-ready ecosystem for State-of-the-Art (SOTA) Vision-Language Models (VLM) and Vision-Language-Action (VLA) models, enabling seamless integration of perception and reasoning for the next generation of AI agents.",
-    heroImage: "/orgs/kornia.png",
+    heroImage: "/orgs/Kornia.png",
     website: "https://kornia.org/",
     chat: "",
     repo: "https://github.com/kornia",

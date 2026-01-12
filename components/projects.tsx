@@ -111,7 +111,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       </a>
       {isOpen && (
         <div
-          className="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center backdrop-blur-[calc(0.1*(1vw-3.6px)+0.5px)] modal"
+          className="fixed z-50 pt-20 inset-0 bg-black bg-opacity-75 flex items-center justify-center backdrop-blur-[calc(0.1*(1vw-3.6px)+0.5px)] modal"
           onClick={handleBackdropClick}
         >
           <div className="relative w-[75%]">

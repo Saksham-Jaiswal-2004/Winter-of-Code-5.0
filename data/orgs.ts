@@ -1085,8 +1085,8 @@ export const orgs: Record<string, Org> = {
       "FOSSIA is a women-centric commnunity aimed to bring underrepresented people to contribute to the Indian FOSS ecosystem. We primarily work on projects and initiatives related to inclusion and accessibility.",
     heroImage: "/orgs/FOSSIA.png",
     website: "https://fossia.org/",
-    chat: "",
-    repo: "https://github.com/fossiaorg/transcribeit",
+    chat: "https://matrix.to/#/#fossiaorg:matrix.org",
+    repo: "https://codeberg.org/fossiaorg",
     email: "fossia@riseup.net",
     focusAreas: ["FastAPI", "Python", "Docker", "Chakra UI", "Next.js"],
     stats: [
@@ -1124,7 +1124,7 @@ export const orgs: Record<string, Org> = {
     ],
     projects: [
       {
-        title: "TranscribeIt – Video transcription for videos and live streams",
+        title: "TranscribeIt - Video transcription for videos and live streams",
         description:
           "",
         tech: ["Next.js", "FastAPI", "Python", "Chakra UI", "Docker"],
@@ -1134,7 +1134,7 @@ export const orgs: Record<string, Org> = {
           "*Backend: API development• asynchronous processing • ASR (automatic speech recognition) • diariazation • video processing   *Frontend: Accessibility • testing • UI development  *Deployment: Containerized deployment • monitoring • performance optimization *Documentation: Onboarding instructions for developers • technical documentation",
         contributionGuide:
           "1. Backend Contributions • Optimize ASR pipelines for both pre-recorded videos and live streams from local content. • Integrate speaker diarization for multi-speaker videos with customization for speaker identification. • Streamline asynchronous video processing workflows using Python and FastAPI for real-world usage. • Provide alternative formats for exporting transcripts and streamline transcript generation *Expected Outcomes: • Robust backend capable of handling multiple video formats and live streams. • Efficient, accurate transcription with speaker labels in customized manner • Formats such as Markdown, PDF and JSON for exports. 2. Frontend Contributions • Develop an accessible UI using Next.js and Chakra UI for the features described in backend section. • Implement features such as searchable transcripts, speaker highlighting, transcript exporting and timestamps for accessibility. • Perform accessibility testing (screen readers, keyboard navigation, color contrast) and integrate accessibility focused tooling for WCAG compliance. • Create a responsive design for desktop and mobile. Expected Outcomes: • User-friendly interface for uploading videos and viewing transcriptions and providing URLs. • Improved accessibility for users with visual and hearing impairments. • Enhanced user experience with intuitive navigation and customization options. 3. Deployment Contributions • Set up orchestration using Docker Compose for self-hosting by optimizing existing Docker setup. • Implement monitoring for system health and performance metrics for production. • Optimize backend performance for large video files or multiple concurrent live streams. Expected Outcomes: • Easy-to-deploy, scalable system for developers and end-users. • Improved stability and uptime. • Clear deployment guides for development and production environments. 4. Documentation Contributions • Write technical documentation for technical implementation in an integrated manner. • Create developer onboarding guides, including setup instructions. • Document API endpoints and video processing workflows using Swagger and VitePress • Maintain changelogs and contribution guidelines for future developers. Expected Outcomes: • Well-documented codebase for future contributors. • Reduced onboarding time for new developers. • Clear usage instructions for both developers and end-users. ***Milestones 1. Milestone 1 – Setup & Familiarization • Set up local development environment (Docker, FastAPI, Next.js) • Explore existing codebase and documentation 2. Milestone 2 – Core Backend Development • Create endpoints for video transcriptions in aternative formats • Optimize video transcription for larger videos • Implement speaker diarization with customisations 3. Milestone 3 – Frontend Integration • Display transcription results with timestamps and speaker information • Develop user interface for exporting transcripts in prefered format 4. Milestone 4 – Deployment & Monitoring • Containerize application for self-hosting and optimize existing Docker setup • Add logging, monitoring, and performance optimization for observability 5. Milestone 6 – Documentation & Final Touches • Complete developer guide • Conduct accessibility testing",
-        githubLink: "https://github.com/fossiaorg/transcribeit",
+        githubLink: "https://codeberg.org/fossiaorg/transcribeit",
       },
     ],
   },

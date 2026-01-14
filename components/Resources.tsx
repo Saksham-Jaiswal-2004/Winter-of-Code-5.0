@@ -9,10 +9,8 @@ interface VideoResource {
   title: string;
   creator: string;
   desc: string;
-  videoUrl: string; // YouTube URL
-  videoId: string; // YouTube video ID extracted from URL
-  tags: string[]; // Categories/topics
-  duration: string; // e.g., "15:30"
+  videoUrl: string;
+  videoId: string;
 }
 
 // Dummy data for testing
@@ -78,11 +76,6 @@ const VideoCard = ({ video }: { video: VideoResource }) => {
           }}
         />
       </div>
-
-      {/* <div className="absolute top-[70%] left-[10%] w-[80%] flex justify-between font-chakra text-scale-30-2 text-[#CADEFF] px-[5%]">
-        <span>{video.duration}</span>
-        <span>{video.difficulty}</span>
-      </div> */}
       
       <div
         className="absolute bottom-[0.75%] left-[0.75%] w-[48%] h-[16%] p-[2.5%] font-chakra text-scale-30-2 text-center text-brand text-nowrap overflow-hidden hover:scale-110 duration-700 cursor-pointer"
@@ -118,23 +111,10 @@ const VideoCard = ({ video }: { video: VideoResource }) => {
               <div className="text-scale-60-2 w-full text-[#CADEFF]">
                 {video.creator.toUpperCase()}
               </div>
-              
-              <div className="w-full flex justify-center items-center text-scale-60-2 px-[5%]">
-                <span>Duration: {video.duration}</span>
-              </div>
 
-              <div className="flex gap-x-[5%] gap-y-0 flex-wrap pt-[5%] justify-center">
-                {video.tags.map((tag, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="text-brand px-[2.5%] py-[1.5%] font-chakra h-fit w-fit my-[2%] border-[thin] rounded-[calc(0.3*(1vw-4px)+3px)]"
-                    >
-                      {tag}
-                    </div>
-                  );
-                })}
-              </div>
+              <pre className="text-scale-40 text-left px-5 mt-5 text-brand text-wrap break-words overflow-y-auto scrollbar flex-1">
+                {video.desc}
+              </pre>
             </div>
 
             <a
@@ -147,9 +127,9 @@ const VideoCard = ({ video }: { video: VideoResource }) => {
             </a>
 
             {/* Video player and description */}
-            <div className="absolute top-0 left-[31.5%] w-[65.5%] h-[88%] m-[3%] pr-[3%] flex flex-col gap-[3%]">
+            <div className="absolute top-0 left-[31.5%] w-[65.5%] h-[88%] m-[3%] pr-[3%] flex justify-center items-center flex-col gap-[3%]">
               {/* YouTube iframe */}
-              <div className="w-[80%] justify-self-center self-center aspect-video rounded-lg overflow-hidden">
+              <div className="w-[95%] justify-self-center self-center aspect-video rounded-lg overflow-hidden">
                 <iframe
                   width="100%"
                   height="100%"
@@ -161,11 +141,6 @@ const VideoCard = ({ video }: { video: VideoResource }) => {
                   className="rounded-lg"
                 ></iframe>
               </div>
-              
-              {/* Description */}
-              <pre className="font-chakra text-scale-15-5 text-brand text-wrap break-words overflow-y-auto scrollbar flex-1">
-                {video.desc}
-              </pre>
             </div>
           </div>
         </div>
@@ -180,15 +155,6 @@ const Resources = () => {
   const [sortBy, setSortBy] = useState("title");
   const [selectedTag, setSelectedTag] = useState("");
 
-  // Get all unique tags
-  const allTags = useMemo(() => {
-    const tags = new Set<string>();
-    videoResources.forEach((video) => {
-      video.tags.forEach((tag) => tags.add(tag));
-    });
-    return Array.from(tags).sort();
-  }, []);
-
   // Filter and sort videos
   const filteredVideos = useMemo(() => {
     let filtered = videoResources.filter((video) => {
@@ -197,13 +163,7 @@ const Resources = () => {
         .includes(searchTerm.toLowerCase()) ||
         video.creator.toLowerCase().includes(searchTerm.toLowerCase());
 
-      const matchesTag =
-        !selectedTag ||
-        video.tags.some(
-          (tag) => tag.toLowerCase() === selectedTag.toLowerCase()
-        );
-
-      return matchesSearch && matchesTag;
+      return matchesSearch;
     });
 
     // Sort
@@ -244,25 +204,6 @@ const Resources = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="px-4 sm:px-6 py-3 bg-black border-[2px] border-brand rounded-lg text-brand font-chakra text-[14px] sm:text-[18px] focus:outline-none focus:border-[#CADEFF] w-full sm:w-[300px] appearance-none"
           />
-
-          <select
-            value={selectedTag}
-            onChange={(e) => setSelectedTag(e.target.value)}
-            className="px-4 sm:px-6 py-3 bg-black border-[2px] border-brand rounded-lg text-brand font-chakra text-[14px] sm:text-[18px] focus:outline-none focus:border-[#23CADEFF] w-full sm:w-[250px] appearance-none cursor-pointer"
-            style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2323CADEFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "right 1rem center",
-              backgroundSize: "20px",
-            }}
-          >
-            <option value="">All Categories</option>
-            {allTags.map((tag) => (
-              <option key={tag} value={tag}>
-                {tag}
-              </option>
-            ))}
-          </select>
 
           {(searchTerm || selectedTag || sortBy !== "title") && (
             <button

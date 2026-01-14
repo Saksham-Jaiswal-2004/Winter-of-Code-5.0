@@ -20,6 +20,7 @@ const navigationleft = [
     { name: "Timeline", href: "/#timeline", current: false },
     { name: "Organizations", href: "/#orgs", current: false },
     { name: "Sponsors", href: "/#sponsors", current: false },
+    // { name: "Events", href: "/#sponsors", current: false },
 ];
 const navigationright = [
     { name: "Projects", href: "/projects", current: false },

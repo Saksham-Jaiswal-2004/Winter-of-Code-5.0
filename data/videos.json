@@ -1,110 +1,23 @@
 [
   {
-    "title": "React Hooks Complete Guide",
-    "creator": "Codevolution",
-    "desc": "Master React Hooks with this comprehensive tutorial. Learn useState, useEffect, useContext, useReducer, and how to create custom hooks. Perfect for developers looking to understand modern React patterns and best practices.\n\nTopics covered:\n- useState basics and advanced patterns\n- useEffect and cleanup functions\n- useContext for state management\n- useReducer for complex state\n- Custom hooks creation\n- Performance optimization tips",
-    "videoUrl": "https://www.youtube.com/watch?v=cF2lQ_gZeA8",
-    "videoId": "cF2lQ_gZeA8",
-    "tags": ["React", "JavaScript", "Hooks", "Frontend"],
-    "duration": "45:30"
+    "title": "Proposal Writing and Submission Guide",
+    "creator": "GDG IIIT Kalyani",
+    "desc": "This video is a comprehensive guide to proposal writing for Winter of Code 5.0, designed to help contributors understand how to write a clear, well-structured and impactful proposal.\n\n✨ In this guide, you'll learn:\n• How to structure a strong project proposal\n• What mentors look for during evaluation\n• How to present ideas with clarity and intent\n• Common mistakes to avoid\n• Best practices to improve your chances\n\nThis guide is especially helpful for first-time open-source contributors and anyone aiming to submit a thoughtful, well-crafted proposal.\n\nWinter of Code 5.0 is all about learning, collaboration, and real-world open-source experience.🚀\nHave questions? Reach out to us on Discord or in the official discussion channels.\n\nStay tuned for more sessions and updates from Winter of Code 5.0.",
+    "videoUrl": "https://www.youtube.com/watch?v=wWAwk_GiYzA&list=PLTzgn5VEtSmR97BZ8qG5_CedzZJn2IzFe&index=1",
+    "videoId": "wWAwk_GiYzA"
   },
   {
-    "title": "Next.js 14 Full Course",
-    "creator": "Traversy Media",
-    "desc": "Complete Next.js 14 tutorial covering all the latest features including App Router, Server Components, Server Actions, and more. Build production-ready applications with the most powerful React framework.\n\nWhat you'll learn:\n- App Router architecture\n- Server and Client Components\n- Data fetching strategies\n- Dynamic routing\n- API routes\n- Deployment on Vercel",
-    "videoUrl": "https://www.youtube.com/watch?v=wm5gMKuwSYk",
-    "videoId": "wm5gMKuwSYk",
-    "tags": ["Next.js", "React", "Full Stack", "TypeScript"],
-    "duration": "2:15:45"
+    "title": "Inaugral Ceremony",
+    "creator": "GDG IIIT Kalyani",
+    "desc": "Welcome to the official Inaugural Ceremony of Winter of Code 5.0! 🎉\n\nThe moment we've all been waiting for is finally here. As we officially kick off Winter of Code 5.0 today, marking the beginning of an exciting and impactful open-source journey hosted by GDG On Campus IIIT Kalyani.❄️\nIn this ceremony, we'll introduce the vision, structure and roadmap of the program, walk through the timeline and contribution process and give you a glimpse of the organizations, projects and mentorship ahead.\n\nKicking things off with an outstanding lineup of speakers - renowned industry leaders and open-source advocates who are shaping the ecosystem:\n• Chris Sells \n• Vanshika Agarwal\n• Santosh Yadav\n• Praveen Kumar\n\nLet's set the stage for an unforgettable Winter of Code journey.",
+    "videoUrl": "https://www.youtube.com/watch?v=a0WheoR5arw&list=PLTzgn5VEtSmR97BZ8qG5_CedzZJn2IzFe&index=2",
+    "videoId": "a0WheoR5arw"
   },
   {
-    "title": "TypeScript for Beginners",
-    "creator": "Programming with Mosh",
-    "desc": "Learn TypeScript from scratch in this beginner-friendly tutorial. Understand types, interfaces, classes, and how TypeScript makes your JavaScript code more robust and maintainable.\n\nCourse content:\n- TypeScript basics and setup\n- Type annotations\n- Interfaces vs Types\n- Classes and inheritance\n- Generics\n- Decorators\n- Integration with React",
-    "videoUrl": "https://www.youtube.com/watch?v=d56mG7DezGs",
-    "videoId": "d56mG7DezGs",
-    "tags": ["TypeScript", "JavaScript", "Programming"],
-    "duration": "1:48:12"
-  },
-  {
-    "title": "CSS Flexbox Tutorial",
-    "creator": "Web Dev Simplified",
-    "desc": "Master CSS Flexbox layout in 20 minutes! This concise tutorial covers everything you need to know about Flexbox to create responsive layouts quickly and efficiently.\n\nKey concepts:\n- Flex container properties\n- Flex item properties\n- Alignment techniques\n- Responsive design patterns\n- Common layout examples\n- Best practices",
-    "videoUrl": "https://www.youtube.com/watch?v=fYq5PXgSsbE",
-    "videoId": "fYq5PXgSsbE",
-    "tags": ["CSS", "Flexbox", "Frontend", "Web Design"],
-    "duration": "20:34"
-  },
-  {
-    "title": "REST API Design Best Practices",
-    "creator": "Tech With Tim",
-    "desc": "Learn how to design professional REST APIs following industry best practices. This tutorial covers HTTP methods, status codes, versioning, authentication, and more.\n\nTopics included:\n- RESTful principles\n- Resource naming conventions\n- HTTP methods (GET, POST, PUT, DELETE)\n- Status codes explained\n- Authentication & Authorization\n- API versioning strategies\n- Error handling",
-    "videoUrl": "https://www.youtube.com/watch?v=pKd0Rpw7O48",
-    "videoId": "pKd0Rpw7O48",
-    "tags": ["API", "Backend", "Node.js", "Best Practices"],
-    "duration": "35:22"
-  },
-  {
-    "title": "Git and GitHub for Beginners",
-    "creator": "freeCodeCamp",
-    "desc": "Complete Git and GitHub tutorial for absolute beginners. Learn version control, collaboration, and how to contribute to open source projects.\n\nWhat's covered:\n- Git installation and setup\n- Basic commands (add, commit, push, pull)\n- Branching and merging\n- Resolving conflicts\n- GitHub workflow\n- Pull requests\n- Collaboration tips",
-    "videoUrl": "https://www.youtube.com/watch?v=RGOj5yH7evk",
-    "videoId": "RGOj5yH7evk",
-    "tags": ["Git", "GitHub", "Version Control", "DevOps"],
-    "duration": "1:08:15"
-  },
-  {
-    "title": "Docker Crash Course",
-    "creator": "TechWorld with Nana",
-    "desc": "Learn Docker from scratch! This crash course teaches you containerization, Docker commands, Dockerfile creation, and Docker Compose for multi-container applications.\n\nCourse outline:\n- What is Docker?\n- Installation and setup\n- Docker images and containers\n- Dockerfile best practices\n- Docker Compose\n- Volumes and networks\n- Deployment strategies",
-    "videoUrl": "https://www.youtube.com/watch?v=3c-iBn73dDE",
-    "videoId": "3c-iBn73dDE",
-    "tags": ["Docker", "DevOps", "Containers", "Backend"],
-    "duration": "2:46:09"
-  },
-  {
-    "title": "JavaScript ES6+ Features",
-    "creator": "Academind",
-    "desc": "Master modern JavaScript with ES6+ features including arrow functions, destructuring, spread operator, async/await, and more. Essential knowledge for every JavaScript developer.\n\nFeatures covered:\n- Arrow functions\n- Template literals\n- Destructuring\n- Spread and rest operators\n- Promises and async/await\n- Modules\n- Classes",
-    "videoUrl": "https://www.youtube.com/watch?v=nZ1DMMsyVyI",
-    "videoId": "nZ1DMMsyVyI",
-    "tags": ["JavaScript", "ES6", "Programming", "Frontend"],
-    "duration": "52:18"
-  },
-  {
-    "title": "MongoDB Tutorial for Beginners",
-    "creator": "The Net Ninja",
-    "desc": "Complete MongoDB tutorial covering NoSQL databases, CRUD operations, indexing, aggregation, and integration with Node.js applications.\n\nLearning objectives:\n- MongoDB basics\n- CRUD operations\n- Schema design\n- Indexing strategies\n- Aggregation framework\n- Integration with Node.js\n- Best practices",
-    "videoUrl": "https://www.youtube.com/watch?v=-56x56UppqQ",
-    "videoId": "-56x56UppqQ",
-    "tags": ["MongoDB", "Database", "NoSQL", "Backend"],
-    "duration": "1:23:45"
-  },
-  {
-    "title": "Tailwind CSS Crash Course",
-    "creator": "Fireship",
-    "desc": "Learn Tailwind CSS utility-first framework in under 15 minutes! Build beautiful, responsive interfaces faster with this modern CSS framework.\n\nQuick overview:\n- Tailwind setup\n- Utility classes\n- Responsive design\n- Custom configurations\n- Best practices\n- Real-world examples",
-    "videoUrl": "https://www.youtube.com/watch?v=mr15Xzb1Ook",
-    "videoId": "mr15Xzb1Ook",
-    "tags": ["Tailwind", "CSS", "Frontend", "Web Design"],
-    "duration": "12:47"
-  },
-  {
-    "title": "GraphQL Full Course",
-    "creator": "Ben Awad",
-    "desc": "Deep dive into GraphQL covering queries, mutations, subscriptions, and building a full-stack application with GraphQL, Apollo, and React.\n\nComprehensive content:\n- GraphQL fundamentals\n- Queries and mutations\n- Schema design\n- Resolvers\n- Apollo Client\n- React integration\n- Authentication\n- Real-time with subscriptions",
-    "videoUrl": "https://www.youtube.com/watch?v=ed8SzALpx1Q",
-    "videoId": "ed8SzALpx1Q",
-    "tags": ["GraphQL", "API", "React", "Full Stack"],
-    "duration": "3:12:30"
-  },
-  {
-    "title": "Python for Data Science",
-    "creator": "Krish Naik",
-    "desc": "Complete Python tutorial for data science covering NumPy, Pandas, Matplotlib, and machine learning basics. Perfect for aspiring data scientists.\n\nTopics:\n- Python basics\n- NumPy arrays\n- Pandas DataFrames\n- Data visualization\n- Statistical analysis\n- Machine learning intro\n- Real projects",
-    "videoUrl": "https://www.youtube.com/watch?v=LHBE6Q9XlzI",
-    "videoId": "LHBE6Q9XlzI",
-    "tags": ["Python", "Data Science", "Machine Learning", "Programming"],
-    "duration": "4:25:15"
+    "title": "Complete Registration Guide",
+    "creator": "GDG IIIT Kalyani",
+    "desc": "Kickstart your journey with Winter of Code 5.0 ! 🚀\nThis tutorial covers everything you need to know about the new candidate registration process, ensuring you understand each step and can join the program without any hassle.\n\n❄️ About Winter of Code 5.0\nWinter of Code 5.0 is a GSoC-inspired Open-Source program where students contribute to real projects, work closely with mentors and build a strong developer portfolio through hands-on experience.",
+    "videoUrl": "https://www.youtube.com/watch?v=Szkjp9zlmgw&list=PLTzgn5VEtSmR97BZ8qG5_CedzZJn2IzFe&index=4",
+    "videoId": "Szkjp9zlmgw"
   }
 ]

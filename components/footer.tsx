@@ -11,6 +11,7 @@ import mailbox from '../public/mailbox.svg'
 import submit from '../public/submit.svg'
 
 const resources = [
+    { title: "Resources", link: "/resources" },
     { title: "How It Works", link: "/how-it-works" },
     { title: "Getting Started", link: "/getting-started" },
     { title: "Past Organizations", link: "/past-organizations" },
@@ -61,9 +62,9 @@ const Footer = () => {
             </div>
 
             <div className="flex-col flex w-[50%] m-[1%] justify-end items-center text-center">
-                <div className="text-scale-40-5 text-white font-chakra w-[90%] m-[1%]">
+                {/* <div className="text-scale-40-5 text-white font-chakra w-[90%] m-[1%]">
                     RESOURCES
-                </div>
+                </div> */}
 
                 {resources.map((resource, index) => (
                     <Link href={resource.link} key={index}

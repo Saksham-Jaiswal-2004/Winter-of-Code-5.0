@@ -24,7 +24,7 @@ interface EventData {
   endTime: string;
   location: string;
   type: string;
-  status: "upcoming" | "ongoing" | "past";
+  status?: "upcoming" | "ongoing" | "past";
   poster: string;
   description: string;
   detailedDescription: string;
@@ -55,7 +55,7 @@ const parseTimeToDate = (dateStr: string, timeStr?: string, fallbackTime = "00:0
 }
 
 // Add utility function to compute event status
-const computeEventStatus = (event: EventData): "upcoming" | "ongoing" | "past" => {
+const computeEventStatus = (event: Omit<EventData, "status">): "upcoming" | "ongoing" | "past" => {
   const now = new Date();
   // If no explicit time, treat as all-day: start 00:00, end 23:59
   const start = parseTimeToDate(event.date, event.time, "00:00");

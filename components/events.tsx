@@ -2,6 +2,19 @@ import Image from "next/image";
 import projectbanner from "../public/projectbanner.svg";
 import { useState, useMemo } from "react";
 import eventsData from "../data/events.json";
+import { FaCalendar } from "react-icons/fa6";
+import { FaClock } from "react-icons/fa6";
+import { MdLocationPin } from "react-icons/md";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { IoLogoLinkedin } from "react-icons/io5";
+
+interface Speaker {
+  name: string;
+  designation?: string;
+  organization?: string;
+  photo?: string;
+  profileLink?: string;
+}
 
 interface EventData {
   id: number;
@@ -15,16 +28,65 @@ interface EventData {
   poster: string;
   description: string;
   detailedDescription: string;
-  speakers: string[];
+  speakers: Speaker[] | string[];
   registrationLink: string;
   capacity: string;
   tags: string[];
   agenda: string[];
+  recordingLink?: string; // Add optional recording link
 }
+
+const parseTimeToDate = (dateStr: string, timeStr?: string, fallbackTime = "00:00") => {
+  const [day, month, year] = dateStr.split("-").map(Number);
+  const base = new Date(year, month - 1, day, 0, 0, 0, 0);
+
+  const timeToParse = (timeStr || fallbackTime).trim();
+  const match = timeToParse.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+  if (!match) return base;
+
+  let hour = parseInt(match[1], 10);
+  const minute = parseInt(match[2], 10);
+  const period = match[3]?.toUpperCase();
+
+  if (period === "AM" && hour === 12) hour = 0;
+  if (period === "PM" && hour !== 12) hour += 12;
+
+  return new Date(year, month - 1, day, hour, minute, 0, 0);
+}
+
+// Add utility function to compute event status
+const computeEventStatus = (event: EventData): "upcoming" | "ongoing" | "past" => {
+  const now = new Date();
+  // If no explicit time, treat as all-day: start 00:00, end 23:59
+  const start = parseTimeToDate(event.date, event.time, "00:00");
+  const end = parseTimeToDate(event.date, event.endTime, event.time ? event.time : "23:59");
+
+  if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) return "upcoming";
+  if (now < start) return "upcoming";
+  if (now > end) return "past";
+  return "ongoing";
+};
 
 const EventCard = ({ event }: { event: EventData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  
+  // Compute actual status based on current date
+  const actualStatus = computeEventStatus(event);
+  const isPastEvent = actualStatus === "past";
+  const hasRecording = !!(event.recordingLink && event.recordingLink.trim() !== "");
+
+  // Normalize speakers to always be an array of objects
+  const normalizedSpeakers: Speaker[] = useMemo(() => {
+    if (!event.speakers || event.speakers.length === 0) return [];
+    
+    // Check if first element is a string
+    if (typeof event.speakers[0] === 'string') {
+      return (event.speakers as string[]).map(name => ({ name }));
+    }
+    
+    return event.speakers as Speaker[];
+  }, [event.speakers]);
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
@@ -79,7 +141,7 @@ const EventCard = ({ event }: { event: EventData }) => {
             src={event.poster}
             alt={event.title}
             onLoad={() => setImageLoaded(true)}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
           />
           {/* Overlay Gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
@@ -87,17 +149,17 @@ const EventCard = ({ event }: { event: EventData }) => {
           {/* Status Badge - Overlay on Poster */}
           <div className="absolute top-4 left-4 z-10">
             <span className={`px-3 py-1 rounded-full text-xs font-bold backdrop-blur-md ${
-              event.status === "upcoming" ? "bg-blue-500/40 text-blue-100 border border-blue-400/50" :
-              event.status === "ongoing" ? "bg-green-500/40 text-green-100 border border-green-400/50" :
-              "bg-gray-500/40 text-gray-100 border border-gray-400/50"
+              actualStatus === "upcoming" ? "bg-blue-500/40 text-faq/60 border border-blue-400/50" :
+              actualStatus === "ongoing" ? "bg-green-500/40 text-blite/60 border border-green-400/50" :
+              "bg-gray-500/40 text-partner/60 border border-gray-400/50"
             }`}>
-              {event.status.toUpperCase()}
+              {actualStatus.toUpperCase()}
             </span>
           </div>
 
           {/* Type Badge - Overlay on Poster */}
           <div className="absolute top-4 right-4 z-10">
-            <span className={`px-3 py-1 rounded-full text-xs font-bold backdrop-blur-md ${getTypeColor(event.type)}`}>
+            <span className={`px-3 py-1 rounded-full text-xs font-bold text-grey/50 backdrop-blur-md ${getTypeColor(event.type)}`}>
               {event.type.toUpperCase()}
             </span>
           </div>
@@ -111,17 +173,21 @@ const EventCard = ({ event }: { event: EventData }) => {
           </h3>
 
           {/* Quick Stats */}
-          <div className="space-y-2 mb-4 text-xs font-chakra text-[#CADEFF]/90">
+          <div className="space-y-2 mb-4 grid grid-cols-2 text-xs font-chakra text-[#CADEFF]/90">
             <div className="flex items-center gap-2">
-              <span className="text-brand text-sm">📅</span>
-              <span className="line-clamp-1">{event.date} {event.time && `@ ${event.time}`}</span>
+              <span className="text-brand text-sm"><FaCalendar /></span>
+              <span className="line-clamp-1">{event.date}</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-brand text-sm">📍</span>
+              <span className="text-brand text-sm"><MdLocationPin /></span>
               <span className="line-clamp-1">{event.location}</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-brand text-sm">👥</span>
+              <span className="text-brand text-sm"><FaClock /></span>
+              <span className="line-clamp-1">{event.time && `${event.time}`}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-brand text-sm"><BsFillPeopleFill /></span>
               <span>{event.capacity}</span>
             </div>
           </div>
@@ -166,7 +232,7 @@ const EventCard = ({ event }: { event: EventData }) => {
         >
           <div className="bg-gradient-to-br from-black to-gray-900 border-2 border-brand/50 rounded-2xl max-w-3xl w-full max-h-[85vh] overflow-y-auto scrollbar shadow-2xl shadow-brand/30">
             {/* Modal Header with Poster */}
-            <div className="relative h-80 overflow-hidden border-b-2 border-brand/30">
+            <div className="relative h-96 overflow-hidden border-b-2 border-brand/30">
               <img
                 src={event.poster}
                 alt={event.title}
@@ -177,20 +243,20 @@ const EventCard = ({ event }: { event: EventData }) => {
               <div className="absolute inset-0 flex flex-col justify-between p-6">
                 <div className="flex justify-between items-start">
                   <div className="flex gap-2 flex-wrap">
-                    <span className={`px-3 py-1 rounded-full text-xs font-bold backdrop-blur-md ${getTypeColor(event.type)}`}>
+                    <span className={`px-3 py-1 rounded-full text-xs text-grey/60 font-bold backdrop-blur-md ${getTypeColor(event.type)}`}>
                       {event.type.toUpperCase()}
                     </span>
                     <span className={`px-3 py-1 rounded-full text-xs font-bold backdrop-blur-md ${
-                      event.status === "upcoming" ? "bg-blue-500/40 text-blue-100 border border-blue-400/50" :
-                      event.status === "ongoing" ? "bg-green-500/40 text-green-100 border border-green-400/50" :
-                      "bg-gray-500/40 text-gray-100 border border-gray-400/50"
+                      actualStatus === "upcoming" ? "bg-blue-500/40 text-faq/60 border border-blue-400/50" :
+                      actualStatus === "ongoing" ? "bg-green-500/40 text-blite/60 border border-green-400/50" :
+                      "bg-gray-500/40 text-partner/60 border border-gray-400/50"
                     }`}>
-                      {event.status.toUpperCase()}
+                      {actualStatus.toUpperCase()}
                     </span>
                   </div>
                   <button
                     onClick={closeModal}
-                    className="bg-black/60 hover:bg-black/80 text-brand rounded-full p-2 transition-all"
+                    className="bg-black/60 hover:bg-black/80 text-brand rounded-full py-2 px-3 transition-all"
                   >
                     ✕
                   </button>
@@ -207,39 +273,90 @@ const EventCard = ({ event }: { event: EventData }) => {
               {/* Key Details Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gradient-to-br from-brand/10 to-transparent p-6 rounded-xl border border-brand/20">
                 <div>
-                  <h4 className="text-brand font-chakra font-semibold mb-2 text-sm uppercase tracking-wider">📅 Date & Time</h4>
+                  <h4 className="text-brand font-chakra font-semibold mb-2 text-sm uppercase tracking-wider flex gap-2 items-center"><FaCalendar /> Date</h4>
+                  <p className="text-[#CADEFF] font-chakra">{event.date}</p>
+                </div>
+                <div>
+                  <h4 className="text-brand font-chakra font-semibold mb-2 text-sm uppercase tracking-wider flex gap-2 items-center"><FaClock /> Time</h4>
                   <p className="text-[#CADEFF] font-chakra">
-                    {event.date} {event.time && `@ ${event.time}`}
+                    {event.time}
                     {event.endTime && ` - ${event.endTime}`}
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-brand font-chakra font-semibold mb-2 text-sm uppercase tracking-wider">📍 Location</h4>
+                  <h4 className="text-brand font-chakra font-semibold mb-2 text-sm uppercase tracking-wider flex gap-2 items-center"><MdLocationPin /> Location</h4>
                   <p className="text-[#CADEFF] font-chakra">{event.location}</p>
                 </div>
                 <div>
-                  <h4 className="text-brand font-chakra font-semibold mb-2 text-sm uppercase tracking-wider">👥 Capacity</h4>
+                  <h4 className="text-brand font-chakra font-semibold mb-2 text-sm uppercase tracking-wider flex gap-2 items-center"><BsFillPeopleFill /> Capacity</h4>
                   <p className="text-[#CADEFF] font-chakra">{event.capacity}</p>
                 </div>
-                <div>
-                  <h4 className="text-brand font-chakra font-semibold mb-2 text-sm uppercase tracking-wider">🎤 Speakers</h4>
-                  <p className="text-[#CADEFF] font-chakra text-sm">{event.speakers.join(", ")}</p>
-                </div>
               </div>
+
+              {/* Speakers Section */}
+              {normalizedSpeakers.length > 0 && (
+                <div className="bg-gradient-to-br from-cyan-900/20 to-transparent p-6 rounded-xl border border-cyan-500/20">
+                  <h4 className="text-brand font-kleemax text-xl mb-4 uppercase tracking-wide">Speakers</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {normalizedSpeakers.map((speaker, idx) => (
+                      <div key={idx} className="flex gap-4 bg-brand/5 p-4 rounded-lg border border-brand/20 transition-all group">
+                        {speaker.photo ? (
+                          <img
+                            src={speaker.photo}
+                            alt={speaker.name}
+                            className="w-16 h-16 rounded-full object-cover border-2 border-brand/40 flex-shrink-0"
+                          />
+                        ) : (
+                          <div className="w-16 h-16 rounded-full bg-brand/20 border-2 border-brand/40 flex items-center justify-center text-brand font-bold text-xl flex-shrink-0">
+                            {speaker.name.charAt(0).toUpperCase()}
+                          </div>
+                        )}
+                        <div className="flex-1 min-w-0 flex flex-col justify-center relative">
+                          {speaker.profileLink ? (
+                            <a
+                              href={speaker.profileLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-brand font-chakra font-bold text-xl truncate hover:text-blue-400 transition-colors absolute top-0 right-0"
+                            >
+                              <IoLogoLinkedin />
+                            </a>
+                          ) : (
+                            <div
+                              className="text-grey/50 cursor-not-allowed w-fit font-chakra font-bold text-xl truncate hover:text-blue-400 transition-colors absolute top-0 right-0"
+                            >
+                              <IoLogoLinkedin />
+                            </div>
+                          )}
+                          {speaker.name && (
+                            <h5 className="text-brand font-chakra font-bold text-base truncate">{speaker.name}</h5>
+                          )}
+                          {speaker.designation && (
+                            <p className="text-[#CADEFF]/80 font-chakra text-sm truncate">{speaker.designation}</p>
+                          )}
+                          {speaker.organization && (
+                            <p className="text-[#CADEFF]/60 font-chakra text-xs mt-1 truncate">{speaker.organization}</p>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Description */}
               <div className="bg-gradient-to-br from-blue-900/20 to-transparent p-6 rounded-xl border border-blue-500/20">
                 <h4 className="text-brand font-kleemax text-xl mb-3 uppercase tracking-wide">About This Event</h4>
-                <p className="text-[#CADEFF] font-chakra leading-relaxed">
+                <p className="text-[#CADEFF] font-chakra leading-relaxed whitespace-pre-line">
                   {event.detailedDescription}
                 </p>
               </div>
 
               {/* Agenda */}
-              {event.agenda.length > 0 && (
+              {event.agenda && event.agenda.length > 0 && (
                 <div className="bg-gradient-to-br from-purple-900/20 to-transparent p-6 rounded-xl border border-purple-500/20">
                   <h4 className="text-brand font-kleemax text-xl mb-4 uppercase tracking-wide">Agenda</h4>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2">
                     {event.agenda.map((item, idx) => (
                       <li key={idx} className="text-[#CADEFF] font-chakra flex items-start gap-3">
                         <span className="text-brand font-bold text-lg min-w-fit">{idx + 1}.</span>
@@ -251,26 +368,55 @@ const EventCard = ({ event }: { event: EventData }) => {
               )}
 
               {/* Tags */}
-              <div>
-                <h4 className="text-brand font-chakra font-semibold mb-3 text-sm uppercase tracking-wider">Tags</h4>
-                <div className="flex flex-wrap gap-2">
-                  {event.tags.map((tag, idx) => (
-                    <span key={idx} className="bg-gradient-to-r from-brand/40 to-blue-500/40 text-brand px-3 py-1.5 rounded-full text-sm font-chakra border border-brand/40">
-                      #{tag}
-                    </span>
-                  ))}
+              {event.tags && event.tags.length > 0 && (
+                <div>
+                  <h4 className="text-brand font-chakra font-semibold mb-3 text-sm uppercase tracking-wider">Tags</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {event.tags.map((tag, idx) => (
+                      <span key={idx} className="bg-gradient-to-r from-brand/40 to-blue-500/40 text-brand px-3 py-1.5 rounded-full text-sm font-chakra border border-brand/40">
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
-              {/* Register Button */}
-              <a
-                href={event.registrationLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full px-8 py-4 bg-gradient-to-r from-brand via-blue-500 to-brand hover:from-brand/90 hover:via-blue-400 hover:to-brand/90 text-black border-2 border-brand/50 rounded-xl font-kleemax text-center font-bold text-lg uppercase tracking-wider transition-all duration-300 shadow-lg shadow-brand/50 hover:shadow-2xl hover:shadow-brand/70"
-              >
-                Register Now
-              </a>
+              {/* Action Buttons */}
+              <div className="flex flex-col gap-3">
+                {/* Register Button - Always visible, disabled for past events */}
+                {isPastEvent ? (
+                  <div className="block w-full px-8 py-4 bg-gradient-to-r from-brand/50 to-brand/50 text-gray-400 border-2 border-gray-600/50 rounded-xl font-kleemax text-center font-bold text-lg uppercase tracking-wider cursor-not-allowed opacity-90">
+                    Registration Closed
+                  </div>
+                ) : (
+                  <a
+                    href={event.registrationLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full px-8 py-4 bg-gradient-to-r from-brand via-blue-500 to-brand hover:from-brand/90 hover:via-blue-400 hover:to-brand/90 text-black border-2 border-brand/50 rounded-xl font-kleemax text-center font-bold text-lg uppercase tracking-wider transition-all duration-300 shadow-lg shadow-brand/50 hover:shadow-xl hover:shadow-brand/70"
+                  >
+                    Register Now
+                  </a>
+                )}
+                
+                {/* Watch Recording Button - Only show if recording link exists */}
+                {hasRecording ? (
+                  <a
+                    href={event.recordingLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full px-8 py-4 bg-brand/80 border-2 rounded-xl font-kleemax text-center font-bold text-lg uppercase tracking-wider transition-all duration-300"
+                  >
+                    Watch Recording
+                  </a>
+                ):(
+                  <div
+                    className="block w-full px-8 py-4 bg-brand/50 opacity-90 cursor-not-allowed border-2 rounded-xl font-kleemax text-center font-bold text-lg uppercase tracking-wider transition-all duration-300"
+                  >
+                    Watch Recording
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -297,7 +443,8 @@ const Events = () => {
         .includes(searchTerm.toLowerCase()) ||
         event.description.toLowerCase().includes(searchTerm.toLowerCase());
 
-      const matchesStatus = filterStatus === "all" || event.status === filterStatus;
+      const actualStatus = computeEventStatus(event);
+      const matchesStatus = filterStatus === "all" || actualStatus === filterStatus;
       const matchesType = filterType === "all" || event.type === filterType;
 
       return matchesSearch && matchesStatus && matchesType;
@@ -339,22 +486,21 @@ const Events = () => {
 
         {/* Events Summary */}
         <div className="mb-12 mt-20 p-6 bg-brand/5 rounded-lg border border-brand/20">
-          {/* <h3 className="text-brand font-kleemax text-lg mb-4">EVENTS SUMMARY</h3> */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div>
               <p className="text-2xl font-bold text-brand">{filteredEvents.length}</p>
               <p className="text-sm text-[#CADEFF] font-chakra">Total Events</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-brand">{filteredEvents.filter(e => e.status === "upcoming").length}</p>
+              <p className="text-2xl font-bold text-brand">{filteredEvents.filter(e => computeEventStatus(e) === "upcoming").length}</p>
               <p className="text-sm text-[#CADEFF] font-chakra">Upcoming</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-brand">{filteredEvents.filter(e => e.status === "ongoing").length}</p>
+              <p className="text-2xl font-bold text-brand">{filteredEvents.filter(e => computeEventStatus(e) === "ongoing").length}</p>
               <p className="text-sm text-[#CADEFF] font-chakra">Ongoing</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-brand">{filteredEvents.filter(e => e.status === "past").length}</p>
+              <p className="text-2xl font-bold text-brand">{filteredEvents.filter(e => computeEventStatus(e) === "past").length}</p>
               <p className="text-sm text-[#CADEFF] font-chakra">Past</p>
             </div>
           </div>

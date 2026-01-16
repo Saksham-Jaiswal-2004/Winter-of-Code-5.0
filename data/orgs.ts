@@ -1252,16 +1252,16 @@ export const orgs: Record<string, Org> = {
 
   // Cooketh Org
   cookethorg: {
-    name: "Cooketh Org",
-    tagline: "Building inclusive tools for global collaboration.",
+    name: "Cooketh Company",
+    tagline: "",
     description:
-      "Example Open Source Lab is a community-driven organization focused on developer experience, accessibility, and data tooling. We mentor newcomers, ship production-grade libraries, and help contributors grow with thoughtful code reviews.",
-    heroImage: "/past-orgs/OpenPrinting.webp",
-    website: "https://example.org",
-    chat: "https://chat.example.org",
-    repo: "https://github.com/example/example-repo",
-    email: "contact@example.org",
-    focusAreas: ["C", "C++", "JavaScript", "Python"],
+      "We craft killer digital vibes for any screen, using top-notch tools and smart coding to keep it smooth and scalable. See how our squad sets you up to win.",
+    heroImage: "/orgs/Cooketh Org.png",
+    website: "https://cookethcompany.xyz/",
+    chat: "",
+    repo: "https://github.com/CookethOrg",
+    email: "",
+    focusAreas: ["HTML", "Tailwind CSS", "React.js", "Next.js", "JavaScript", "Flutter", "Supabase"],
     stats: [
       { label: "Active Mentors", value: "12" },
       { label: "Contributors", value: "350+" },
@@ -1288,79 +1288,60 @@ export const orgs: Record<string, Org> = {
     ],
     mentors: [
       {
-        name: "Alex Rivera",
+        name: "Subroto Banerjee",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        discord: "teewrath",
+        email: "subroto.2003@gmail.com",
+        linkedin: "https://www.linkedin.com/in/subroto-banerjee-70983b214/",
       },
       {
-        name: "Alex Rivera",
+        name: "Antara Paul",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        discord: "auryn._.",
+        email: "paul.antara04@gmail.com",
+        linkedin: "https://www.linkedin.com/in/antara-paul-069a37271/",
       },
       {
-        name: "Priya Verma",
+        name: "Swarnabha Khamrui",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
         discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        email: "",
+        linkedin: "https://www.linkedin.com/in/swarnabha-khamrui-396353321/",
       },
       {
-        name: "Priya Verma",
+        name: "Mrutyunjay Lodhi",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
         discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
-      },
-      {
-        name: "Samir Khan",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, harum et optio obcaecati reprehenderit aperiam soluta facere veniam numquam voluptatibus laudantium a sequi ducimus, consequuntur vero dolorum, odit labore ad.",
-        discord: "@alex-r",
-        email: "abc@gmail.com",
-        linkedin: "linkedin.com",
+        email: "",
+        linkedin: "https://www.linkedin.com/in/mrutyunjay-lodhi-b48171210/",
       },
     ],
     projects: [
       {
-        title: "CLI UX Overhaul",
+        title: "Cooketh Flow",
         description:
-          "A modern overhaul of our CLI to make complex tasks intuitive and traceable. The goal is to reduce friction for contributors and power users with clearer messaging, step-aware progress, and composable subcommands.",
-        tech: ["TypeScript", "Node.js", "CLI", "Jest"],
+          "Cooketh Flow is an open-source, powerful visual thinking tool designed for teams and individuals to brainstorm, sketch, and organize ideas effortlessly. Whether you're mapping out ideas, designing user flows, or organizing tasks, Cooketh Flow provides an intuitive drag-and-drop interface that makes building and refining workflows effortless.",
+        tech: ["Flutter", "Supabase"],
         problemStatement:
-          "Our current CLI provides minimal feedback and lacks a robust subcommand architecture. As workflows scale, users cannot easily see what is happening, retry failed steps, or compose commands safely. This results in confusion, longer onboarding, and lower contributor confidence.",
+          "CookethFlow aims to unify all your productivity tasks in one platform.",
         focusArea:
-          "Developer Experience • Command Design • Tracing • Error Handling",
+          "• Platform Availability • Flutter • Frontend • UI/UX • Pixel perfect frontend • Backend • REST APIs",
         contributionGuide:
-          "Start by auditing existing commands and grouping related functionality into subcommands. Propose a progress reporting pattern using spinners/bars and structured logs, then add tracing hooks (timestamps, step IDs). Implement retries and helpful error messages. Add unit/integration tests for the new composition layer and update the README with examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "Expected Tasks for Cooketh Flow - Workspace: 1.Export flow button font and padding 2.Side toolbar size (too much spacing between individual icons and buttons) 3.Same size issue with zoom in/out button 4.Update connectors: bifurcation and text/icon addition feature 5.Selected node box UI, and resize handles sizes 6.Node editing tool update as per the design 7.Cursor for user and add a settings to change cursor color 8.Sticky Notes UI improvement, align more with the design 9.Responsive design - make it strictly UI perfect for mobile and tablets as per design; Expected OutcomeContributors must complete all the tasks after proper reviews and within time.",
+        githubLink: "https://github.com/CookethOrg/Cooketh-Flow",
       },
       {
-        title: "Accessibility Audit Dashboard",
+        title: "Cooketh Flow Product Website",
         description:
-          "A polished audit dashboard that surfaces accessibility findings across builds, product areas, and time. It empowers teams to catch regressions early and prioritize fixes that matter most.",
-        tech: ["React", "Tailwind", "a11y", "Playwright", "Vitest"],
+          "",
+        tech: ["HTML", "Tailwind CSS", "React.js", "Next.js", "JavaScript"],
         problemStatement:
-          "Multiple teams ship changes without unified visibility into accessibility health. Findings are scattered across tools and CI logs, making it difficult to track regressions, identify ownership, and measure improvements over time. This leads to inconsistent standards and user-impacting issues.",
+          "Markets the product Cooketh Flow, its capabilities and usages.",
         focusArea:
-          "Accessibility • Reporting • CI Integration • Trend Analysis",
+          "• Frontend • Pixel Perfect UI • Responsive Frontend • UI/UX",
         contributionGuide:
-          "Integrate automated scanners (axe, pa11y) into CI, normalize results, and store them in a lightweight data layer. Build views for trends, severity, and ownership, with filters for releases and components. Add export/share features and a “how to fix” playbook. Write tests for parsers and core UI states, and ship clear docs for integrating new apps.",
-        githubLink: "https://github.com/example/example-repo",
-      },
-      {
-        title: "Data Viz Templates",
-        description:
-          "A collection of well-crafted, accessible chart templates with strong defaults that make data storytelling effortless. Focused on practical patterns and maintainable APIs.",
-        tech: ["D3", "TypeScript", "Storybook", "Testing Library"],
-        problemStatement:
-          "Teams repeatedly reinvent chart components, often missing accessibility and consistency. Without opinionated templates and examples, new contributors struggle to create reliable visuals that communicate clearly.",
-        focusArea: "Data Visualization • Component Libraries • Accessibility",
-        contributionGuide:
-          "Define a small template API (line, bar, pie) with sensible defaults, keyboard navigation, and color contrast. Add documentation and Storybook demos showcasing real-world data. Include tests for rendering and accessibility. Encourage contributions via a template RFC and starter examples.",
-        githubLink: "https://github.com/example/example-repo",
+          "The entire website has to be developed from scratch. Sample designs are ready.",
+        githubLink: "",
       },
     ],
   },

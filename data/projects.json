@@ -1449,5 +1449,89 @@
       "email": "",
       "twitter": ""
     }
+  },
+  {
+    "name": "Cooketh Flow",
+    "developer": "Cooketh Org",
+    "desc": "Description\nCooketh Flow is an open-source, powerful visual thinking tool designed for teams and individuals to brainstorm, sketch, and organize ideas effortlessly. Whether you're mapping out ideas, designing user flows, or organizing tasks, Cooketh Flow provides an intuitive drag-and-drop interface that makes building and refining workflows effortless.\n\nProblem Statement\nCookethFlow aims to unify all your productivity tasks in one platform.\n\nFocus Areas\nPlatform Availability\nFlutter\nFrontend\nUI/UX\nPixel perfect frontend\nBackend\nREST APIs\n\nIdea\nExpected Tasks for Cooketh Flow\nWorkspace:\nExport flow button font and padding\nSide toolbar size (too much spacing between individual icons and buttons)\nSame size issue with zoom in/out button\nUpdate connectors: bifurcation and text/icon addition feature\nSelected node box UI, and resize handles sizes\nNode editing tool update as per the design\nCursor for user and add a settings to change cursor colo\nSticky Notes UI improvement, align more with the design\nResponsive design - make it strictly UI perfect for mobile and tablets as per design\n\nExpected Outcome\nContributors must complete all the tasks after proper reviews and within time.",
+    "techstack": ["Flutter", "Supabase"],
+    "github": "https://github.com/CookethOrg/Cooketh-Flow",
+    "mentors": [
+      {
+        "name": "Subroto Banerjee",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/subroto-banerjee-70983b214/",
+          "discord": "teewrath",
+          "email": "subroto.2003@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Antara Paul",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/antara-paul-069a37271/",
+          "discord": "auryn._.",
+          "email": "paul.antara04@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Swarnabha Khamrui",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/swarnabha-khamrui-396353321/",
+          "discord": "",
+          "email": "",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "Cooketh Flow Product Website",
+    "developer": "Cooketh Org",
+    "desc": "Problem Statement\nMarkets the product Cooketh Flow, its capabilities and usages.\n\nFocus Areas\nFrontend\nPixel Perfect UI\nResponsive Frontend\nUI/UX\n\nIdea\nThe entire website has to be developed from scratch. Sample designs are ready.",
+    "techstack": ["HTML", "Tailwind CSS", "React.js", "Next.js", "JavaScript"],
+    "github": "",
+    "mentors": [
+      {
+        "name": "Subroto Banerjee",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/subroto-banerjee-70983b214/",
+          "discord": "teewrath",
+          "email": "subroto.2003@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Antara Paul",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/antara-paul-069a37271/",
+          "discord": "auryn._.",
+          "email": "paul.antara04@gmail.com",
+          "twitter": ""
+        }
+      },
+      {
+        "name": "Mrutyunjay Lodhi",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/mrutyunjay-lodhi-b48171210/",
+          "discord": "",
+          "email": "",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
   }
 ]

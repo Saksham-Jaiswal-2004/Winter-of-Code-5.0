@@ -9,49 +9,50 @@
     "type": "ceremony",
     "status": "past",
     "poster": "/events/Inaugural Ceremony.jpeg",
-    "description": "The official start of Winter of Code! Join us for an introductory session where we'll walk you through the program's timeline, expectations, and the exciting journey ahead.",
-    "detailedDescription": "This is our flagship event where we launch Winter of Code 5.0. Meet the core team, understand the program structure, and get inspired by previous success stories. All participants must attend this inaugural session to understand the program flow, submission guidelines, and evaluation criteria.",
+    "description": "The official kickoff of Winter of Code 5.0 - welcoming contributors to a GSoC-inspired open-source journey.",
+    "detailedDescription": "The Inaugural Ceremony of Winter of Code 5.0 marks the official kickoff of a GSoC-inspired open-source program aimed at empowering students and developers to begin and grow their open-source journey. This session sets the vision, goals, and impact of WoC 5.0, introduces the community to the program structure, and features inspiring talks from renowned industry leaders and open-source advocates. With insights from global speakers, the ceremony is designed to ignite curiosity, motivation, and confidence in contributors as they step into the world of open source.",
     "speakers": [
       {
         "name": "Chris Sells",
-        "designation": "Program Director",
-        "organization": "Winter of Code Foundation",
-        "photo": "/speakers/rajesh-kumar.jpg",
-        "profileLink": "https://linkedin.com/in/rajeshkumar"
+        "designation": "",
+        "organization": "Meta, Google, Microsoft, Intel",
+        "photo": "https://media.licdn.com/dms/image/v2/C4E03AQHJJKnM8piq5g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516166602645?e=1770249600&v=beta&t=Yzu0PgdGsU4UB2LXriWgdF82RBRCKfiQyC24F8AOQ2g",
+        "profileLink": "https://www.linkedin.com/in/csells/"
       },
       {
         "name": "Santosh Yadav",
-        "designation": "Lead Mentor",
-        "organization": "Google Summer of Code",
-        "photo": "",
-        "profileLink": "https://github.com/priyasharma"
+        "designation": "Principal Developer Advocate",
+        "organization": "CodeRabbit",
+        "photo": "https://media.licdn.com/dms/image/v2/D4D03AQEpQt7RxOJGUw/profile-displayphoto-scale_400_400/B4DZtq1koKH4Ag-/0/1767023988339?e=1770249600&v=beta&t=Amsf0RtB2zNlJyrCshAuqx2khsVOfig_J8mO69zZE4U",
+        "profileLink": "https://www.linkedin.com/in/santoshyadavdev/"
       },
       {
         "name": "Vanshika Agarwal",
-        "designation": "Technical Lead",
-        "organization": "Microsoft",
-        "photo": "",
-        "profileLink": "https://linkedin.com/in/amitpatel"
+        "designation": "Software Engineer",
+        "organization": "Google",
+        "photo": "https://media.licdn.com/dms/image/v2/D5603AQHe83Ujd5ymgw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726466712872?e=1770249600&v=beta&t=20pLFic-EJr34BCErQpGb8O4IzPIa6gAVWHhCPL41NY",
+        "profileLink": "https://www.linkedin.com/in/vanshika-agarwal28/"
       },
       {
-        "name": "Praveen",
-        "designation": "Technical Lead",
-        "organization": "Microsoft",
-        "photo": "",
-        "profileLink": "https://linkedin.com/in/amitpatel"
+        "name": "Praveen Kumar",
+        "designation": "Associate Director",
+        "organization": "Fitch Group Inc.",
+        "photo": "https://media.licdn.com/dms/image/v2/D5603AQHBGaUagLWnZQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705905277353?e=1770249600&v=beta&t=2GHDykk270hoxsLtCGDqw3hyNmQjnbzZsRdU21MfxF4",
+        "profileLink": "https://www.linkedin.com/in/praveentech/"
       }
     ],
     "registrationLink": "",
     "capacity": "Unlimited",
     "tags": ["ceremony", "mandatory", "kickoff"],
     "agenda": [
-      "Welcome Address",
-      "Program Overview & Timeline",
-      "Success Stories",
-      "Mentor Introductions",
-      "Project Selection Guidelines",
-      "Q&A Session",
-      "Closing Remarks"
+      "Welcome note and opening of Winter of Code 5.0",
+      "Introduction to Winter of Code and its GSoC-inspired vision",
+      "Program goals, structure, and timeline overview",
+      "Keynote and talks by industry leaders and open-source advocates",
+      "Insights and experiences from global open-source contributors",
+      "What participants can expect from WoC 5.0",
+      "Community values, collaboration, and code of conduct",
+      "Official inauguration and closing remarks"
     ],
     "recordingLink": "https://www.youtube.com/live/a0WheoR5arw?si=bSn3LjxW9fhnYbRK"
   },
@@ -65,29 +66,29 @@
     "type": "Tech Talk",
     "status": "upcoming",
     "poster": "/events/Open Source 101.png",
-    "description": "A comprehensive workshop focused on helping students write strong, well-structured project proposals that stand out.",
-    "detailedDescription": "Learn from experienced mentors how to craft compelling project proposals. This workshop covers proposal structure, documentation best practices, timeline planning, and addressing mentor feedback. Bring your project ideas and get real-time guidance on improving your proposals. We'll review sample proposals and conduct live critiques.",
+    "description": "A practical introduction to open source, GSoC, and GitHub-straight from a GSoC 2025 mentor.",
+    "detailedDescription": "Open Source 101 is a beginner-friendly yet insightful session designed to help students and developers take their first confident steps into open source. Led by Amaan Bhati, DevRel Engineer at Keploy and Google Summer of Code (GSoC) 2025 Mentor, this session will cover the fundamentals of open source contributions, how programs like GSoC work, effective proposal writing strategies, and essential Git & GitHub workflows. Whether you’re just starting out or planning to apply for GSoC, this session will give you a clear roadmap and practical guidance from someone actively working in the ecosystem.",
     "speakers": [
       {
         "name": "Amaan Bhati",
-        "designation": "Senior Open Source Contributor",
-        "organization": "Apache Foundation",
-        "photo": "",
-        "profileLink": ""
+        "designation": "DevRel Engineer",
+        "organization": "Keploy",
+        "photo": "https://media.licdn.com/dms/image/v2/D4D03AQHYfndPQ3bhAw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1716025326484?e=1770249600&v=beta&t=KAtOrn05DlQtkHZ4Ap1ftyhTupJT-AnA7_7XqUq5p1A",
+        "profileLink": "https://www.linkedin.com/in/amaan-bhati/"
       }
     ],
     "registrationLink": "https://gdg.community.dev/e/mc7h5b/",
     "capacity": "100",
     "tags": ["GSoC", "Open Sorce", "workshop", "learning", "proposals", "mandatory"],
     "agenda": [
-      "Introduction to Technical Proposals",
-      "Proposal Structure & Components",
-      "Real-World Examples from Past Winners",
-      "Common Mistakes & How to Avoid Them",
-      "Timeline Planning & Milestone Setting",
-      "Live Proposal Review Session",
-      "Tools & Resources",
-      "Q&A"
+      "Introduction to Open Source and why it matters",
+      "Understanding the open-source ecosystem",
+      "Overview of Google Summer of Code (GSoC)",
+      "How to get started with open source contributions",
+      "Basics of GSoC proposal writing",
+      "Git & GitHub fundamentals (repositories, issues, pull requests)",
+      "Common beginner mistakes and best practices",
+      "Live Q&A with a DevRel Engineer and GSoC 2025 Mentor"
     ],
     "recordingLink": ""
   }

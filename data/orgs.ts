@@ -1528,7 +1528,7 @@ export const orgs: Record<string, Org> = {
     heroImage: "/orgs/Rootsprout.png",
     website: "https://www.rootsprouthub.com/",
     chat: "https://github.com/orgs/RootSprout/discussions",
-    repo: "https://www.linkedin.com/company/rootsprout/",
+    repo: "https://github.com/RootSprout",
     email: "rootsprout1@gmail.com",
     focusAreas: ["C"],
     stats: [
@@ -1538,7 +1538,7 @@ export const orgs: Record<string, Org> = {
       { label: "Good First Issues", value: "18" },
     ],
     contacts: [
-      { label: "Website", value: "rootsprout.org", href: "hhttps://www.rootsprouthub.com/" },
+      { label: "Website", value: "rootsprout.org", href: "https://www.rootsprouthub.com/" },
       {
         label: "Community Chat",
         value: "chat.rootsprout.org",
@@ -1551,7 +1551,12 @@ export const orgs: Record<string, Org> = {
       },
       {
         label: "GitHub",
-        value: "github.com/rootsprout",
+        value: "github.com/RootSprout",
+        href: "https://github.com/RootSprout",
+      },
+      {
+        label: "LinkedIn",
+        value: "linkedin.com/company/rootsprout",
         href: "https://www.linkedin.com/company/rootsprout/",
       },
     ],

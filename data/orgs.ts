@@ -1797,4 +1797,71 @@ export const orgs: Record<string, Org> = {
       },
     ],
   },
+
+
+
+
+
+
+  // Cumbuca Dev
+  cumbucadev: {
+    name: "Cumbuca Dev",
+    tagline: "",
+    description:
+      "Cumbuca Dev is a Brazilian open source community that creates real-world learning and contribution opportunities in technology, with a strong focus on underrepresented groups and sustainable open source projects.",
+    heroImage: "/orgs/Cumbuca Dev.png",
+    website: "https://cumbuca.dev",
+    chat: "mailto:cumbucadev@gmail.com",
+    repo: "https://github.com/cumbucadev",
+    email: "contact@example.org",
+    focusAreas: ["Python", "OpenAPI", "Pytest", "Requests", "YAML", "Docker", "GitHub Actions"],
+    stats: [
+      { label: "Active Mentors", value: "12" },
+      { label: "Contributors", value: "350+" },
+      { label: "Open Issues", value: "42" },
+      { label: "Good First Issues", value: "18" },
+    ],
+    contacts: [
+      { label: "Website", value: "example.org", href: "https://example.org" },
+      {
+        label: "Community Chat",
+        value: "chat.example.org",
+        href: "https://chat.example.org",
+      },
+      {
+        label: "Email",
+        value: "contact@example.org",
+        href: "mailto:contact@example.org",
+      },
+      {
+        label: "GitHub",
+        value: "github.com/example",
+        href: "https://github.com/example",
+      },
+    ],
+    mentors: [
+      {
+        name: "Camila Maia",
+        desc: "",
+        discord: "camilamaia",
+        email: "cmaiacd@gmail.com",
+        linkedin: "https://www.linkedin.com/in/cmaiacd",
+      },
+    ],
+    projects: [
+      {
+        title: "Scan API",
+        description:
+          "",
+        tech: ["Python", "PyTorch"],
+        problemStatement:
+          "APIs are a core part of modern software systems, but keeping API behavior, testing, and documentation aligned is still a major challenge. Many teams rely on manual testing or fragmented tools, which leads to unreliable integrations, outdated documentation, and poor developer experience. ScanAPI addresses this problem by providing automated API integration testing and live documentation based on OpenAPI specifications. It validates real API behavior against the specification, helping teams detect breaking changes early and improve reliability.",
+        focusArea:
+          "• Backend development with Python • API testing and validation • OpenAPI specifications • Developer Experience (DX) • Documentation improvements • CI/CD automation • Code quality, performance, and maintainability",
+        contributionGuide:
+          "Students contributing to ScanAPI will work on a production-grade open source Python project and solve real-world problems. Possible contribution areas include: • Improving existing API testing features • Adding support for new OpenAPI scenarios and edge cases • Enhancing error reporting and test result clarity • Improving documentation, examples, and tutorials • Writing and improving automated tests • Enhancing CI workflows and developer tooling Expected outcomes include merged pull requests, improved documentation, increased test coverage, and hands-on experience with open source collaboration. Mentors will help define milestones and guide students throughout the program. ScanAPI maintains regular Office Hours on the first Friday of every month, where contributors can ask questions, discuss ideas, and get guidance directly from maintainers. New contributors are encouraged to start with the official contribution guidelines: https://github.com/scanapi/scanapi/blob/main/CONTRIBUTING.md The project follows open source best practices, including code reviews, automated testing, CI workflows, and clear documentation. Mentors actively support first-time contributors and students throughout their onboarding and contribution journey.",
+      githubLink: "https://github.com/scanapi/scanapi",
+      }
+    ],
+  },
 };

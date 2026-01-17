@@ -1533,5 +1533,29 @@
       "email": "",
       "twitter": ""
     }
+  },
+  {
+    "name": "Scan API",
+    "developer": "Cumbuca Dev",
+    "desc": "Problem Statement\nAPIs are a core part of modern software systems, but keeping API behavior, testing, and documentation aligned is still a major challenge. Many teams rely on manual testing or fragmented tools, which leads to unreliable integrations, outdated documentation, and poor developer experience.\nScanAPI addresses this problem by providing automated API integration testing and live documentation based on OpenAPI specifications. It validates real API behavior against the specification, helping teams detect breaking changes early and improve reliability.\n\nFocus Areas\n• Backend development with Python\n• API testing and validation\n• OpenAPI specifications\n• Developer Experience (DX)\n• Documentation improvements\n• CI/CD automation\n• Code quality, performance, and maintainability\n\nStudent Contribution Guide (Idea Page)\nDescribe what students will work on, possible feature additions, and what outcomes you expect.\n(Tip: Define clear milestones if possible.)\nStudents contributing to ScanAPI will work on a production-grade open source Python project and solve real-world problems. \n\nPossible contribution areas include:\n• Improving existing API testing features\n• Adding support for new OpenAPI scenarios and edge cases\n• Enhancing error reporting and test result clarity\n• Improving documentation, examples, and tutorials\n• Writing and improving automated tests\n• Enhancing CI workflows and developer tooling\nExpected outcomes include merged pull requests, improved documentation, increased test coverage, and hands-on experience with open source collaboration. Mentors will help define milestones and guide students throughout the program.\n\nContribution Guidelines\nScanAPI maintains regular Office Hours on the first Friday of every month, where contributors can ask questions, discuss ideas, and get guidance directly from maintainers.\nNew contributors are encouraged to start with the official contribution guidelines:\nhttps://github.com/scanapi/scanapi/blob/main/CONTRIBUTING.md\nThe project follows open source best practices, including code reviews, automated testing, CI workflows, and clear documentation. Mentors actively support first-time contributors and students throughout their onboarding and contribution journey.",
+    "techstack": ["Python", "OpenAPI", "Pytest", "Requests", "YAML", "Docker", "GitHub Actions"],
+    "github": "https://github.com/scanapi/scanapi",
+    "mentors": [
+      {
+        "name": "Camila Maia",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/cmaiacd",
+          "discord": "camilamaia",
+          "email": "cmaiacd@gmail.com",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
   }
 ]

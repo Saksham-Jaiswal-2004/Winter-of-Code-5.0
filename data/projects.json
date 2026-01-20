@@ -1557,5 +1557,53 @@
       "email": "",
       "twitter": ""
     }
+  },
+  {
+    "name": "Next-generation Tiled Extensions",
+    "developer": "Tiled",
+    "desc": "Problem Statement\nTiled currently supports extensions written in JavaScript, allowing users to add custom actions, tools, and file formats. While powerful, this approach lacks a convenient way to define custom user interfaces and more declarative extension behavior. Qt provides QML, a modern declarative language ideally suited for defining UI and application logic, but it is not yet available for Tiled extensions.\n\nFocus Areas\n• Extension system architecture\n• Qt / QML integration\n• Plugin and scripting APIs\n• UI extensibility\n• Developer experience improvements\n\nStudent Contribution Guide (Idea Page)\nStudents will work on enabling a QML-based extension system for Tiled. The project can be scoped depending on experience level.\nPossible tasks\n• Design and implement a QML-based API for declaring:\n• Custom actions\n• File formats\n• Tools\n• Expose selected Tiled internals to QML in a safe and documented way\n• Provide example QML extensions\n• (Optional, advanced) Enable extensions to define custom UI panels and dialogs\n\nExpected Outcomes\n• Tiled extensions can be written using QML\n• Extension authors can declaratively define behavior and (optionally) UI\n• Improved extensibility and maintainability of Tiled\n• Documentation and examples for future contributors\n\nMilestones\n• Study existing JavaScript extension system\n• Design QML extension API\n• Implement core QML integration\n• Add sample extensions\n• Documentation and testing",
+    "techstack": ["C++", "Qt", "Qt Quick", "QML", "JavaScript"],
+    "github": "https://github.com/mapeditor/tiled",
+    "mentors": [
+      {
+        "name": "Thorbjørn Lindeijer",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/thorbjorn81/",
+          "discord": "thorbjorn81",
+          "email": "bjorn@lindeijer.nl",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
+  },
+  {
+    "name": "glTF Export for Maps",
+    "developer": "Tiled",
+    "desc": "Problem Statement\nUsing Tiled maps in modern game engines often requires each engine to implement its own logic to interpret Tiled’s formats, properties, and rendering behavior. This leads to duplicated effort and inconsistencies. glTF is a widely supported, modern 3D asset format that could serve as a universal export target for Tiled maps, allowing engines and frameworks to import maps with minimal additional logic.\n\nFocus Areas\n• Export pipelines\n• Rendering data generation\n• Asset optimization\n• Cross-engine compatibility\n• Plugin development\n\nStudent Contribution Guide (Idea Page)\nStudents will implement a glTF export plugin for Tiled, preferably in C++ (or JavaScript where appropriate).\n\nPossible tasks\n• Export Tiled maps (or entire Worlds) to glTF\n• Convert tile layers into optimized meshes\n• Handle tileset spacing, margins, alignment, and orientation\n• Explore texture packing and tileset optimization\n• Define handling strategies for:\n• Tile animations\n• Non-visual / logic layers\n• Dynamic elements\n\nExpected Outcomes\n• A working glTF export plugin for Tiled\n• Maps can be rendered in external engines with minimal setup\n• Improved performance and portability for Tiled-based workflows\n• Clear documentation of export limitations and design choices\n\nMilestones\n• Research glTF format and Tiled rendering logic\n• Design export structure\n• Implement static map export\n• Optimize meshes and textures\n• Documentation and example exports",
+    "techstack": ["C++ or JavaScript", "glTF 2.0", "Qt", "Graphics"],
+    "github": "https://github.com/mapeditor/tiled",
+    "mentors": [
+      {
+        "name": "Thorbjørn Lindeijer",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/in/thorbjorn81/",
+          "discord": "thorbjorn81",
+          "email": "bjorn@lindeijer.nl",
+          "twitter": ""
+        }
+      }
+    ],
+    "socials": {
+      "linkedin": "",
+      "discord": "",
+      "email": "",
+      "twitter": ""
+    }
   }
 ]

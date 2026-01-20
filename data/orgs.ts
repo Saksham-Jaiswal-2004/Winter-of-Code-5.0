@@ -1869,4 +1869,84 @@ export const orgs: Record<string, Org> = {
       }
     ],
   },
+
+
+
+
+
+
+  // Tiled
+  tiled: {
+    name: "Tiled",
+    tagline: "",
+    description:
+      "Tiled is a free and open-source, cross-platform 2D tile map editor used by game developers to design levels for tile-based games.",
+    heroImage: "/orgs/Tiled.png",
+    website: "https://www.mapeditor.org/",
+    chat: "",
+    repo: "https://github.com/mapeditor",
+    email: "contact@example.org",
+    focusAreas: ["C++", "Qt", "Qt Quick", "QML", "JavaScript", "glTF 2.0", "Graphics"],
+    stats: [
+      { label: "Active Mentors", value: "12" },
+      { label: "Contributors", value: "350+" },
+      { label: "Open Issues", value: "42" },
+      { label: "Good First Issues", value: "18" },
+    ],
+    contacts: [
+      { label: "Website", value: "example.org", href: "https://example.org" },
+      {
+        label: "Community Chat",
+        value: "chat.example.org",
+        href: "https://chat.example.org",
+      },
+      {
+        label: "Email",
+        value: "contact@example.org",
+        href: "mailto:contact@example.org",
+      },
+      {
+        label: "GitHub",
+        value: "github.com/example",
+        href: "https://github.com/example",
+      },
+    ],
+    mentors: [
+      {
+        name: "Thorbjørn Lindeijer",
+        desc: "",
+        discord: "thorbjorn81",
+        email: "bjorn@lindeijer.nl",
+        linkedin: "https://www.linkedin.com/in/thorbjorn81/",
+      },
+    ],
+    projects: [
+      {
+        title: "Next-generation Tiled Extensions",
+        description:
+          "",
+        tech: ["C++", "Qt", "Qt Quick", "QML", "JavaScript"],
+        problemStatement:
+          "Tiled currently supports extensions written in JavaScript, allowing users to add custom actions, tools, and file formats. While powerful, this approach lacks a convenient way to define custom user interfaces and more declarative extension behavior. Qt provides QML, a modern declarative language ideally suited for defining UI and application logic, but it is not yet available for Tiled extensions.",
+        focusArea:
+          "• Extension system architecture • Qt / QML integration • Plugin and scripting APIs • UI extensibility • Developer experience improvements",
+        contributionGuide:
+          "Students will work on enabling a QML-based extension system for Tiled. The project can be scoped depending on experience level.   Possible tasks • Design and implement a QML-based API for declaring: • Custom actions • File formats • Tools • Expose selected Tiled internals to QML in a safe and documented way • Provide example QML extensions • (Optional, advanced) Enable extensions to define custom UI panels and dialogs  Expected Outcomes Tiled extensions can be written using QML Extension authors can declaratively define behavior and (optionally) UI Improved extensibility and maintainability of Tiled Documentation and examples for future contributors. Milestones • Study existing JavaScript extension system • Design QML extension API • Implement core QML integration • Add sample extensions • Documentation and testing",
+      githubLink: "https://github.com/mapeditor/tiled",
+      },
+      {
+        title: "glTF Export for Maps",
+        description:
+          "",
+        tech: ["C++ or JavaScript", "glTF 2.0", "Qt", "Graphics"],
+        problemStatement:
+          "Using Tiled maps in modern game engines often requires each engine to implement its own logic to interpret Tiled’s formats, properties, and rendering behavior. This leads to duplicated effort and inconsistencies. glTF is a widely supported, modern 3D asset format that could serve as a universal export target for Tiled maps, allowing engines and frameworks to import maps with minimal additional logic.",
+        focusArea:
+          "• Export pipelines • Rendering data generation • Asset optimization • Cross-engine compatibility • Plugin development",
+        contributionGuide:
+          "Students will implement a glTF export plugin for Tiled, preferably in C++ (or JavaScript where appropriate).  Possible tasks • Export Tiled maps (or entire Worlds) to glTF • Convert tile layers into optimized meshes • Handle tileset spacing, margins, alignment, and orientation • Explore texture packing and tileset optimization • Define handling strategies for: • Tile animations • Non-visual / logic layers • Dynamic elements  Expected Outcomes • A working glTF export plugin for Tiled • Maps can be rendered in external engines with minimal setup • Improved performance and portability for Tiled-based workflows • Clear documentation of export limitations and design choices  Milestones • Research glTF format and Tiled rendering logic • Design export structure • Implement static map export • Optimize meshes and textures • Documentation and example exports",
+      githubLink: "https://github.com/mapeditor/tiled",
+      }
+    ],
+  },
 };

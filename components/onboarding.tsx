@@ -9,7 +9,7 @@ import Snowfall from 'react-snowfall'
 import { useEffect, useState } from "react";
 
 const Register = () => {
-    var TBA = false;
+    var TBA = true;
 
     // useEffect(() => {
     //     const script = document.createElement('script');
@@ -42,7 +42,7 @@ const Register = () => {
                     <div className='absolute top-right-arrow right-[0.375vw] top-[0.3vw] sm:top-[0.45vw] mb-4'></div>
                     {TBA ? 
                     <div className="text-nowrap pt-[1.5%] font-kleemax">
-                        <JumbleText text="COMING SOON" id="registerhere"/>
+                        <JumbleText text="REGISTRATION CLOSED" id="registerhere"/>
                     </div>:
                     <Link href="https://winter-of-code-5.devfolio.co/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
                         <JumbleText text="REGISTRATION OPEN" id="registerhere2"/>

@@ -91,5 +91,41 @@
       "Live Q&A with a DevRel Engineer and GSoC 2025 Mentor"
     ],
     "recordingLink": "https://www.youtube.com/watch?v=Ocy7fWQSPa0"
-  }
+  },
+  {
+  "id": 3,
+  "title": "Frontend Development with UI Libraries",
+  "date": "24-01-2026",
+  "time": "07:00 PM",
+  "endTime": "08:00 PM",
+  "location": "Online (Google Meet)",
+  "type": "Tech Talk / Workshop",
+  "status": "upcoming",
+  "poster": "/events/Keploy24.png",
+  "description": "Learn fast and effective frontend development with Next.js, UI libraries, and open source tools from a GSoC 2025 mentor.",
+  "detailedDescription": "Frontend Development with UI Libraries is an interactive session designed for developers who want to build fast, scalable, and beautiful web applications. Led by Amaan Bhati, DevRel Engineer at Keploy and Google Summer of Code (GSoC) 2025 Mentor, this session will dive into modern frontend development using Next.js, best UI/UX practices, and the power of open source UI libraries. You’ll also see a live demonstration on how to quickly test APIs using Keploy. Whether you’re a beginner or an intermediate frontend developer, this session will help you level up your workflow and connect with like-minded developers.",
+  "speakers": [
+    {
+      "name": "Amaan Bhati",
+      "designation": "DevRel Engineer",
+      "organization": "Keploy",
+      "photo": "https://media.licdn.com/dms/image/v2/D4D03AQHYfndPQ3bhAw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1716025326484?e=1770249600&v=beta&t=KAtOrn05DlQtkHZ4Ap1ftyhTupJT-AnA7_7XqUq5p1A",
+      "profileLink": "https://www.linkedin.com/in/amaan-bhati/"
+    }
+  ],
+  "registrationLink": "https://gdg.community.dev/e/mymzqn/",
+  "capacity": "100",
+  "tags": ["Frontend", "Next.js", "UI Libraries", "Open Source", "Keploy", "GSoC", "Workshop"],
+  "agenda": [
+    "Introduction to modern frontend development",
+    "Why Next.js is powerful for fast frontend apps",
+    "Best UI/UX practices for scalable applications",
+    "Using open source UI libraries effectively",
+    "Speeding up development with ready-made components",
+    "Live demo: Testing APIs quickly with Keploy",
+    "Tips for becoming a better frontend engineer",
+    "Live Q&A and networking"
+  ],
+  "recordingLink": ""
+}
 ]

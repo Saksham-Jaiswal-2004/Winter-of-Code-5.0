@@ -127,5 +127,42 @@
     "Live Q&A and networking"
   ],
   "recordingLink": "https://www.youtube.com/watch?v=elVh7tfaFyE"
+},
+  {
+  "id": 4,
+  "title": "Frontend Development with UI Libraries",
+  "date": "09-02-2026",
+  "time": "06:00 PM",
+  "endTime": "07:30 PM",
+  "location": "Online",
+  "type": "Tech Talk / Workshop",
+  "status": "upcoming",
+  "poster": "/events/Full Stack 101.png",
+  "description": "Kickstart your journey into Full Stack Development by learning how frontend and backend come together to build powerful applications.",
+  "detailedDescription": "Full Stack 101 is an insightful online session crafted to introduce participants to the exciting and ever-evolving world of Full Stack Development. This session is perfect for frontend developers who want to understand backend systems, backend developers aiming to create better user experiences, and beginners curious about how complete web applications are built. You’ll explore the core concepts of frontend and backend development, how they communicate, and the essential tools and technologies used by full stack developers today. Guided by an experienced speaker, this session focuses on practical understanding, real-world workflows, and best practices to help you build dynamic, efficient, and scalable applications. Join us to learn, interact, and connect with peers who share your passion for building end-to-end solutions.",
+  "speakers": [
+    {
+        "name": "Praveen Kumar",
+        "designation": "Associate Director",
+        "organization": "Fitch Group Inc.",
+        "photo": "https://media.licdn.com/dms/image/v2/D5603AQHBGaUagLWnZQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705905277353?e=1770249600&v=beta&t=2GHDykk270hoxsLtCGDqw3hyNmQjnbzZsRdU21MfxF4",
+        "profileLink": "https://www.linkedin.com/in/praveentech/"
+    }
+  ],
+  "registrationLink": "https://gdg.community.dev/e/m2ygn3/",
+  "capacity": "Unlimited",
+  "tags": ["Full Stack", "Web Development", "Frontend", "Backend", "APIs", "Databases", "JavaScript", "Career Growth", "Workshop"],
+  "agenda": [
+    "Welcome and session overview",
+    "What is Full Stack Development?",
+    "Understanding frontend fundamentals",
+    "Introduction to backend systems and APIs",
+    "How frontend and backend work together",
+    "Overview of popular full stack tools and tech stacks",
+    "Best practices for building scalable applications",
+    "Roadmap and tips for aspiring full stack developers",
+    "Live Q&A and networking"
+  ],
+  "recordingLink": ""
 }
 ]

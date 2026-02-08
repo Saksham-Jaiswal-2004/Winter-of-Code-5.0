@@ -457,7 +457,7 @@ const Events = () => {
           // Parse dates in DD-MM-YYYY format
           const dateA = new Date(a.date.split("-").reverse().join("-"));
           const dateB = new Date(b.date.split("-").reverse().join("-"));
-          return dateA.getTime() - dateB.getTime();
+          return dateB.getTime() - dateA.getTime();
         case "title":
           return a.title.localeCompare(b.title);
         case "type":
